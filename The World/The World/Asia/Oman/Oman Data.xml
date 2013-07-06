@@ -1,0 +1,10 @@
+<region name="Oman" leader="Sultan Qaboos bin Said al Said" capital="Muscat">
+<sub_region red="200" green="200" blue="200" name="Ad Dhahirah" capital="Ad Dhahirah"/>
+<sub_region red="196" green="196" blue="196" name="Al Batinah" capital="Al Batinah"/>
+<sub_region red="194" green="194" blue="194" name="Al Dakhliyah" capital="Al Dakhliyah"/>
+<sub_region red="192" green="192" blue="192" name="Al Wusta" capital="Al Wusta"/>
+<sub_region red="190" green="190" blue="190" name="Ash Sharqiyah North" capital="Ash Sharqiyah North"/>
+<sub_region red="186" green="186" blue="186" name="Dhofar" capital="Dhofar"/>
+<sub_region red="184" green="184" blue="184" name="Masqat" capital="Masqat"/>
+<sub_region red="182" green="182" blue="182" name="Musandam" capital="Musandam"/>
+</region>

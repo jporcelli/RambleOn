@@ -1,0 +1,10 @@
+<region name="Kenya" leader="Uhuru Kenyatta" capital="Nairobi">
+<sub_region red="120" green="120" blue="120" name="Nyanza" capital="Kisumu"/>
+<sub_region red="130" green="130" blue="130" name="Western" capital="Kakamega"/>
+<sub_region red="140" green="140" blue="140" name="Rift Valley" capital="Nakuru"/>
+<sub_region red="150" green="150" blue="150" name="Central" capital="Nyeri"/>
+<sub_region red="160" green="160" blue="160" name="Eastern" capital="Embu"/>
+<sub_region red="170" green="170" blue="170" name="North Eastern" capital="Garissa"/>
+<sub_region red="180" green="180" blue="180" name="Coast" capital="Mombasa"/>
+<sub_region red="190" green="190" blue="190" name="Nairobi" capital="Nairobi"/>
+</region>

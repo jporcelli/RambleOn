@@ -1,0 +1,11 @@
+<region name="South Africa" leader="Jacob Zuma" capital="Pretoria">
+<sub_region red="195" green="195" blue="195" name="Limpopo" capital="Polokwane"/>
+<sub_region red="190" green="190" blue="190" name="North West" capital="Mahikeng"/>
+<sub_region red="185" green="185" blue="185" name="Mpumalanga" capital="Nelspruit"/>
+<sub_region red="180" green="180" blue="180" name="Gauteng" capital="Johannesburg"/>
+<sub_region red="175" green="175" blue="175" name="Northern Cape" capital="Kimberley"/>
+<sub_region red="170" green="170" blue="170" name="Free State" capital="Bloemfontein"/>
+<sub_region red="165" green="165" blue="165" name="KwaZulu-Natal" capital="Pietermaritzburg"/>
+<sub_region red="160" green="160" blue="160" name="Western Cape" capital="Cape Town"/>
+<sub_region red="155" green="155" blue="155" name="Eastern Cape" capital="Bhisho"/>
+</region>

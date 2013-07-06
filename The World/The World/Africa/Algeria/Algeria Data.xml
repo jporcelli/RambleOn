@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<region name="Algeria" leader="Abdelaziz Bouteflika" capital="Algiers">
+     <sub_region capital="El Taref" name="El Taref" blue="200" green="200" red="200"/>
+     <sub_region capital="Annaba" name="Annaba" blue="199" green="199" red="199"/>
+     <sub_region capital="Skikda" name="Skikda" blue="198" green="198" red="198"/>
+     <sub_region capital="Guelma" name="Guelma" blue="197" green="197" red="197"/>
+     <sub_region capital="Souk Ahras" name="Souk Ahras" blue="196" green="196" red="196"/>
+     <sub_region capital="Tébessa" name="Tébessa" blue="195" green="195" red="195"/>
+     <sub_region capital="Oum El Bouaghi" name="Oum El Bouaghi" blue="194" green="194" red="194"/>
+     <sub_region capital="Constantine" name="Constantine" blue="193" green="193" red="193"/>
+     <sub_region capital="Mila" name="Mila" blue="192" green="192" red="192"/>
+     <sub_region capital="Jijel" name="Jijel" blue="191" green="191" red="191"/>
+     <sub_region capital="Béjaïa" name="Béjaïa" blue="190" green="190" red="190"/>
+     <sub_region capital="Sétif" name="Sétif" blue="189" green="189" red="189"/>
+     <sub_region capital="Batna" name="Batna" blue="188" green="188" red="188"/>
+     <sub_region capital="Khenchela" name="Khenchela" blue="187" green="187" red="187"/>
+     <sub_region capital="El Oued" name="El Oued" blue="186" green="186" red="186"/>
+     <sub_region capital="Biskra" name="Biskra" blue="185" green="185" red="185"/>
+     <sub_region capital="M'Sila" name="M'Sila" blue="184" green="184" red="184"/>
+     <sub_region capital="Bordj Bou Arréridj" name="Bordj Bou Arréridj" blue="183" green="183" red="183"/>
+     <sub_region capital="Bouïra" name="Bouïra" blue="182" green="182" red="182"/>
+     <sub_region capital="Tizi Ouzou" name="Tizi Ouzou" blue="181" green="181" red="181"/>
+     <sub_region capital="Boumerdès" name="Boumerdès" blue="180" green="180" red="180"/>
+     <sub_region capital="Algiers" name="Algiers" blue="179" green="179" red="179"/>
+     <sub_region capital="Blida" name="Blida" blue="178" green="178" red="178"/>
+     <sub_region capital="Médéa" name="Médéa" blue="177" green="177" red="177"/>
+     <sub_region capital="Djelfa" name="Djelfa" blue="176" green="176" red="176"/>
+     <sub_region capital="Ouargla" name="Ouargla" blue="175" green="175" red="175"/>
+     <sub_region capital="Ghardaïa" name="Ghardaïa" blue="174" green="174" red="174"/>
+     <sub_region capital="Laghouat" name="Laghouat" blue="173" green="173" red="173"/>
+     <sub_region capital="Tiaret" name="Tiaret" blue="172" green="172" red="172"/>
+     <sub_region capital="Tissemsilt" name="Tissemsilt" blue="171" green="171" red="171"/>
+     <sub_region capital="Aïn Defla" name="Aïn Defla" blue="170" green="170" red="170"/>
+     <sub_region capital="Tipaza" name="Tipaza" blue="169" green="169" red="169"/>
+     <sub_region capital="Chlef" name="Chlef" blue="168" green="168" red="168"/>
+     <sub_region capital="Relizane" name="Relizane" blue="167" green="167" red="167"/>
+     <sub_region capital="Mostaganem" name="Mostaganem" blue="166" green="166" red="166"/>
+     <sub_region capital="Oran" name="Oran" blue="165" green="165" red="165"/>
+     <sub_region capital="Mascara" name="Mascara" blue="164" green="164" red="164"/>
+     <sub_region capital="Saïda" name="Saïda" blue="163" green="163" red="163"/>
+     <sub_region capital="El Bayadh" name="El Bayadh" blue="162" green="162" red="162"/>
+     <sub_region capital="Aïn Témouchent" name="Aïn Témouchent" blue="161" green="161" red="161"/>
+     <sub_region capital="Sidi Bel Abbès" name="Sidi Bel Abbès" blue="160" green="160" red="160"/>
+     <sub_region capital="Tlemcen" name="Tlemcen" blue="159" green="159" red="159"/>
+     <sub_region capital="Naâma" name="Naâma" blue="158" green="158" red="158"/>
+     <sub_region capital="Béchar" name="Béchar" blue="157" green="157" red="157"/>
+     <sub_region capital="Tindouf" name="Tindouf" blue="156" green="156" red="156"/>
+     <sub_region capital="Adrar" name="Adrar" blue="155" green="155" red="155"/>
+     <sub_region capital="Tamanrasset" name="Tamanghasset" blue="154" green="154" red="154"/>
+     <sub_region capital="Illizi" name="Illizi" blue="153" green="153" red="153"/>
+</region>

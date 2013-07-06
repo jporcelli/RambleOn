@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="Lesotho" leader="Letsie III" capital="Maseru">
+    <sub_region red="200" green="200" blue="200" name="Butha-Buthe"      capital="Butha-Buthe" />
+    <sub_region red="190" green="190" blue="190" name="Mokhotlong"        capital="Mokhotlong" />
+    <sub_region red="180" green="180" blue="180" name="Leribe"           capital="Leribe" />
+    <sub_region red="170" green="170" blue="170" name="Thaba-Tseka"         capital="Thaba-Tseka" />
+    <sub_region red="160" green="160" blue="160" name="Berea"          capital="Teyateyaneng" />
+    <sub_region red="150" green="150" blue="150" name="Maseru"        capital="Maseru" />
+    <sub_region red="140" green="140" blue="140" name="Mafeteng"          capital="Mafeteng" />
+    <sub_region red="130" green="130" blue="130" name="Mohales Hoek"          capital="Mohales Hoek" />
+    <sub_region red="120" green="120" blue="120" name="Qachas Nek"         capital="Qachas Nek" />
+    <sub_region red="110" green="110" blue="110" name="Quthing"          capital="Quthing" />
+</region>
+
+

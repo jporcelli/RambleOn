@@ -1,0 +1,13 @@
+<region name="Barbados" leader="David Thompson" capital="Bridgetown">
+	<sub_region red="212" green="212" blue="212" name="St. Lucy" capital="Crab Hill"/>
+	<sub_region red="201" green="201" blue="201" name="St. Peter" capital="Speightstown"/>
+	<sub_region red="191" green="191" blue="191" name="St. James" capital="Holetown"/>
+	<sub_region red="180" green="180" blue="180" name="St. Andrew" capital="Greenland"/>
+	<sub_region red="170" green="170" blue="170" name="St. Thomas" capital="Hillaby"/>
+	<sub_region red="159" green="159" blue="159" name="St. Joseph" capital="Bathsheba"/>
+	<sub_region red="148" green="148" blue="148" name="St. Michael" capital="Bridgetown"/>
+	<sub_region red="138" green="138" blue="138" name="St. George" capital="Bulkeley"/>
+	<sub_region red="127" green="127" blue="127" name="St. John" capital="Four Roads"/>
+	<sub_region red="116" green="116" blue="116" name="Christ Church" capital="Oistins"/>
+	<sub_region red="106" green="106" blue="106" name="St. Phillip" capital="Crane"/>
+	</region>

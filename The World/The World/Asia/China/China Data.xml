@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="China" leader="Xi Jinping" capital="Beijing">
+    <sub_region red="220" green="220" blue="220" name="Heilongjiang"      capital="Harbin" />
+	<sub_region red="218" green="218" blue="218" name="Jilin"             capital="Changchun" />
+	<sub_region red="216" green="216" blue="216" name="Liaoning"          capital="Shenyang" />
+	<sub_region red="214" green="214" blue="214" name="Heibei"            capital="Shijiazhuang" />
+	<sub_region red="212" green="212" blue="212" name="Beijing"           capital="Beijing" />
+	<sub_region red="210" green="210" blue="210" name="Tianjin"           capital="Tianjin" />
+	<sub_region red="208" green="208" blue="208" name="Shandong"          capital="Jinan" />
+	<sub_region red="206" green="206" blue="206" name="Jiangsu"           capital="Nanjing" />
+	<sub_region red="204" green="204" blue="204" name="Shanghai"          capital="Shanghai" />
+	<sub_region red="202" green="202" blue="202" name="Zhejiang"          capital="Hangzhou" />
+	<sub_region red="200" green="200" blue="200" name="Fujian"            capital="Fuzhou" />
+	<sub_region red="198" green="198" blue="198" name="Guangdong"         capital="Guangzhou" />
+    <sub_region red="196" green="196" blue="196" name="Guangxi"           capital="Nanning" />
+    <sub_region red="194" green="194" blue="194" name="Yunnan"            capital="Kunming" />
+    <sub_region red="192" green="192" blue="192" name="Tibet"             capital="Lhasa" />
+    <sub_region red="190" green="190" blue="190" name="Xinjiang"          capital="Urumqi" />
+    <sub_region red="188" green="188" blue="188" name="Gansu"             capital="Lanzhou" />
+    <sub_region red="186" green="186" blue="186" name="Inner Mongolia"    capital="Hohhot" />
+    <sub_region red="184" green="184" blue="184" name="Shanxi"            capital="Taiyuan" />
+    <sub_region red="182" green="182" blue="182" name="Henan"             capital="Zhengzhou" />
+    <sub_region red="180" green="180" blue="180" name="Anhui"             capital="Hefei" />
+    <sub_region red="178" green="178" blue="178" name="Jiangxi"           capital="Nanchang" />
+    <sub_region red="176" green="176" blue="176" name="Hunan"             capital="Changsha" />
+    <sub_region red="174" green="174" blue="174" name="Guizhou"           capital="Guiyang" />
+    <sub_region red="172" green="172" blue="172" name="Sichuan"           capital="Chengdu" />
+    <sub_region red="170" green="170" blue="170" name="Qinghai"           capital="Xining" />
+    <sub_region red="168" green="168" blue="168" name="Ningxia"           capital="Yinchuan" />
+    <sub_region red="166" green="166" blue="166" name="Shaanxi"           capital="Xi'an" />
+    <sub_region red="164" green="164" blue="164" name="Hubei"             capital="Wuhan" />
+    <sub_region red="162" green="162" blue="162" name="Chongqing"         capital="Chongqing" />
+    <sub_region red="160" green="160" blue="160" name="Hainan"            capital="Haikou" />
+</region>
+

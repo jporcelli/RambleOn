@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="Qatar" leader="Sheikh Hamad bin Khalifa Al Thani" capital="Doha">
+    <sub_region red="120" green="120" blue="120" name="Jariyan al Batnah"      	capital="Umm Bab" />
+    <sub_region red="125" green="125" blue="125" name="Al Wakrah"        	capital="Al Wakrah" />
+    <sub_region red="130" green="130" blue="130" name="Ar Rayyan"           	capital="Ar Rayyan" />
+    <sub_region red="135" green="135" blue="135" name="Ad Dawhah"         	capital="Doha" />
+    <sub_region red="140" green="140" blue="140" name="Al Jumayliyah"          	capital="Al Jumayliyah" />
+    <sub_region red="150" green="150" blue="150" name="Al Ghuwariyah"        	capital="Al Ghuwairiya" />
+    <sub_region red="155" green="155" blue="155" name="Umm Salal"          	capital="Umm Salal" />
+    <sub_region red="160" green="160" blue="160" name="Al Khawr"          	capital="Al Khor" />
+    <sub_region red="165" green="165" blue="165" name="Ash Shamal"        	 capital="Ar Ru'ays" />
+</region>

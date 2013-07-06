@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="Saint Kitts and Nevis" leader="Denzil Douglas" capital="Basseterre">
+    <sub_region red="200" green="200" blue="200" name="Christ Church Nichola Town"      capital="Nichola Town" />
+    <sub_region red="198" green="198" blue="198" name="Saint Anne Sandy Point"        capital="Sandy Point Town" />
+    <sub_region red="196" green="196" blue="196" name="Saint George Basseterre"           capital="Basseterre" />
+    <sub_region red="194" green="194" blue="194" name="Saint George Gingerland"         capital="Market Shop" />
+    <sub_region red="192" green="192" blue="192" name="Saint James Windward"          capital="Newcastle" />
+    <sub_region red="190" green="190" blue="190" name="Saint John Capesterre"        capital="Dieppe Bay Town" />
+    <sub_region red="188" green="188" blue="188" name="Saint John Figtree"          capital="Figtree" />
+    <sub_region red="186" green="186" blue="186" name="Saint Mary Cayon"          capital="Cayon" />
+    <sub_region red="184" green="184" blue="184" name="Saint Paul Capisterre"         capital="Saint Paul Capesterre" />
+    <sub_region red="182" green="182" blue="182" name="Saint Paul Charlestown"          capital="Charlestown" />
+    <sub_region red="180" green="180" blue="180" name="Saint Peter Basseterre"           capital="Monkey Hill" />
+    <sub_region red="178" green="178" blue="178" name="Saint Thomas Lowland"       capital="Cotton Ground" />
+    <sub_region red="176" green="176" blue="176" name="Saint Thomas Middle Island "   capital="Middle Island" />
+    <sub_region red="174" green="174" blue="174" name="Trinity Palmetto Point "           capital="Palmetto Point" />
+</region>
+

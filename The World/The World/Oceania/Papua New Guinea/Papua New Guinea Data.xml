@@ -1,0 +1,21 @@
+<region name="Papua New Guinea" leader="Micheal Ogio" capital="Port Moresby">
+	<sub_region red="229" green="229" blue="229" name="West Sepik" capital="Vanimo"/>
+	<sub_region red="225" green="225" blue="225" name="Fly River" capital="Kiunga"/>
+	<sub_region red="219" green="219" blue="219" name="East Sepik" capital="Wewak"/>
+	<sub_region red="214" green="214" blue="214" name="Hela" capital="Tari"/>
+	<sub_region red="209" green="209" blue="209" name="Gulf" capital="Terema"/>
+	<sub_region red="204" green="204" blue="204" name="Enga" capital="Wabag"/>
+	<sub_region red="199" green="199" blue="199" name="Madang" capital="Madang"/>
+	<sub_region red="194" green="194" blue="194" name="Jiwaka" capital="Minj"/>
+	<sub_region red="189" green="189" blue="189" name="Chimbu" capital="Kundiawa"/>
+	<sub_region red="184" green="184" blue="184" name="Eastern Highlands" capital="Goroka"/>
+	<sub_region red="179" green="179" blue="179" name="Morobe" capital="Lae"/>
+	<sub_region red="174" green="174" blue="174" name="Central" capital="Konedobu"/>
+	<sub_region red="173" green="173" blue="173" name="Oro" capital="Popondetta"/>
+	<sub_region red="171" green="171" blue="171" name="Milne Bay" capital="Alotau"/>
+	<sub_region red="168" green="168" blue="168" name="West New Britain" capital="Kimbe"/>
+	<sub_region red="165" green="165" blue="165" name="East New Britain" capital="Kokopo"/>
+	<sub_region red="162" green="162" blue="162" name="Manus" capital="Lorengau"/>
+	<sub_region red="159" green="159" blue="159" name="New Ireland" capital="Kavieng"/>
+	<sub_region red="155" green="155" blue="155" name="Bougainville" capital="Buka"/>
+</region>

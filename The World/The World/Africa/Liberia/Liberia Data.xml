@@ -1,0 +1,16 @@
+<region name="Liberia" leader="Ellen Johnson Sirleaf" capital="Monrovia">
+	<sub_region red="200" green="200" blue="200" name="Bomi" capital="Tubmanburg"/>
+	<sub_region red="190" green="190" blue="190" name="Bong" capital="Gbarnga"/>
+	<sub_region red="184" green="184" blue="184" name="Gbarpolu" capital="Bopulu"/>
+	<sub_region red="179" green="179" blue="179" name="Grand Bassa" capital="Buchanan"/>
+	<sub_region red="194" green="194" blue="194" name="Grand Cape Mount" capital="Robertsport"/>
+	<sub_region red="149" green="149" blue="149" name="Grand Gedeh" capital="Zwedru"/>
+	<sub_region red="170" green="170" blue="170" name="Grand Kru" capital="Barclayville"/>
+	<sub_region red="182" green="182" blue="182" name="Lofa" capital="Voinjama"/>
+	<sub_region red="175" green="175" blue="175" name="Margibi" capital="Kakata"/>
+	<sub_region red="182" green="182" blue="182" name="Maryland" capital="Harper"/>
+	<sub_region red="177" green="177" blue="177" name="Montserrado" capital="Bensonville"/>
+	<sub_region red="157" green="157" blue="157" name="Nimba" capital="Sanniquellie"/>
+	<sub_region red="166" green="166" blue="166" name="Rivercess" capital="Rivercess"/>
+	<sub_region red="161" green="161" blue="161" name="River Gee" capital="Fish Town"/>	
+</region>

@@ -1,0 +1,14 @@
+<region name="Georgia" leader="Mikheil Saakashvili" capital="Tibilisi">
+	<sub_region red="200" green="200" blue="200" name="Abkhazia" capital="Sukhumi"/>
+	<sub_region red="198" green="198" blue="198" name="Samegrelo-Zemo Svaneti" capital="Zugdidi"/>
+	<sub_region red="196" green="196" blue="196" name="Guria" capital="Ozurgeti"/>
+	<sub_region red="194" green="194" blue="194" name="Ajaria" capital="Batumi"/>
+	<sub_region red="192" green="192" blue="192" name="Imereti" capital="Kutaisi"/>
+	<sub_region red="190" green="190" blue="190" name="Racha-Lechkhumi-Kvemo Svaneti" capital="Ambrolauri"/>
+	<sub_region red="188" green="188" blue="188" name="Samtskhe-Javakheti" capital="Akhaltsikhe"/>
+	<sub_region red="186" green="186" blue="186" name="Shida Kartli" capital="Gori"/>
+	<sub_region red="184" green="184" blue="184" name="Kvemo Kartli" capital="Rustavi"/>
+	<sub_region red="182" green="182" blue="182" name="Mtskheta-Mtianeti" capital="Mtskheta"/>
+	<sub_region red="180" green="180" blue="180" name="Tbilisi" capital="Tbilisi"/>
+	<sub_region red="178" green="178" blue="178" name="Kakheti" capital="Telavi"/>
+</region>

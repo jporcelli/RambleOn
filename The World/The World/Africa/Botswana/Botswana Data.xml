@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="Botswana" leader="Ian Khama" capital="Gaborone">
+    <sub_region red="200" green="200" blue="200" name="North-West"  capital="Maun" />
+    <sub_region red="195" green="200" blue="200" name="Ghanzi"      capital="Ghanzi" />
+    <sub_region red="195" green="195" blue="200" name="Central"     capital="Serowe" />
+    <sub_region red="190" green="190" blue="190" name="North-East"  capital="Masunga" />
+    <sub_region red="180" green="180" blue="180" name="Kgalagadi"   capital="Tshabong" />
+    <sub_region red="175" green="180" blue="180" name="Kweneng"     capital="Molepolole" />
+    <sub_region red="170" green="170" blue="170" name="Southern"    capital="Kanye" />
+    <sub_region red="175" green="175" blue="175" name="Kgatleng"    capital="Mochudi" />
+    <sub_region red="175" green="175" blue="170" name="South East"  capital="Ramotswa" />
+</region>

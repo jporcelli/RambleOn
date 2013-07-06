@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="Spain" leader="Mariano Rajoy" capital="Madrid">
+    <sub_region red="71" green="71" blue="71" name="Galicia"      capital="Santiago de Compostela" />
+    <sub_region red="88" green="88" blue="88" name="Asturias"        capital="Oviedo" />
+    <sub_region red="105" green="105" blue="105" name="Cantabria"           capital="Santander" />
+    <sub_region red="122" green="122" blue="122" name="Basque Country"         capital="Vitoria-Gasteiz" />
+    <sub_region red="139" green="139" blue="139" name="Navarre"          capital="Pamplona" />
+    <sub_region red="156" green="156" blue="156" name="Catalonia"        capital="Barcelona" />
+    <sub_region red="173" green="173" blue="173" name="Castile Leon"          capital="Valladolid/Burgos" />
+    <sub_region red="190" green="190" blue="190" name="La Rioja"          capital="Logroño" />
+    <sub_region red="207" green="207" blue="207" name="Aragon"         capital="Zaragoza" />
+    <sub_region red="72" green="72" blue="72" name="Extremadura"          capital="Mérida" />
+    <sub_region red="89" green="89" blue="89" name="Madrid"           capital="Madrid" />
+    <sub_region red="106" green="106" blue="106" name="Castile La Mancha"       capital="Toledo" />
+    <sub_region red="123" green="123" blue="123" name="Valencia"   capital="Valencia" />
+    <sub_region red="140" green="140" blue="140" name="Balearic Islands"           capital="Palma" />
+    <sub_region red="157" green="157" blue="157" name="Andalusia"          capital="Seville" />
+    <sub_region red="174" green="174" blue="174" name="Murica"           capital="Murcia" />
+    <sub_region red="191" green="191" blue="191" name="Canary Islands"        capital="Las Palmas/Santa Cruz de Tenerife" />
+    <sub_region red="73" green="73" blue="73" name="Ceuta"           capital="Ceuta" />
+    <sub_region red="103" green="103" blue="103" name="Melilla"         capital="Melilla" />
+</region>

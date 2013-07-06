@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="Republic of San Marino" leader="Antonella Mularoni" capital="San Marino">
+    <sub_region red="168" green="168" blue="168" name="Castello di Acquaviva"                   capital="Acquaviva" />
+    <sub_region red="178" green="178" blue="178" name="Castello di Borgo Maggiore"              capital="Borgo Maggiore" />
+    <sub_region red="173" green="168" blue="168" name="Castello di Chiesanuova"                 capital="Chiesanuova" />
+    <sub_region red="189" green="187" blue="187" name="Castello di Domagnano"                   capital="Domagnano" />
+    <sub_region red="192" green="199" blue="209" name="Castello di Faetano"                     capital="Faetano" />
+    <sub_region red="188" green="188" blue="188" name="Castello di Fiorentino"                  capital="Fiorentino" />
+    <sub_region red="198" green="198" blue="198" name="Castello di Montegiardino"               capital="Montegiardino" />
+    <sub_region red="165" green="163" blue="163" name="Castello della Città di San Marino"      capital="San Marino" />
+    <sub_region red="161" green="161" blue="161" name="Castello di Serravalle"                  capital="Serravalle" />
+</region>
+

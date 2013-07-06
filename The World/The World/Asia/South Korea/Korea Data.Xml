@@ -1,0 +1,30 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red170\green13\blue145;\red196\green26\blue22;\red131\green108\blue40;
+}
+\margl1440\margr1440\vieww20080\viewh11680\viewkind0
+\deftab529
+\pard\tx529\pardeftab529\pardirnatural
+
+\f0\fs22 \cf2 \CocoaLigature0 <?xml version=\cf3 "1.0"\cf2  encoding=\cf3 "UTF-8"\cf2 ?>\cf0 \
+\
+\cf2 <region \cf4 name\cf2 =\cf3 "Korea"\cf2  \cf4 leader\cf2 =\cf3 "Park Geun-hye"\cf2  \cf4 capital\cf2 =\cf3 "Seoul"\cf2 >\cf0 \
+    \cf2 <sub_region \cf4 red\cf2 =\cf3 "200"\cf2  \cf4 green\cf2 =\cf3 "200"\cf2  \cf4 blue\cf2 =\cf3 "200"\cf2  \cf4 name\cf2 =\cf3 "Gangwon-do"\cf2       	\cf4 capital\cf2 =\cf3 "Chuncheon"\cf2  />\cf0 \
+    \cf2 <sub_region \cf4 red\cf2 =\cf3 "205"\cf2  \cf4 green\cf2 =\cf3 "205"\cf2  \cf4 blue\cf2 =\cf3 "205"\cf2  \cf4 name\cf2 =\cf3 "Gyeonggi-do"\cf2      	\cf4 capital\cf2 =\cf3 "Suwon"\cf2  />\cf0 \
+    \cf2 <sub_region \cf4 red\cf2 =\cf3 "210"\cf2  \cf4 green\cf2 =\cf3 "210"\cf2  \cf4 blue\cf2 =\cf3 "210"\cf2  \cf4 name\cf2 =\cf3 "Seoul"\cf2            	\cf4 capital\cf2 =\cf3 "Seoul"\cf2  />\cf0 \
+    \cf2 <sub_region \cf4 red\cf2 =\cf3 "215"\cf2  \cf4 green\cf2 =\cf3 "215"\cf2  \cf4 blue\cf2 =\cf3 "215"\cf2  \cf4 name\cf2 =\cf3 "Incheon"\cf2          	\cf4 capital\cf2 =\cf3 "Incheon"\cf2  />\cf0 \
+    \cf2 <sub_region \cf4 red\cf2 =\cf3 "220"\cf2  \cf4 green\cf2 =\cf3 "220"\cf2  \cf4 blue\cf2 =\cf3 "220"\cf2  \cf4 name\cf2 =\cf3 "Gyeongsangbuk-do"\cf2     \cf4 capital\cf2 =\cf3 "Daegu"\cf2  />\cf0 \
+    \cf2 <sub_region \cf4 red\cf2 =\cf3 "235"\cf2  \cf4 green\cf2 =\cf3 "235"\cf2  \cf4 blue\cf2 =\cf3 "235"\cf2  \cf4 name\cf2 =\cf3 "Chungcheongbuk-do"\cf2    \cf4 capital\cf2 =\cf3 "Cheongju"\cf2  />\cf0 \
+    \cf2 <sub_region \cf4 red\cf2 =\cf3 "230"\cf2  \cf4 green\cf2 =\cf3 "230"\cf2  \cf4 blue\cf2 =\cf3 "230"\cf2  \cf4 name\cf2 =\cf3 "Chungcheongnam-do"\cf2    \cf4 capital\cf2 =\cf3 "Daejeon"\cf2  />\cf0 \
+    \cf2 <sub_region \cf4 red\cf2 =\cf3 "245"\cf2  \cf4 green\cf2 =\cf3 "245"\cf2  \cf4 blue\cf2 =\cf3 "245"\cf2  \cf4 name\cf2 =\cf3 "Busan"\cf2          	 	\cf4 capital\cf2 =\cf3 "Busan"\cf2  />\cf0 \
+    \cf2 <sub_region \cf4 red\cf2 =\cf3 "240"\cf2  \cf4 green\cf2 =\cf3 "240"\cf2  \cf4 blue\cf2 =\cf3 "240"\cf2  \cf4 name\cf2 =\cf3 "Deagu"\cf2          		\cf4 capital\cf2 =\cf3 "Deagu"\cf2  />\cf0 \
+    \cf2 <sub_region \cf4 red\cf2 =\cf3 "242"\cf2  \cf4 green\cf2 =\cf3 "242"\cf2  \cf4 blue\cf2 =\cf3 "242"\cf2  \cf4 name\cf2 =\cf3 "Daejeon"\cf2           	\cf4 capital\cf2 =\cf3 "Daejeon"\cf2  />\cf0 \
+    \cf2 <sub_region \cf4 red\cf2 =\cf3 "251"\cf2  \cf4 green\cf2 =\cf3 "251"\cf2  \cf4 blue\cf2 =\cf3 "251"\cf2  \cf4 name\cf2 =\cf3 "Gwangju"\cf2            	\cf4 capital\cf2 =\cf3 "Gwangju"\cf2  />\cf0 \
+    \cf2 <sub_region \cf4 red\cf2 =\cf3 "238"\cf2  \cf4 green\cf2 =\cf3 "238"\cf2  \cf4 blue\cf2 =\cf3 "238"\cf2  \cf4 name\cf2 =\cf3 "Ulsan"\cf2        		\cf4 capital\cf2 =\cf3 "Ulsan"\cf2  />\cf0 \
+    \cf2 <sub_region \cf4 red\cf2 =\cf3 "253"\cf2  \cf4 green\cf2 =\cf3 "253"\cf2  \cf4 blue\cf2 =\cf3 "253"\cf2  \cf4 name\cf2 =\cf3 "Jeollanam-do"\cf2    		\cf4 capital\cf2 =\cf3 "Muan County"\cf2  />\cf0 \
+    \cf2 <sub_region \cf4 red\cf2 =\cf3 "250"\cf2  \cf4 green\cf2 =\cf3 "250"\cf2  \cf4 blue\cf2 =\cf3 "250"\cf2  \cf4 name\cf2 =\cf3 "Jeollabuk-do"\cf2         \cf4 capital\cf2 =\cf3 "Jeonju"\cf2  />\cf0 \
+    \cf2 <sub_region \cf4 red\cf2 =\cf3 "255"\cf2  \cf4 green\cf2 =\cf3 "255"\cf2  \cf4 blue\cf2 =\cf3 "255"\cf2  \cf4 name\cf2 =\cf3 "jeju"\cf2           		\cf4 capital\cf2 =\cf3 "Jeju City"\cf2  />\cf0 \
+    \cf2 <sub_region \cf4 red\cf2 =\cf3 "248"\cf2  \cf4 green\cf2 =\cf3 "248"\cf2  \cf4 blue\cf2 =\cf3 "248"\cf2  \cf4 name\cf2 =\cf3 "Gyeongsangnam-do"\cf2     \cf4 capital\cf2 =\cf3 "Changwon"\cf2  />\cf0 \
+\cf2 </region>\cf0 \
+\
+}

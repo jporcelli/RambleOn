@@ -1,0 +1,13 @@
+<region name="Liechtenstein" leader="Hans-Adam II" capital="Vaduz">
+<sub_region red="200" green="200" blue="200" name="Ruggell" capital="Ruggell"/>
+<sub_region red="196" green="196" blue="196" name="Schellenberg" capital="Schellenberg"/>
+<sub_region red="192" green="192" blue="192" name="Gamprin" capital="Gamprin"/>
+<sub_region red="188" green="188" blue="188" name="Eschen" capital="Eschen"/>
+<sub_region red="184" green="184" blue="184" name="Mauren" capital="Mauren"/>
+<sub_region red="180" green="180" blue="180" name="Schaan" capital="Schaan"/>
+<sub_region red="176" green="176" blue="176" name="Planken" capital="Planken"/>
+<sub_region red="172" green="172" blue="172" name="Vaduz" capital="Vaduz"/>
+<sub_region red="168" green="168" blue="168" name="Triesenberg" capital="Triesenberg"/>
+<sub_region red="164" green="164" blue="164" name="Balzers" capital="Balzers"/>
+<sub_region red="160" green="160" blue="160" name="Triesen" capital="Triesen"/>
+</region>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="Tunisia" leader="Moncef Marzouki" capital="Tunis">
+    <sub_region red="200" green="200" blue="200" name="Nabeul"      capital="Nabeul" />
+    <sub_region red="198" green="198" blue="198" name="Sousse"        capital="Sousse" />
+    <sub_region red="196" green="196" blue="196" name="Monastir"           capital="Monastir" />
+    <sub_region red="194" green="194" blue="194" name="Mahdia"         capital="Mahdia" />
+    <sub_region red="192" green="192" blue="192" name="Sfax"          capital="Sfax" />
+    <sub_region red="190" green="190" blue="190" name="Gabes"        capital="Gabes" />
+    <sub_region red="188" green="188" blue="188" name="Medenine"          capital="Medenine" />
+    <sub_region red="186" green="186" blue="186" name="Tataouine"          capital="Tataouine" />
+    <sub_region red="184" green="184" blue="184" name="Kebili"         capital="Kebili" />
+    <sub_region red="182" green="182" blue="182" name="Sidi Bouzid"          capital="Sidi Bouzid" />
+    <sub_region red="180" green="180" blue="180" name="Kairouan"           capital="Kairouan" />
+    <sub_region red="178" green="178" blue="178" name="Zaghouan"       capital="Zaghouan" />
+    <sub_region red="176" green="176" blue="176" name="Ben Arous"   capital="Ben Arous" />
+    <sub_region red="174" green="174" blue="174" name="Ariana"           capital="Aryanah" />
+    <sub_region red="172" green="172" blue="172" name="Tunis"          capital="Tunis" />
+    <sub_region red="170" green="170" blue="170" name="Bizerte"           capital="Bizerte" />
+    <sub_region red="168" green="168" blue="168" name="Manouba"        capital="Manouba" />
+    <sub_region red="166" green="166" blue="166" name="Beja"           capital="Beja" />
+    <sub_region red="164" green="164" blue="164" name="Siliana"         capital="Siliana" />
+    <sub_region red="162" green="162" blue="162" name="Jendouba"          capital="Jendouba" />
+    <sub_region red="160" green="160" blue="160" name="Kef"       capital="Kef" />
+    <sub_region red="158" green="158" blue="158" name="Kasserine"          capital="Kasserine" />
+    <sub_region red="156" green="156" blue="156" name="Gafsa"          capital="Gafsa" />
+    <sub_region red="154" green="154" blue="154" name="Tozeur"         capital="Tozeur" />
+</region>
+

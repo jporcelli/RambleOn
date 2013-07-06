@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="Somoa" leader="Maximus Tanielu" capital="Apia">
+    <sub_region red="100" green="100" blue="100" name="Vaisigano"      capital="Vaisigano" />
+    <sub_region red="98" green="98" blue="98" name="Gagaifomauga"        capital="Gagaifomauga" />
+    <sub_region red="96" green="96" blue="96" name="Satupaitea"           capital="Satupaitea" />
+    <sub_region red="94" green="94" blue="94" name="Palauli"         capital="Palauli" />
+    <sub_region red="92" green="92" blue="92" name="Gagaemauga"          capital="Gagaemauga" />
+    <sub_region red="90" green="90" blue="90" name="Faasaleleaga"        capital="Faasaleleaga" />
+    <sub_region red="88" green="88" blue="88" name="Aana"          capital="Aana" />
+    <sub_region red="86" green="86" blue="86" name="Tuamasaga"          capital="Tuamasaga" />
+    <sub_region red="84" green="84" blue="84" name="Atua"         capital="Atua" />
+    <sub_region red="82" green="82" blue="82" name="Vaanofonoti"          capital="Vaanofonoti" />
+    </region>
+

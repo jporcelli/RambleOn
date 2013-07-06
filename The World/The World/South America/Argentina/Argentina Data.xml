@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="Argentina" leader="Cristina Fernández de Kirchner" capital="Buenos Aires">
+    <sub_region red="140" green="140" blue="140" name="Tierra del Fuego" capital="Ushuaia" />
+    <sub_region red="141" green="141" blue="141" name="Santa Cruz" capital="Río Gallegos" />
+    <sub_region red="142" green="142" blue="142" name="Chubut" capital="Rawson" />
+    <sub_region red="143" green="143" blue="143" name="Río Negro" capital="Viedma" />
+    <sub_region red="144" green="144" blue="144" name="Neuquén" capital="Neuquén City" />
+    <sub_region red="145" green="145" blue="145" name="La Pampa" capital="Santa Rosa" />
+    <sub_region red="146" green="146" blue="146" name="Buenos Aires" capital="La Plata" />
+    <sub_region red="147" green="147" blue="147" name="Mendoza" capital="Mendoza City" />
+    <sub_region red="148" green="148" blue="148" name="San Luis" capital="San Luis City" />
+    <sub_region red="149" green="149" blue="149" name="Córdoba" capital="Córdoba City" />
+    <sub_region red="150" green="150" blue="150" name="Santa Fe" capital="Santa Fe de la Vera Cruz" />
+    <sub_region red="151" green="151" blue="151" name="Entre Ríos" capital="Paraná" />
+    <sub_region red="152" green="152" blue="152" name="San Juan" capital="San Juan City" />
+    <sub_region red="153" green="153" blue="153" name="La Rioja" capital="La Rioja City" />
+    <sub_region red="154" green="154" blue="154" name="Catamarca" capital="San Fernando del Valle de Catamarca" />
+    <sub_region red="155" green="155" blue="155" name="Tucumán" capital="San Miguel de Tucumán" />
+    <sub_region red="156" green="156" blue="156" name="Santiago del Estero" capital="Santiago del Estero City" />
+    <sub_region red="157" green="157" blue="157" name="Chaco" capital="Resistencia" />
+    <sub_region red="158" green="158" blue="158" name="Corrientes" capital="Corrientes City" />
+    <sub_region red="159" green="159" blue="159" name="Misiones" capital="Posadas" />
+    <sub_region red="160" green="160" blue="160" name="Salta" capital="Salta City" />
+    <sub_region red="161" green="161" blue="161" name="Jujuy" capital="San Salvador de Jujuy" />
+    <sub_region red="162" green="162" blue="162" name="Formosa" capital="Formosa City" />
+</region>
+

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="Burkina Faso" leader="Hamid Karzai" capital="Kabul">
+    <sub_region red="200" green="200" blue="200" name="Balé"      capital="Boromo" />
+	<sub_region red="200" green="200" blue="199" name="Bam"      capital="Kongoussi" />
+	<sub_region red="200" green="200" blue="198" name="Banwa"      capital="Solenzo" />
+	<sub_region red="200" green="200" blue="197" name="Bazèga"      capital="Kombissiri" />
+	<sub_region red="200" green="199" blue="200" name="Bougouriba"      capital="Diébougou" />
+	<sub_region red="200" green="199" blue="199" name="Boulgou"      capital="Tenkodogo" />
+	<sub_region red="200" green="199" blue="198" name="Boulkiemdé"      capital="Koudougou" />
+	<sub_region red="200" green="199" blue="197" name="Comoé"      capital="Banfora" />
+	<sub_region red="200" green="198" blue="200" name="Ganzourgou"      capital="Zorgho" />
+	<sub_region red="200" green="198" blue="199" name="Gnagna"      capital="Bogandé" />
+	<sub_region red="200" green="198" blue="198" name="Gourma"      capital="Fada N'gourma" />
+	<sub_region red="200" green="198" blue="197" name="Houet"      capital="Bobo-Dioulasso" />
+	<sub_region red="200" green="197" blue="200" name="Ioba"      capital="Dano" />
+	<sub_region red="200" green="197" blue="199" name="Kadiogo"      capital="Ouagadougou" />
+	<sub_region red="200" green="197" blue="198" name="Kénédougou"      capital="Orodara" />
+	<sub_region red="200" green="197" blue="197" name="Komondjari"      capital="Gayéri" />
+	<sub_region red="199" green="200" blue="200" name="Kompienga"      capital="Pama" />
+	<sub_region red="199" green="200" blue="199" name="Kossi"      capital="Nouna" />
+	<sub_region red="199" green="200" blue="198" name="Koulpélogo"      capital="Ouargaye" />
+	<sub_region red="199" green="200" blue="197" name="Kouritenga"      capital="Koupéla" />
+	<sub_region red="199" green="199" blue="200" name="Kourwéogo"      capital="Boussé" />
+	<sub_region red="199" green="199" blue="199" name="Léraba"      capital="Sindou" />
+	<sub_region red="199" green="199" blue="198" name="Loroum"      capital="Titao" />
+	<sub_region red="199" green="199" blue="197" name="Mouhoun"      capital="Dédougou" />
+	<sub_region red="199" green="198" blue="200" name="Nahouri"      capital="Pô" />
+	<sub_region red="199" green="198" blue="199" name="Namentenga"      capital="Boulsa" />
+	<sub_region red="199" green="198" blue="198" name="Nayala"      capital="Toma" />
+	<sub_region red="199" green="198" blue="197" name="Noumbiel"      capital="Batié" />
+	<sub_region red="199" green="197" blue="200" name="Oubritenga"      capital="Ziniaré" />
+	<sub_region red="199" green="197" blue="199" name="Oudalan"      capital="Gorom-Gorom" />
+	<sub_region red="199" green="197" blue="198" name="Passoré"      capital="Yako" />
+	<sub_region red="199" green="197" blue="197" name="Poni"      capital="Gaoua" />
+	<sub_region red="198" green="200" blue="200" name="Sanguié"      capital="Réo" />
+	<sub_region red="198" green="200" blue="199" name="Sanmatenga"      capital="Kaya" />
+	<sub_region red="198" green="200" blue="198" name="Séno"      capital="Dori" />
+	<sub_region red="198" green="200" blue="197" name="Sissili"      capital="Léo" />
+	<sub_region red="198" green="199" blue="200" name="Soum"      capital="Djibo" />
+	<sub_region red="198" green="199" blue="199" name="Sourou"      capital="Tougan" />
+	<sub_region red="198" green="199" blue="198" name="Tapoa"      capital="Diapaga" />
+	<sub_region red="198" green="199" blue="197" name="Tuy"      capital="Houndé" />
+	<sub_region red="198" green="198" blue="200" name="Yagha"      capital="Sebba" />
+	<sub_region red="198" green="198" blue="199" name="Yatenga"      capital="Ouahigouya" />
+	<sub_region red="198" green="198" blue="198" name="Ziro"      capital="Sapouy" />
+	<sub_region red="198" green="198" blue="197" name="Zondoma"      capital="Gourcy" />
+	<sub_region red="198" green="197" blue="200" name="Zoundwéogo"      capital="Manga" />
+</region>
+

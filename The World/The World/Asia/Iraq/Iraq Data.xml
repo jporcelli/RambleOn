@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<region name="Iraq" leader="Nouri al-Maliki" capital="Baghdad">
+    <sub_region red="200" green="200" blue="200" name="Dohuk" capital="Duhok"/>
+    <sub_region red="198" green="198" blue="198" name="Nineveh" capital="Mosul"/>
+    <sub_region red="196" green="196" blue="196" name="Arbil" capital="Erbil"/>
+    <sub_region red="194" green="194" blue="194" name="Kirkuk" capital="Kirkuk"/>
+    <sub_region red="192" green="192" blue="192" name="Sulaymaniyah" capital="Sulaymaniyah"/>
+    <sub_region red="190" green="190" blue="190" name="Saladin" capital="Tikrit"/>
+    <sub_region red="188" green="188" blue="188" name="Al Anbar" capital="Ramadi"/>
+    <sub_region red="186" green="186" blue="186" name="Baghdad" capital="Baghdad"/>
+    <sub_region red="184" green="184" blue="184" name="Diyala" capital="Baqubah"/>
+    <sub_region red="182" green="182" blue="182" name="Karbala" capital="Karbala"/>
+    <sub_region red="180" green="180" blue="180" name="Babil" capital="Hillah"/>
+    <sub_region red="178" green="178" blue="178" name="Wasit" capital="Al Kut"/>
+    <sub_region red="176" green="176" blue="176" name="Najaf" capital="Najaf"/>
+    <sub_region red="174" green="174" blue="174" name="Al-Qadisiyyah" capital="Al Diwaniyah"/>
+    <sub_region red="172" green="172" blue="172" name="Maysan" capital="Amarah"/>
+    <sub_region red="170" green="170" blue="170" name="Muthanna" capital="Samawah"/>
+    <sub_region red="168" green="168" blue="168" name="Dhi Qar" capital="Nasiriyah"/>
+    <sub_region red="166" green="166" blue="166" name="Basra" capital="Basra"/>
+</region>

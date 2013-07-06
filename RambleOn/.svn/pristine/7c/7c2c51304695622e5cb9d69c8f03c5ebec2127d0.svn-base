@@ -1,0 +1,11 @@
+
+package rambleon;
+
+/**
+ *
+ * @author James Porcelli, SBU ID 108900819
+ */
+enum RambleOnModeType {
+
+    CAPITAL_MODE, LEADER_MODE, NAME_MODE, FLAG_MODE, REGION_SELECTION
+}

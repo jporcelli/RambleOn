@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="Guinea" leader="Alpha Conde" capital="Conakry">
+    <sub_region red="200" green="200" blue="200" name="Conakry" capital="Conakry" />
+    <sub_region red="198" green="198" blue="198" name="Nzerekore" capital="Nzerekore" />
+    <sub_region red="196" green="196" blue="196" name="Kankan" capital="Kankan" />
+    <sub_region red="194" green="194" blue="194" name="Kindia" capital="Kindia" />
+    <sub_region red="192" green="192" blue="192" name="Boke" capital="Boke" />
+    <sub_region red="190" green="190" blue="190" name="Labe" capital="Labe" />
+    <sub_region red="188" green="188" blue="188" name="Faranah" capital="Faranah" />
+    <sub_region red="186" green="186" blue="186" name="Mamou" capital="Mamou" />
+</region>
+

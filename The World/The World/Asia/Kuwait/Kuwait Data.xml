@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="Kuwait" leader="Sabah Al-Ahmad Al-Jaber Al-Sabah" capital="Kuwait City">
+    <sub_region red="150" green="150" blue="150" name="Al Jahrah"       capital="Al Jahrah" />
+    <sub_region red="149" green="149" blue="149" name="Al Kuwayt"       capital="Al Kuwait" />
+    <sub_region red="148" green="148" blue="148" name="Al Ahmadi"       capital="Al Ahmadi" />
+    <sub_region red="147" green="147" blue="147" name="Al Farwaniyah"   capital="Farwaniyah" />
+    <sub_region red="146" green="146" blue="146" name="Hawalli"         capital="Hawalli District" />
+</region>
+

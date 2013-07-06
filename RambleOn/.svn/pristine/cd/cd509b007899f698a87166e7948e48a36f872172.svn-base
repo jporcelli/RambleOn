@@ -1,0 +1,252 @@
+package rambleon;
+
+import java.awt.image.BufferedImage;
+import javax.swing.JFrame;
+import mini_game.MiniGame;
+import mini_game.MiniGameDataModel;
+import mini_game.Sprite;
+import mini_game.SpriteType;
+import static rambleon.RambleOnSettings.*;
+import rambleonevents.ExitGameButtonHandler;
+
+/**
+ * RambleOn is a Mini-Game based loosely on the popular "Stack The States" game.
+ * RambleOn uses the MiniGameFramework as the framework for this mini-game.
+ *
+ * @author James C. Porcelli, SBU ID 108900819
+ */
+public class RambleOn extends MiniGame {
+
+    /**
+     *
+     * @param appTitle
+     * @param framesPerSecond
+     */
+    public RambleOn(String appTitle, int framesPerSecond) {
+        //INIT THE MINI-GAME FRAMEWORK
+        super(appTitle, framesPerSecond);
+
+    }
+
+    /**
+     *
+     * @return
+     */
+    public JFrame getWindow() {
+        return window;
+    }
+
+    /**
+     *
+     */
+    @Override
+    public void initData() {
+        //INIT THE DATA MODEL FOR THIS GAME
+        data = new RambleOnDataModel();
+
+        //SET THE GAME DINMENSIONS
+        data.setGameDimensions(GAME_WIDTH, GAME_HEIGHT);
+
+        //INIT THE GAME BOUNDRYS 
+        boundaryLeft = 0;
+        boundaryRight = GAME_WIDTH;
+        boundaryTop = 0;
+        boundaryBottom = GAME_HEIGHT;
+    }
+
+    /**
+     *
+     * @return The data model for this game
+     */
+    public MiniGameDataModel getData() {
+        return data;
+    }
+
+    /**
+     *
+     */
+    @Override
+    public void updateGUI() {
+    }
+
+    /**
+     *
+     */
+    @Override
+    public void reset() {
+    }
+
+    /**
+     *
+     */
+    @Override
+    public void initGUIHandlers() {
+        //SET THE LISTENER FOR THE EXIT BUTTON
+        ExitGameButtonHandler exitGameHandler = new ExitGameButtonHandler(this);
+        guiButtons.get(EXIT_TYPE).setActionListener(exitGameHandler);
+    }
+
+    /**
+     *
+     *
+     */
+    @Override
+    public void initGUIControls() {
+        //THE GAME CANVAS EVERYTHING WELL BE RENDERED IN AND DISPLAYED TO
+        canvas = new RambleOnPanel(this, (RambleOnDataModel) data);
+
+
+        // WE'LL REUSE THESE TO INIT OUR GUICONTROLS
+        SpriteType sT;
+        BufferedImage img;
+        int x, y, vX, vY;
+        Sprite s;
+
+        //BUTTON FOR NAME MODE GAME PLAY
+        sT = new SpriteType(NAME_TYPE);
+        //ENABLED
+        img = loadImage(ARTWORK_PATH + NAME_MODE_GO_BUTTON_FILE);
+        sT.addState(ENABLED_STATE, img);
+        //(DISABLED)
+        img = loadImage(ARTWORK_PATH + NAME_MODE_STOP_BUTTON_FILE);
+        sT.addState(DISABLED_STATE, img);
+        //TOP LEFT CORNER BUTTON TOOLBAR
+        x = GAME_WIDTH - img.getWidth();
+        y = 0;
+        vX = vY = 0;
+        s = new Sprite(sT, x, y, 0, 0, DISABLED_STATE);
+        guiButtons.put(NAME_TYPE, s);
+
+        //BUTTON FOR CAPITAL MODE GAME PLAY
+        sT = new SpriteType(CAPITAL_TYPE);
+        //ENABLED
+        img = loadImage(ARTWORK_PATH + CAPITAL_MODE_GO_BUTTON_FILE);
+        sT.addState(ENABLED_STATE, img);
+        //(DISABLED)
+        img = loadImage(ARTWORK_PATH + CAPITAL_MODE_STOP_BUTTON_FILE);
+        sT.addState(DISABLED_STATE, img);
+        //TOP RIGHT CORNER BUTTON TOOLBAR
+        x = GAME_WIDTH - (img.getWidth() * 2);
+        y = 0;
+        vX = vY = 0;
+        s = new Sprite(sT, x, y, 0, 0, DISABLED_STATE);
+        guiButtons.put(CAPITAL_TYPE, s);
+
+        //BUTTON FOR LEADER MODE GAME PLAY
+        sT = new SpriteType(LEADER_TYPE);
+        //ENABLED
+        img = loadImage(ARTWORK_PATH + LEADER_MODE_GO_BUTTON_FILE);
+        sT.addState(ENABLED_STATE, img);
+        //(DISABLED)
+        img = loadImage(ARTWORK_PATH + LEADER_MODE_STOP_BUTTON_FILE);
+        sT.addState(DISABLED_STATE, img);
+        //BOTTOM LEFT CORNER BUTTON TOOLBAR
+        x = GAME_WIDTH - img.getWidth();
+        y = 100;
+        vX = vY = 0;
+        s = new Sprite(sT, x, y, 0, 0, DISABLED_STATE);
+        guiButtons.put(LEADER_TYPE, s);
+
+        //BUTTON FOR FLAG MODE GAME PLAY
+        sT = new SpriteType(FLAG_TYPE);
+        //ENABLED
+        img = loadImage(ARTWORK_PATH + FLAG_MODE_GO_BUTTON_FILE);
+        sT.addState(ENABLED_STATE, img);
+        //(DISABLED)
+        img = loadImage(ARTWORK_PATH + FLAG_MODE_STOP_BUTTON_FILE);
+        sT.addState(DISABLED_STATE, img);
+        //BOTTOM RIGHT CORNER BUTTON TOOLBAR
+        x = GAME_WIDTH - (img.getWidth() * 2);
+        y = 100;
+        vX = vY = 0;
+        s = new Sprite(sT, x, y, 0, 0, DISABLED_STATE);
+        guiButtons.put(FLAG_TYPE, s);
+
+        //TOOLBAR VERTICAL SEPERATOR
+        sT = new SpriteType(VERTICAL_SEPERATOR_TYPE1);
+        img = loadImage(ARTWORK_PATH + VERTICAL_SEPERATOR_FILE);
+        sT.addState(ENABLED_STATE, img);
+        x = data.getGameWidth() - (301);
+        y = 0;
+        s = new Sprite(sT, x, y, 0, 0, ENABLED_STATE);
+        guiDecor.put(VERTICAL_SEPERATOR_TYPE1, s);
+        
+         //TOOLBAR VERTICAL SEPERATOR
+        sT = new SpriteType(VERTICAL_SEPERATOR_TYPE2);
+        img = loadImage(ARTWORK_PATH + VERTICAL_SEPERATOR_FILE);
+        sT.addState(ENABLED_STATE, img);
+        x = data.getGameWidth() - (1);
+        y = 0;
+        s = new Sprite(sT, x, y, 0, 0, ENABLED_STATE);
+        guiDecor.put(VERTICAL_SEPERATOR_TYPE2, s);
+        
+        //TOOLBAR VERTICAL SEPERATOR
+        sT = new SpriteType(VERTICAL_SEPERATOR_TYPE2);
+        img = loadImage(ARTWORK_PATH + VERTICAL_SEPERATOR_SMALL_FILE);
+        sT.addState(ENABLED_STATE, img);
+        x = data.getGameWidth() - (151);
+        y = 0;
+        s = new Sprite(sT, x, y, 0, 0, ENABLED_STATE);
+        guiDecor.put(VERTICAL_SEPERATOR_TYPE2, s);
+        
+        //TOOLBAR HORIZONTAL SEPERATOR1
+        sT = new SpriteType(HORIZONTAL_SEPERATOR_TYPE1);
+        img = loadImage(ARTWORK_PATH + HORIZONTAL_SEPERATOR_FILE);
+        sT.addState(ENABLED_STATE, img);
+        x = data.getGameWidth() - (300);
+        y = 101;
+        s = new Sprite(sT, x, y, 0, 0, ENABLED_STATE);
+        guiDecor.put(HORIZONTAL_SEPERATOR_TYPE1, s);
+
+        //TOOLBAR HORIZONTAL SEPERATOR2
+        sT = new SpriteType(HORIZONTAL_SEPERATOR_TYPE2);
+        img = loadImage(ARTWORK_PATH + HORIZONTAL_SEPERATOR_FILE);
+        sT.addState(ENABLED_STATE, img);
+        x = data.getGameWidth() - (300);
+        y = 201;
+        s = new Sprite(sT, x, y, 0, 0, ENABLED_STATE);
+        guiDecor.put(HORIZONTAL_SEPERATOR_TYPE2, s);
+        
+          //TOOLBAR HORIZONTAL SEPERATOR2
+        sT = new SpriteType(HORIZONTAL_SEPERATOR_TYPE3);
+        img = loadImage(ARTWORK_PATH + HORIZONTAL_SEPERATOR_FILE);
+        sT.addState(ENABLED_STATE, img);
+        x = data.getGameWidth() - (300);
+        y = 301;
+        s = new Sprite(sT, x, y, 0, 0, ENABLED_STATE);
+        guiDecor.put(HORIZONTAL_SEPERATOR_TYPE3, s);
+
+        //EXIT GAME BUTTON
+        sT = new SpriteType(EXIT_TYPE);
+        //(ENABLED)
+        img = loadImage(ARTWORK_PATH + EXIT_GAME_BUTTON_FILE);
+        sT.addState(ENABLED_STATE, img);
+        //EXIT GAME IS ALWAYS ENABLED
+        x = data.getGameWidth() - (img.getWidth());
+        y = 200;
+        s = new Sprite(sT, x, y, 0, 0, ENABLED_STATE);
+        guiButtons.put(EXIT_TYPE, s);
+
+
+    }
+
+    /**
+     * Driver for this mini-game game application
+     *
+     * @param args the command line arguments, which we will not use for this
+     * application
+     */
+    public static void main(String[] args) {
+        //THIS CLASS MANAGES THE MENU DRIVEN COMPONENTS OF THIS APP
+        //LOAD THE ACCOUNT DATABASE FROM THE RAMBLE ON DATASTORE BINARY FILE
+        RambleOnScreenManager screenManager = new RambleOnScreenManager();
+        //THIS WILL TAKE US THROUGH ALL ACCOUNT MANAGEMENT SCREENS AS NEEDED
+        screenManager.startApp();
+        //THE ACCOUNT MANAGER IS SAVED BEFORE THE MANAGER WINDOW IS CLOSED
+        //THE GAME WINDOW OPENED. 
+
+        //THE GAME IS STARTED BY THE EVENT HANDLER FOR THE BUTTON TO GO FROM 
+        //THE ACCOUNTS MANAGER TO THE GAME
+
+    }
+}

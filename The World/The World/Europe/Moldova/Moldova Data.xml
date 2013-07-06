@@ -1,0 +1,40 @@
+<region name="Moldova" leader="Nicolae Timofti"capital="Chisinau">
+<sub_region red="200" green="200" blue="200" name="Briceni" capital="Briceni"/>
+<sub_region red="198" green="198" blue="198" name="Ocnita" capital="Ocnita"/>
+<sub_region red="196" green="196" blue="196" name="Edinet" capital="Edinet"/>
+<sub_region red="194" green="194" blue="194" name="Donduseni" capital="Donduseni"/>
+<sub_region red="192" green="192" blue="192" name="Soroca" capital="Soroca"/>
+<sub_region red="190" green="190" blue="190" name="Riscani" capital="Riscani"/>
+<sub_region red="188" green="188" blue="188" name="Drochia" capital="Drochia"/>
+<sub_region red="186" green="186" blue="186" name="Floresti" capital="Floresti"/>
+<sub_region red="184" green="184" blue="184" name="Transnistria" capital="Tiraspol"/>
+<sub_region red="182" green="182" blue="182" name="Glodeni" capital="Glodeni"/>
+<sub_region red="180" green="180" blue="180" name="Balti" capital="Balti"/>
+<sub_region red="178" green="178" blue="178" name="Singerei" capital="Singerei"/>
+<sub_region red="176" green="176" blue="176" name="Falesti" capital="Falesti"/>
+<sub_region red="174" green="174" blue="174" name="Soldanesti" capital="Soldanesti"/>
+<sub_region red="172" green="172" blue="172" name="Telenesti" capital="Telenesti"/>
+<sub_region red="170" green="170" blue="170" name="Rezina" capital="Rezina"/>
+<sub_region red="168" green="168" blue="168" name="Ungheni" capital="Ungheni"/>
+<sub_region red="166" green="166" blue="166" name="Calarasi" capital="Calarasi"/>
+<sub_region red="164" green="164" blue="164" name="Orhei" capital="Orhei"/>
+<sub_region red="162" green="162" blue="162" name="Dubasari" capital="Dubasari"/>
+<sub_region red="160" green="160" blue="160" name="Nisporeni" capital="Nisporeni"/>
+<sub_region red="158" green="158" blue="158" name="Straseni" capital="Straseni"/>
+<sub_region red="156" green="156" blue="156" name="Criuleni" capital="Criuleni"/>
+<sub_region red="154" green="154" blue="154" name="Hincesti" capital="Hincesti"/>
+<sub_region red="152" green="152" blue="152" name="Ialoveni" capital="Ialoveni"/>
+<sub_region red="150" green="150" blue="150" name="Chisinau" capital="Chisinau"/>
+<sub_region red="148" green="148" blue="148" name="Anenii Noi" capital="Anenii Noi"/>
+<sub_region red="146" green="146" blue="146" name="Bender" capital="Bender"/>
+<sub_region red="144" green="144" blue="144" name="Leova" capital="Leova"/>
+<sub_region red="142" green="142" blue="142" name="Cimislia" capital="Cimislia"/>
+<sub_region red="140" green="140" blue="140" name="Causeni" capital="Causeni"/>
+<sub_region red="138" green="138" blue="138" name="Stefan Voda" capital="Stefan Voda"/>
+<sub_region red="136" green="136" blue="136" name="Cantermir" capital="Cantermir"/>
+<sub_region red="134" green="134" blue="134" name="Comrat" capital="Comrat"/>
+<sub_region red="132" green="132" blue="132" name="Basarabeasca" capital="Basarabeasca"/>
+<sub_region red="130" green="130" blue="130" name="Cahul" capital="Cahul"/>
+<sub_region red="128" green="128" blue="128" name="Taraclia" capital="Taraclia"/>
+</region>
+

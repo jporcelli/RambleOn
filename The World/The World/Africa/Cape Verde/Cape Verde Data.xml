@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<region name="Cape Verde" leader="Jorge Carlos Fonseca" capital="Praia">
+    <sub_region red="200" green="200" blue="200" name="Santo Antao" capital="Porto Novo"/>
+    <sub_region red="180" green="180" blue="180" name="Sao Vicente" capital="Mindelo"/>
+    <sub_region red="140" green="140" blue="140" name="Sao Nicolau" capital="Ribeira Brava"/>
+    <sub_region red="120" green="120" blue="120" name="Sal" capital="Espargos"/>
+    <sub_region red="100" green="100" blue="100" name="Boa Vista" capital="Monte Estancia"/>
+    <sub_region red="80" green="80" blue="80" name="Maio" capital="Vila Do Maio"/>
+    <sub_region red="60" green="60" blue="60" name="Santiago" capital="Praia"/>
+    <sub_region red="210" green="210" blue="210" name="Fogo" capital="Sao Filipe"/>
+    <sub_region red="190" green="190" blue="190" name="Brava" capital="Nova Sintra"/>
+</region>

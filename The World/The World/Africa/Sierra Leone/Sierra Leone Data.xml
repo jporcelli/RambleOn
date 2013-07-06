@@ -1,0 +1,6 @@
+<region name="Sierra Leone" leader="Ernest Bai Koroma" capital="Freetown">
+<sub_region red="150" green="150" blue="150" name="Northern Province" capital="Makeni"/>
+<sub_region red="125" green="125" blue="125" name="Western Province" capital="Freetown"/>
+<sub_region red="100" green="100" blue="100" name="Southern Province" capital="Bo"/>
+<sub_region red="75" green="75" blue="75" name="Eastern Province" capital="Kenema"/>
+</region>

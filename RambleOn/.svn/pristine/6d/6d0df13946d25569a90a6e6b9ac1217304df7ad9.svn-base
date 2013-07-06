@@ -1,0 +1,35 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package rambleonevents;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import rambleon.RambleOnScreenManager;
+
+/**
+ *
+ * @author James C. Porcelli, SBU ID 108900819
+ */
+public class ExitButtonHandler implements ActionListener {
+
+    private RambleOnScreenManager screenManager;
+    
+    /**
+     * 
+     * @param screenManager 
+     */
+    public ExitButtonHandler(RambleOnScreenManager screenManager) {
+        this.screenManager = screenManager;
+    }
+
+    /**
+     *
+     * @param e
+     */
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        screenManager.killApp();
+    }
+}

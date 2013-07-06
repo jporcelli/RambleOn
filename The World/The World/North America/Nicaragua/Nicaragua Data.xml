@@ -1,0 +1,19 @@
+<region name="Nicaragua" leader="Daniel Ortega" capital="Managua">
+<sub_region red="80" green="80" blue="80" name="Chinandega" capital="Chinandega"/>
+<sub_region red="90" green="90" blue="90" name="Leon" capital="Leon"/>
+<sub_region red="100" green="100" blue="100" name="Esteli" capital="Esteli"/>
+<sub_region red="110" green="110" blue="110" name="Madriz" capital="Somoto"/>
+<sub_region red="120" green="120" blue="120" name="New Segovia" capital="Ocotal"/>
+<sub_region red="130" green="130" blue="130" name="Jinotega" capital="Jinotega"/>
+<sub_region red="140" green="140" blue="140" name="North Atlantic" capital="Puerto Cabezas"/>
+<sub_region red="150" green="150" blue="150" name="Matagalpa" capital="Matagalpa"/>
+<sub_region red="160" green="160" blue="160" name="Managua" capital="Managua"/>
+<sub_region red="170" green="170" blue="170" name="Masaya" capital="Masaya"/>
+<sub_region red="180" green="180" blue="180" name="Carazo" capital="Jinotepe"/>
+<sub_region red="190" green="190" blue="190" name="Granada" capital="Granada"/>
+<sub_region red="200" green="200" blue="200" name="Rivas" capital="Rivas"/>
+<sub_region red="210" green="210" blue="210" name="Boaco" capital="Boaco"/>
+<sub_region red="220" green="220" blue="220" name="Chontales" capital="Juigalpa"/>
+<sub_region red="230" green="230" blue="230" name="Rio San Juan" capital="San Carlos"/>
+<sub_region red="240" green="240" blue="240" name="South Atlantic" capital="Bluefields"/>
+</region>

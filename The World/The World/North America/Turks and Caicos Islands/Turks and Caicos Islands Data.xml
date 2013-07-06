@@ -1,0 +1,8 @@
+<region name="Turks and Caicos Islands" leader="Ric Todd" capital="Cockburn Town">
+    <sub_region red="200" green="200" blue="200" name="Providenciales and West Caicos" capital="Blue Hills"/>
+    <sub_region red="198" green="198" blue="198" name="North Caicos" capital="Bottle Creek"/>
+    <sub_region red="196" green="196" blue="196" name="Middle Caicos" capital="Conch Bar"/>
+    <sub_region red="194" green="194" blue="194" name="South Caicos and East Caicos" capital="Cockburn Harbour"/>
+    <sub_region red="192" green="192" blue="192" name="Grand Turk" capital="Cockburn Town"/>
+    <sub_region red="190" green="190" blue="190" name="Salt Cay" capital="Balfour Town"/>
+</region>

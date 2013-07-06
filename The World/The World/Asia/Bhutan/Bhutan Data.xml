@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="Bhutan" leader="Jigme Khesar Namgyel Wangchuck" capital="Thimphu">
+    <sub_region red="105" green="105" blue="105" name="Samtse"      capital="Samtse" />
+    <sub_region red="110" green="110" blue="110" name="Haa"        capital="Haa" />
+    <sub_region red="115" green="115" blue="115" name="Chukha"           capital="Chukha" />
+    <sub_region red="120" green="120" blue="120" name="Paro"         capital="Tshongdue" />
+    <sub_region red="125" green="125" blue="125" name="Thimphu"          capital="Thimphu" />
+    <sub_region red="130" green="130" blue="130" name="Dagana"        capital="Dagana" />
+    <sub_region red="135" green="135" blue="135" name="Gasa"          capital="Gasa" />
+    <sub_region red="140" green="140" blue="140" name="Punakha"          capital="Punakha" />
+    <sub_region red="145" green="145" blue="145" name="Wangdue Phodrang"         capital="Wangdue" />
+    <sub_region red="150" green="150" blue="150" name="Tsirang"          capital="Damphu" />
+    <sub_region red="155" green="155" blue="155" name="Trongsa"           capital="Trongsa" />
+    <sub_region red="160" green="160" blue="160" name="Sarpang"       capital="Sarpang" />
+    <sub_region red="165" green="165" blue="165" name="Bumthang"   capital="Jakar" />
+    <sub_region red="170" green="170" blue="170" name="Zhemgang"           capital="Zhemgang" />
+    <sub_region red="175" green="175" blue="175" name="Lhuentse"          capital="Lhuentse" />
+    <sub_region red="180" green="180" blue="180" name="Mongar"           capital="Mongar" />
+    <sub_region red="185" green="185" blue="185" name="Pemagatshel"        capital="Pemagatshel" />
+    <sub_region red="190" green="190" blue="190" name="Trashiyangtse"           capital="Yangtse" />
+    <sub_region red="195" green="195" blue="195" name="Trashigang"         capital="Trashigang" />
+    <sub_region red="200" green="200" blue="200" name="Samdrup Jongkhar"          capital="Samdrup Jongkhar" />
+</region>
+

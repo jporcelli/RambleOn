@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="Jordan" leader="Abdullah II" capital="Amman">
+    <sub_region red="255" green="255" blue="255" name="Mafraq"      capital="Mafraq" />
+    <sub_region red="254" green="254" blue="254" name="Irbid"        capital="Irbid" />
+    <sub_region red="253" green="253" blue="253" name="Ajloun"           capital="Ajloun" />
+    <sub_region red="252" green="252" blue="252" name="Jarash"         capital="Jerash" />
+    <sub_region red="251" green="251" blue="251" name="Balqa"          capital="Salt" />
+    <sub_region red="250" green="250" blue="250" name="Zarqa"        capital="Zarqa" />
+    <sub_region red="249" green="249" blue="249" name="Amman"          capital="Amman" />
+    <sub_region red="248" green="248" blue="248" name="Madaba"          capital="Madaba" />
+    <sub_region red="247" green="247" blue="247" name="Karak"         capital="Al Karak" />
+    <sub_region red="246" green="246" blue="246" name="Ma'an"          capital="Ma'an" />
+    <sub_region red="245" green="245" blue="245" name="Tafilah"           capital="Tafilah" />
+    <sub_region red="244" green="244" blue="244" name="Aqaba"       capital="Aqaba" />
+</region>
+
+

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<region name="Lebanon" leader="Michel Suleiman" capital="Beirut">
+<sub_region red="230" green="230" blue="230" name="Liban-Nord" capital="Tripoli"/>
+<sub_region red="220" green="220" blue="220" name="Mont-Liban" capital="Baabda"/>
+<sub_region red="210" green="210" blue="210" name="Beqaa" capital="Zahlah"/>
+<sub_region red="200" green="200" blue="200" name="Liban-Sud" capital="Sidon"/>
+<sub_region red="190" green="190" blue="190" name="Nabatiye" capital="Nabatiye"/>
+</region>

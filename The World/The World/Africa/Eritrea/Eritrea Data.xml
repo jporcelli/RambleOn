@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="Eritrea" leader="Isaias Afewerki" capital="Asmara">
+    <sub_region red="105" green="105" blue="105" name="Gash-Barka"      capital="Barentu" />
+    <sub_region red="125" green="125" blue="125" name="Anseba"        capital="Keren" />
+    <sub_region red="145" green="145" blue="145" name="Maakel"           capital="Asmara" />
+    <sub_region red="165" green="165" blue="165" name="Debub"         capital="Mendefera" />
+    <sub_region red="185" green="185" blue="185" name="Semenawi Keyih Bahri"          capital="Massawa" />
+    <sub_region red="205" green="205" blue="205" name="Debubawi Keyih Bahri"        capital="Asseb" />
+</region>
+

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="Israel" leader="Shimon Peres" capital="Jerusalem">
+    <sub_region red="255" green="255" blue="255" name="Golan Heights"      capital="Qatzrin" />
+    <sub_region red="254" green="254" blue="254" name="Galil"        capital="Nazareth" />
+    <sub_region red="253" green="253" blue="253" name="North Coast"           capital="Haifa" />
+    <sub_region red="252" green="252" blue="252" name="West Bank"         capital="Ramla" />
+    <sub_region red="251" green="251" blue="251" name="Coastal Plain"          capital="Tel Aviv" />
+    <sub_region red="250" green="250" blue="250" name="Shephela"        capital="Jerusalem" />
+    <sub_region red="249" green="249" blue="249" name="Negev"          capital="Beersheba" />
+</region>
+
+

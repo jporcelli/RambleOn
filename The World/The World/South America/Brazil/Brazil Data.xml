@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="Brazil" leader="Dilma Rousseff" capital="Brasilia">
+    <sub_region red="250" green="250" blue="250" name="Amazonas"      capital="Manaus" />
+    <sub_region red="245" green="245" blue="245" name="Acre"        capital="Rio Branco" />
+    <sub_region red="240" green="240" blue="240" name="Roraima"           capital="Boa Vista" />
+    <sub_region red="235" green="235" blue="235" name="Amapa"         capital="Macapa" />
+    <sub_region red="230" green="230" blue="230" name="Para"          capital="Belem" />
+    <sub_region red="225" green="225" blue="225" name="Maranhao"        capital="Sao Luis" />
+    <sub_region red="220" green="220" blue="220" name="Mato Grosso do Sul"          capital="Campo Grande" />
+    <sub_region red="215" green="215" blue="215" name="Rio Grande do Sul"          capital="Porto Alegre" />
+    <sub_region red="210" green="210" blue="210" name="Pemambuco"         capital="Recife" />
+    <sub_region red="205" green="205" blue="205" name="Minas Gerais"          capital="Belo Horizonte" />
+    <sub_region red="200" green="200" blue="200" name="Rio Grande do Norte"           capital="Natal" />
+    <sub_region red="195" green="195" blue="195" name="Sergipe"       capital="Aracaju" />
+    <sub_region red="190" green="190" blue="190" name="Parana"   capital="Curitiba" />
+    <sub_region red="185" green="185" blue="185" name="Mato Grosso"           capital="Cuiaba" />
+    <sub_region red="180" green="180" blue="180" name="Alagoas"          capital="Maceio" />
+    <sub_region red="175" green="175" blue="175" name="Paraiba"           capital="Joao Pessoa" />
+    <sub_region red="170" green="170" blue="170" name="Distrito Federal"        capital="Brasilia" />
+    <sub_region red="165" green="165" blue="165" name="Esprito Santo"           capital="Vitoria" />
+    <sub_region red="160" green="160" blue="160" name="Sao Paulo"         capital="Sao Paulo" />
+    <sub_region red="155" green="155" blue="155" name="Bahia"          capital="Salvador" />
+    <sub_region red="150" green="150" blue="150" name="Tocantins"       capital="Palmas" />
+    <sub_region red="145" green="145" blue="145" name="Ceara"          capital="Fortaleza" />
+    <sub_region red="140" green="140" blue="140" name="Rio de Jeneiro"          capital="Rio de Jeneiro" />
+    <sub_region red="135" green="135" blue="135" name="Santa Catarina"         capital="Florianopolis" />
+    <sub_region red="130" green="130" blue="130" name="Rondonia"         capital="Porto Velho" />
+    <sub_region red="125" green="125" blue="125" name="Goias"            capital="Goiania" />
+    <sub_region red="120" green="120" blue="120" name="Piaui"        capital="Teresina" />
+</region>
+
+

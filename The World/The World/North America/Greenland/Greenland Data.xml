@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="Greenland" leader="Aleqa Hammond" capital="Nuuk">
+    <sub_region red="192" green="192" blue="192" name="North Greenland"      capital="Qaanaaq" />
+	<sub_region red="163" green="163" blue="163" name="West Greenland"      capital="Nuuk" />
+	<sub_region red="128" green="128" blue="128" name="East Greenland"      capital="Tasiilq" />
+    
+</region>
+

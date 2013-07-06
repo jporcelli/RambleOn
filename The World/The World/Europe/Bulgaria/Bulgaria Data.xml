@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="Bulgaria" leader="Rosen Plevneliev" capital="Sofia">
+    <sub_region red="100" green="100" blue="100" name="Blagoevgrad"      capital="Blagoevgrad" />
+	<sub_region red="102" green="102" blue="102" name="Burgas"      capital="Burgas" />
+	<sub_region red="104" green="104" blue="104" name="Dobrich"      capital="Dobrich" />
+	<sub_region red="106" green="106" blue="106" name="Gabrovo"      capital="Gabrovo" />
+	<sub_region red="108" green="108" blue="108" name="Haskovo"      capital="Haskovo" />
+	<sub_region red="110" green="110" blue="110" name="Kardzhali"      capital="Kardzhali" />
+	<sub_region red="112" green="112" blue="112" name="Kyustendil"      capital="Kyustendil" />
+	<sub_region red="114" green="114" blue="114" name="Lovech"      capital="Lovech" />
+	<sub_region red="116" green="116" blue="116" name="Montana"      capital="Montana" />
+	<sub_region red="118" green="118" blue="118" name="Pazardzhik"      capital="Pazardzhik" />
+	<sub_region red="120" green="120" blue="120" name="Pernik"      capital="Pernik" />
+	<sub_region red="122" green="122" blue="122" name="Pleven"      capital="Pleven" />
+	<sub_region red="124" green="124" blue="124" name="Plovdiv"      capital="Plovdiv" />
+	<sub_region red="126" green="126" blue="126" name="Razgrad"      capital="Razgrad" />
+	<sub_region red="128" green="128" blue="128" name="Ruse"      capital="Ruse" />
+	<sub_region red="130" green="130" blue="130" name="Shumen"      capital="Shumen" />
+	<sub_region red="132" green="132" blue="132" name="Silistra"      capital="Silistra" />
+	<sub_region red="134" green="134" blue="134" name="Sliven"      capital="Sliven" />
+	<sub_region red="136" green="136" blue="136" name="Smolyan"      capital="Smolyan" />
+	<sub_region red="138" green="138" blue="138" name="Sofia "      capital="Sofia " />
+	<sub_region red="140" green="140" blue="140" name="Sofia-grad"      capital="Sofia-grad" />
+	<sub_region red="142" green="142" blue="142" name="Stara Zagora"      capital="Stara Zagora" />
+	<sub_region red="144" green="144" blue="144" name="Targovishte"      capital="Targovishte" />
+	<sub_region red="146" green="146" blue="146" name="Varna"      capital="Varna" />
+	<sub_region red="148" green="148" blue="148" name="Veliko Tarnovo"      capital="Veliko Tarnovo" />
+	<sub_region red="150" green="150" blue="150" name="Vidin"      capital="Vidin" />
+	<sub_region red="152" green="152" blue="152" name="Vratsa"      capital="Vratsa" />
+	<sub_region red="154" green="154" blue="154" name="Yambol"      capital="Yambol" />
+</region>

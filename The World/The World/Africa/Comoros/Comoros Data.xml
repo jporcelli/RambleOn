@@ -1,0 +1,5 @@
+<region name="Comoros" leader=" Ikililou Dhoinine" capital="Moroni">
+	<sub_region red="200" green="200" blue="200" name="Grande Comore" capital="Moroni"/>
+	<sub_region red="199" green="199" blue="199" name="Moheil" capital="Fomboni"/>
+	<sub_region red="198" green="198" blue="198" name="Anjouan" capital="Mutsamudu"/>
+</region>	

@@ -1,0 +1,96 @@
+package accountdata;
+
+import java.util.ArrayList;
+import java.util.TreeMap;
+import javax.swing.JTable;
+import javax.swing.table.AbstractTableModel;
+import static rambleon.RambleOnSettings.*;
+
+/**
+ * An AccountStatistics object is a data structure containing the game
+ * statistics for every game play mode for a particular region.
+ *
+ * @author James C. Porcelli, SBU ID 108900819
+ */
+public class AccountStatistics {
+
+    //A TABLE CONTAINING 12 DATA FIELDS, 3 STATS FOR EACH OF THE 4 MODES
+    private JTable modeStats;
+    private AbstractTableModel modeStatsTableModel;
+    private TreeMap<String, Integer> modeNameToRowMap;
+    private TreeMap<String, Integer> statNameToColMap;
+    private TreeMap<Integer, String> rowToModeNameMap;
+    private TreeMap<Integer, String> colToStateNameMap;
+
+    /**
+     *
+     * @param tableModel
+     */
+    public AccountStatistics() {
+        modeStatsTableModel = new AbstractModeStatsTableModel();
+        modeStats = new JTable(modeStatsTableModel);
+        modeNameToRowMap = new TreeMap<>();
+        statNameToColMap = new TreeMap<>();
+    }
+
+    /**
+     * We can use this access method to get a copy of the JTable containing all
+     * the game statistics for this AccountStatistics object which would belong
+     * to a given user. We could then traverse the table and parse the data from
+     * it to say write the data back to the external XML data file.
+     *
+     * @return The JTable containing all the game statistics for the user to
+     * whom this AccountStatistics object belongs
+     */
+    public JTable getModeStats() {
+        return modeStats;
+    }
+
+    public TreeMap<String, Integer> getModeNameToRowMap() {
+        return modeNameToRowMap;
+    }
+
+    public TreeMap<String, Integer> getStatNameToColMap() {
+        return statNameToColMap;
+    }
+
+    public AbstractTableModel getModeStatsTableModel() {
+        return modeStatsTableModel;
+    }
+
+    public void setModeStatsTableModel(AbstractTableModel modeStatsTableModel) {
+        this.modeStatsTableModel = modeStatsTableModel;
+    }
+
+    public TreeMap<Integer, String> getRowToModeNameMap() {
+        return rowToModeNameMap;
+    }
+
+    public void setRowToModeNameMap(TreeMap<Integer, String> rowToModeNameMap) {
+        this.rowToModeNameMap = rowToModeNameMap;
+    }
+
+    public TreeMap<Integer, String> getColToStateNameMap() {
+        return colToStateNameMap;
+    }
+
+    public void setColToStateNameMap(TreeMap<Integer, String> colToStateNameMap) {
+        this.colToStateNameMap = colToStateNameMap;
+    }
+
+    /**
+     *
+     * @param mode
+     * @param stat
+     * @return
+     */
+    public int getStats(String mode, String stat) {
+        //MAP THE STRING CONSTANT SPECIFIER FOR THE DESIRED MODE AND STAT TYPE
+        //TO THE ROW, AND COLUMN LOCATION IN THE TABLE 
+        int row = modeNameToRowMap.get(mode),
+                col = statNameToColMap.get(stat);
+
+        //ALL STATS ARE INTEGER VALUES
+        return (int) modeStatsTableModel.getValueAt(row, col);
+    }
+}

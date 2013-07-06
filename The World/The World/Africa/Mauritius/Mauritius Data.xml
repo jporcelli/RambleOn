@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<region
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='src/javaapplication8/schema.xsd'>
+    <sub_region red="200" green="200" blue="200" name="Riviere du Rempart" capital="Poudre d'Or"></sub_region>
+    <sub_region red="150" green="150" blue="150" name="Pamplemousses" capital="Pamplemousses"></sub_region>
+    <sub_region red="185" green="185" blue="185" name="Port Louis" capital="Port Louis"></sub_region>
+    <sub_region red="130" green="130" blue="130" name="Flacq" capital="Centre de Flacq"></sub_region>
+    <sub_region red="190" green="190" blue="190" name="Moka" capital="Moka"></sub_region>
+    <sub_region red="140" green="140" blue="140" name="Plaines Wilhems" capital="Beau Bassin"></sub_region>
+    <sub_region red="180" green="180" blue="180" name="Riviere Noire" capital="Tamarin"></sub_region>
+    <sub_region red="175" green="175" blue="175" name="Grand Port" capital="Mahebourg"></sub_region>
+    <sub_region red="195" green="195" blue="195" name="Savanne" capital="Souillac"></sub_region>
+
+</region>

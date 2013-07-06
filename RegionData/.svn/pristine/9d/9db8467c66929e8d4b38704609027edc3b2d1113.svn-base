@@ -1,0 +1,41 @@
+package regiondata;
+
+import java.io.File;
+import xml_utilities.XMLUtilities;
+
+/**
+ * This class serves as a plug-in for reading and writing regions to and from XML
+ * files using RegionDataSchema.XSD
+ * 
+ * @author James C. Porcelli, SBU ID # 108900819
+ */
+public class RegionIO implements RegionImporter {
+    // THIS WILL HELP US PARSE THE XML FILES
+
+    private XMLUtilities xmlUtil;
+    // THIS IS THE SCHEMA WE'LL USE
+    private File regionDataSchema;
+
+    /**
+     * Constructor for making our importer/exporter. Note that it initializes
+     * the XML utility for processing XML files and it sets up the schema for
+     * use.
+     */
+    public RegionIO(File regionDataSchema) {
+        xmlUtil = new XMLUtilities();
+
+        // WE'LL USE THE SCHEMA FILE TO VALIDATE THE XML FILES
+        this.regionDataSchema = regionDataSchema;
+    }
+
+    /**
+     *
+     * @param regionsFile
+     * @param regionToLoad
+     * @return
+     */
+    @Override
+    public boolean loadRegion(File regionsFile, RegionDataManager regionToLoad) {
+        return false; //TEMPORARY
+    }
+}

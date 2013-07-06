@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="Saint Lucia" leader="Kenny Anthony" capital="Castries">
+    <sub_region red="200" green="200" blue="200" name="Anse la Raye Quarter"      capital="Anse la Raye" />
+    <sub_region red="198" green="198" blue="198" name="Castries Quarter"        capital="Castries" />
+    <sub_region red="196" green="196" blue="196" name="Choiseul Quarter"           capital="Choiseul" />
+    <sub_region red="194" green="194" blue="194" name="Dauphin Quarter"         capital="Dauphin" />
+    <sub_region red="192" green="192" blue="192" name="Dennery Quarter"          capital="Dennery" />
+    <sub_region red="190" green="190" blue="190" name="Gros Islet Quarter"        capital="Gros Islet" />
+    <sub_region red="188" green="188" blue="188" name="Laborie Quarter"          capital="Laborie" />
+    <sub_region red="186" green="186" blue="186" name="Micoud Quarter"          capital="Micoud" />
+    <sub_region red="184" green="184" blue="184" name="Praslin Quarter"         capital="Praslin" />
+    <sub_region red="182" green="182" blue="182" name="Soufrière Quarter"          capital="Soufrière" />
+    <sub_region red="180" green="180" blue="180" name="Vieux Fort Quarter"           capital="Vieux Fort" />
+
+</region>
+

@@ -1,0 +1,19 @@
+<region name="Honduras" leader="Porfirio Lobo Sasa" capital="Tegucigalpa">
+<sub_region red="230" green="230" blue="230" name="Cracias a Dois" capital="Puerto Lempira"/>
+<sub_region red="220" green="220" blue="220" name="Colón" capital="Trujillo"/>
+<sub_region red="210" green="210" blue="210" name="Olancho" capital="Juticalpa"/>
+<sub_region red="200" green="200" blue="200" name="Atlántida" capital="La Ceiba"/>
+<sub_region red="190" green="190" blue="190" name="Yoro" capital="Yoro"/>
+<sub_region red="180" green="180" blue="180" name="Francisco Morazán" capital="Tegucigalpa"/>
+<sub_region red="170" green="170" blue="170" name="El Paraíso" capital="Yuscarán"/>
+<sub_region red="160" green="160" blue="160" name="Choluteca" capital="Choluteca"/>
+<sub_region red="150" green="150" blue="150" name="Valle" capital="Nacaome"/>
+<sub_region red="140" green="140" blue="140" name="Cortés" capital="San Pedro Sula"/>
+<sub_region red="130" green="130" blue="130" name="Comayagua" capital="Comayagua"/>
+<sub_region red="120" green="120" blue="120" name="La Paz" capital="La Paz"/>
+<sub_region red="110" green="110" blue="110" name="Santa Bárbara" capital="Santa Bárbara"/>
+<sub_region red="100" green="100" blue="100" name="Intibucá" capital="La Esperanza"/>
+<sub_region red="90" green="90" blue="90" name="Copán" capital="Santa Rosa de Copán"/>
+<sub_region red="80" green="80" blue="80" name="Lempira" capital="Gracias"/>
+<sub_region red="70" green="70" blue="70" name="Ocotepeque" capital="Nueva Ocotepeque"/>
+</region>

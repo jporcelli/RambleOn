@@ -1,0 +1,18 @@
+<region name="Poland" leader="Bronislaw Komorowski" capital="Warsaw">
+<sub_region red="250" green="250" blue="250" name="Pomeranian" capital="Gdansk"/>
+<sub_region red="230" green="230" blue="230" name="West Pomeranian" capital="Szczecin"/>
+<sub_region red="220" green="220" blue="220" name="Lubusz" capital="Zielona Gora"/>
+<sub_region red="210" green="210" blue="210" name="Greater Poland" capital="Poznan"/>
+<sub_region red="200" green="200" blue="200" name="Kuyavian-Pomeranian" capital="Bydgoszcz"/>
+<sub_region red="190" green="190" blue="190" name="Warmian-Masurian" capital="Olsztyn"/>
+<sub_region red="180" green="180" blue="180" name="Podlachian" capital="Bialystok"/>
+<sub_region red="170" green="170" blue="170" name="Masovian" capital="Warsaw"/>
+<sub_region red="160" green="160" blue="160" name="Lodzkie" capital="Lodz"/>
+<sub_region red="150" green="150" blue="150" name="Lower Silesian" capital="Wroclaw"/>
+<sub_region red="140" green="140" blue="140" name="Opole" capital="Opole"/>
+<sub_region red="130" green="130" blue="130" name="Silesian" capital="Katowice"/>
+<sub_region red="120" green="120" blue="120" name="Swietokrzyskie" capital="Kielce"/>
+<sub_region red="110" green="110" blue="110" name="Lublin" capital="Lublin"/>
+<sub_region red="100" green="100" blue="100" name="Lesser Poland" capital="Krakow"/>
+<sub_region red="90" green="90" blue="90" name="Subcarpathian" capital="Rzeszow"/>
+</region>

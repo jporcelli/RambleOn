@@ -1,0 +1,11 @@
+<region name="Zambia" leader="Michael Sata" capital="Lusaka">
+  <sub_region red="200" green="200" blue="200" name="Northern" capital="Northern" />
+  <sub_region red="190" green="190" blue="190" name="Western" capital="Western" />
+  <sub_region red="180" green="180" blue="180" name="Luapula" capital="Luapula" />
+  <sub_region red="170" green="170" blue="170" name="Southern" capital="Southern" />
+  <sub_region red="160" green="160" blue="160" name="Eastern" capital="Eastern" />
+  <sub_region red="150" green="150" blue="150" name="North-Western" capital="North-Western" />
+  <sub_region red="140" green="140" blue="140" name="Central" capital="Central" />
+  <sub_region red="130" green="130" blue="130" name="Copperbelt" capital="Copperbelt" />
+  <sub_region red="120" green="120" blue="120" name="Lusaka" capital="Lusaka" />
+</region>

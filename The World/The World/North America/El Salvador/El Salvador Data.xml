@@ -1,0 +1,16 @@
+<region name="El Salvador" leader="Mauricio Funes" capital="San Salvador">
+	<sub_region red="200" green="200" blue="200" name="Ahuachapan" capital="Ahuachapan"/>
+	<sub_region red="190" green="190" blue="190" name="Sonsonate" capital="Sonsonate"/>
+	<sub_region red="180" green="180" blue="180" name="Santa Ana" capital="Santa Ana"/>
+	<sub_region red="170" green="170" blue="170" name="La Libertad" capital="Nuevo San Salvador"/>
+	<sub_region red="160" green="160" blue="160" name="Chalatenango" capital="Chalatenango"/>
+	<sub_region red="150" green="150" blue="150" name="San Salvador" capital="San Salvador"/>
+	<sub_region red="140" green="140" blue="140" name="Suchitoto" capital="Cojutepeque"/>
+	<sub_region red="130" green="130" blue="130" name="La Paz" capital="Zacatecoluca"/>
+	<sub_region red="120" green="120" blue="120" name="Cabanas" capital="Sensuntepeque"/>
+	<sub_region red="115" green="115" blue="115" name="San Vicente" capital="San Vicente"/>
+	<sub_region red="110" green="110" blue="110" name="Usulutan" capital="Usulutan"/>
+	<sub_region red="105" green="105" blue="105" name="San Miguel" capital="San Miguel"/>
+	<sub_region red="100" green="100" blue="100" name="Morazan" capital="San Francisco"/>
+	<sub_region red="95" green="95" blue="95" name="La Union" capital="La Union"/>
+</region>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="Trinidad" leader="Anthony Carmona" capital="Port of Spain">
+    <sub_region red="100" green="100" blue="100" name="Diego Martin"      capital="Diego Martin" />
+	<sub_region red="102" green="102" blue="102" name="Port of Spain"      capital="Port of Spain" />
+	<sub_region red="104" green="104" blue="104" name="San Juan-Laventille"      capital="San Juan-Laventille" />
+	<sub_region red="106" green="106" blue="106" name="Tunapuna-Piarco"      capital="Tunapuna-Piarco" />
+	<sub_region red="108" green="108" blue="108" name="Sangre Grande"      capital="Sangre Grande" />
+	<sub_region red="110" green="110" blue="110" name="Chaguanas"      capital="Chaguanas" />
+	<sub_region red="112" green="112" blue="112" name="Couva-Talparo"      capital="Couva-Talparo" />
+	<sub_region red="114" green="114" blue="114" name="Rio Claro-Mayaro"      capital="Rio Claro-Mayaro" />
+	<sub_region red="116" green="116" blue="116" name="Princes Town"      capital="Princes Town" />
+	<sub_region red="118" green="118" blue="118" name="San Fernando"      capital="San Fernando" />
+	<sub_region red="120" green="120" blue="120" name="Penal-Debe"      capital="Penal-Debe" />
+	<sub_region red="122" green="122" blue="122" name="Siparia"      capital="Siparia" />
+	<sub_region red="124" green="124" blue="124" name="Point Fortin"      capital="Point Fortin" />
+	<sub_region red="126" green="126" blue="126" name="Tobago"      capital="Tobago" />
+	
+    
+</region>
+

@@ -1,0 +1,11 @@
+<region name="Mali" leader="Dioncounda Traore" capital="Bamako">
+<sub_region red="230" green="230" blue="230" name="Kidal" capital="Kidal"/>
+<sub_region red="210" green="210" blue="210" name="Gao" capital="Gao"/>
+<sub_region red="190" green="190" blue="190" name="Tombouctou" capital="Timbuktu"/>
+<sub_region red="170" green="170" blue="170" name="Mopti" capital="Mopti"/>
+<sub_region red="150" green="150" blue="150" name="Segou" capital="Segou"/>
+<sub_region red="130" green="130" blue="130" name="Sikasso" capital="Sikasso"/>
+<sub_region red="110" green="110" blue="110" name="Koulikoro" capital="Koulikoro"/>
+<sub_region red="90" green="90" blue="90" name="Kayes" capital="Kayes"/>
+<sub_region red="70" green="70" blue="70" name="Bamako" capital="Bamako"/>
+</region>

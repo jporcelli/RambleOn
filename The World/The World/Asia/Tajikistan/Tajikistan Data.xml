@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="Tajikistan" leader="Emomalii Rahmon" capital="Dushanbe">
+    <sub_region red="200" green="200" blue="200" name="Sughd"                                   capital="Khujand" />
+	<sub_region red="190" green="190" blue="190" name="Region of Republican Subordination"      capital="Dushanbe" />
+    <sub_region red="180" green="180" blue="180" name="Khatlon"                                 capital="Qurghonteppa" />
+	<sub_region red="170" green="170" blue="170" name="Gorno-Badakshan"                         capital="Khorugh" />
+</region>
+	

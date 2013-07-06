@@ -1,0 +1,62 @@
+package accountdata;
+
+import java.util.TreeMap;
+
+/**
+ * This class encapsulates all the information we need for a given user account
+ * for this game. We will initialize one of these Account objects for each
+ * account we have stored in the XML data file providing the data store for this
+ * application.
+ *
+ * @author James C. Porcelli, SBU ID 108900819
+ */
+public class Account {
+
+    //THIS ACCOUNTS USERNAME
+    private String userName;
+    //A MAPPING OF THE NAME OF EVERY REGION THIS USER HAS PLAYED TO THE
+    //CORRESPONDING GAME STATISTICS FOR THAT REGION FOR THIS ACCOUNT
+    private TreeMap<String, AccountStatistics> regionStats;
+
+    /**
+     *
+     * @param userName
+     */
+    public Account(String userName) {
+        this.userName = userName;
+        regionStats = new TreeMap<>();
+        regionStats.put("TEST",new AccountStatistics());
+    }
+
+    /**
+     *
+     * @return
+     */
+    public String getUserName() {
+        return userName;
+    }
+
+    /**
+     *
+     * @param userName
+     */
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public TreeMap<String, AccountStatistics> getRegionStats() {
+        return regionStats;
+    }
+
+    /**
+     *
+     * @param regionStats
+     */
+    public void setRegionStats(TreeMap<String, AccountStatistics> regionStats) {
+        this.regionStats = regionStats;
+    }
+}

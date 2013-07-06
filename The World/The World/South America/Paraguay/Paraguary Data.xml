@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="Paraguay" leader="Federico Franco" capital="Asuncion">
+    <sub_region red="80" green="80" blue="80" name="Distrito Capital" capital="Asuncion" />
+    <sub_region red="90" green="90" blue="90" name="Alto Paraguay" capital="Fuerte Olimpo" />
+    <sub_region red="140" green="140" blue="140" name="Alto Parana" capital="Ciudad del Este" />
+    <sub_region red="110" green="110" blue="110" name="Amambay" capital="Pedro Juan Caballero" />
+    <sub_region red="95" green="95" blue="95" name="Boqueron" capital="Filadelfia" />
+    <sub_region red="135" green="135" blue="135" name="Caaguazu" capital="Coronel Oviedo" />
+    <sub_region red="160" green="160" blue="160" name="Caazapa" capital="Caazapa" />
+    <sub_region red="120" green="120" blue="120" name="Canindeyu" capital="Salto del Guaira" />
+    <sub_region red="145" green="145" blue="145" name="Central" capital="Aregua" />
+    <sub_region red="105" green="105" blue="105" name="Concepcion" capital="Concepcion" />
+    <sub_region red="130" green="130" blue="130" name="Cordillera" capital="Caacupe" />
+    <sub_region red="155" green="155" blue="155" name="Guaira" capital="Villarrica" />
+    <sub_region red="175" green="175" blue="175" name="Itapua" capital="Encarnacion" />
+    <sub_region red="170" green="170" blue="170" name="Misiones" capital="San Juan Bautista" />
+    <sub_region red="165" green="165" blue="165" name="Neembucu" capital="Pilar" />
+    <sub_region red="150" green="150" blue="150" name="Paraguari" capital="Paraguari" />
+    <sub_region red="100" green="100" blue="100" name="Presidente Hayes" capital="Villa Hayes" />
+    <sub_region red="115" green="115" blue="115" name="San Pedro" capital="San Pedro" />
+</region>

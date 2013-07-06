@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="United States of America" leader="Barack Obama" capital="Washington, D.C.">
+    <sub_region red="140" green="140" blue="140" name="Washington" capital="Olympia" />
+    <sub_region red="141" green="141" blue="141" name="Oregon" capital="Salem" />
+    <sub_region red="142" green="142" blue="142" name="California" capital="Sacramento" />
+    <sub_region red="143" green="143" blue="143" name="Idaho" capital="Boise" />
+    <sub_region red="144" green="144" blue="144" name="Nevada" capital="Carson City" />
+    <sub_region red="145" green="145" blue="145" name="Arizona" capital="Phoenix" />
+    <sub_region red="146" green="146" blue="146" name="Montana" capital="Helena" />
+    <sub_region red="147" green="147" blue="147" name="Wyoming" capital="Cheyenne" />
+    <sub_region red="148" green="148" blue="148" name="Utah" capital="Salt Lake City" />
+    <sub_region red="149" green="149" blue="149" name="Colorado" capital="Denver" />
+    <sub_region red="150" green="150" blue="150" name="New Mexico" capital="Santa Fe" />
+    <sub_region red="151" green="151" blue="151" name="North Dakota" capital="Bismarck" />
+    <sub_region red="152" green="152" blue="152" name="South Dakota" capital="Pierre" />
+    <sub_region red="153" green="153" blue="153" name="Nebraska" capital="Lincoln" />
+    <sub_region red="154" green="154" blue="154" name="Kansas" capital="Topeka" />
+    <sub_region red="155" green="155" blue="155" name="Oklahoma" capital="Oklahoma City" />
+    <sub_region red="156" green="156" blue="156" name="Texas" capital="Austin" />
+    <sub_region red="157" green="157" blue="157" name="Minnesota" capital="Saint Paul" />
+    <sub_region red="158" green="158" blue="158" name="Iowa" capital="Des Moines" />
+    <sub_region red="159" green="159" blue="159" name="Missouri" capital="Jefferson City" />
+    <sub_region red="160" green="160" blue="160" name="Arkansas" capital="Little Rock" />
+    <sub_region red="161" green="161" blue="161" name="Louisiana" capital="Balton Rogue" />
+    <sub_region red="162" green="162" blue="162" name="Wisconsin" capital="Madison" />
+    <sub_region red="163" green="163" blue="163" name="Illinois" capital="Springfield" />
+    <sub_region red="164" green="164" blue="164" name="Kentucky" capital="Frankfort" />
+    <sub_region red="165" green="165" blue="165" name="Tennessee" capital="Nashville" />
+    <sub_region red="166" green="166" blue="166" name="Mississippi" capital="Jackson" />
+    <sub_region red="167" green="167" blue="167" name="Michigan" capital="Lansing" />
+    <sub_region red="168" green="168" blue="168" name="Indiana" capital="Indianapolis" />
+    <sub_region red="169" green="169" blue="169" name="Alabama" capital="Montgomery" />
+    <sub_region red="170" green="170" blue="170" name="Ohio" capital="Columbus" />
+    <sub_region red="171" green="171" blue="171" name="West Virginia" capital="Charleston" />
+    <sub_region red="172" green="172" blue="172" name="Virginia" capital="Richmond" />
+    <sub_region red="173" green="173" blue="173" name="North Carolina" capital="Raleigh" />
+	<sub_region red="174" green="174" blue="174" name="South Carolina" capital="Columbia" />
+	<sub_region red="175" green="175" blue="175" name="Georgia" capital="Atlanta" />
+	<sub_region red="176" green="176" blue="176" name="Florida" capital="Tallahassee" />
+	<sub_region red="177" green="177" blue="177" name="New York" capital="Albany" />
+	<sub_region red="178" green="178" blue="178" name="Pennsylvania" capital="Harrisburg" />
+	<sub_region red="179" green="179" blue="179" name="New Jersey" capital="Trenton" />
+	<sub_region red="180" green="180" blue="180" name="Maryland" capital="Annapolis" />
+	<sub_region red="181" green="181" blue="181" name="Delaware" capital="Dover" />
+	<sub_region red="182" green="182" blue="182" name="Vermont" capital="Montpelier" />
+	<sub_region red="183" green="183" blue="183" name="New Hampshire" capital="Concord" />
+	<sub_region red="184" green="184" blue="184" name="Massachusetts" capital="Boston" />
+	<sub_region red="185" green="185" blue="185" name="Connecticut" capital="Hartford" />
+	<sub_region red="186" green="186" blue="186" name="Rhode Island" capital="Providence" />
+	<sub_region red="187" green="187" blue="187" name="Maine" capital="Augusta" />
+	<sub_region red="188" green="188" blue="188" name="Hawaii" capital="Honolulu" />
+	<sub_region red="189" green="189" blue="189" name="Alaska" capital="Juneau" />
+</region>
+

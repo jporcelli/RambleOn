@@ -1,0 +1,16 @@
+<region name="Malaysia" leader="Abdul Halim" capital="Kuala Lumpur">
+<script/>
+	<sub_region red="200" green="200" blue="200" name="Johor" capital="Johor Bahru"/>
+	<sub_region red="198" green="198" blue="198" name="Kedah" capital="Alor Setar"/>
+	<sub_region red="196" green="196" blue="196" name="Kelantan" capital="Kota Bharu"/>
+	<sub_region red="194" green="194" blue="194" name="Melaka" capital="Malacca City"/>
+	<sub_region red="192" green="192" blue="192" name="Negeri Sembilan" capital="Seremban"/>
+	<sub_region red="190" green="190" blue="190" name="Pahang" capital="Kuantan"/>
+	<sub_region red="188" green="188" blue="188" name="Perak" capital="Ipoh"/>	
+	<sub_region red="186" green="186" blue="186" name="Perlis" capital="Kangar"/>
+	<sub_region red="184" green="184" blue="184" name="Pulau Pinang" capital="George Town"/>
+	<sub_region red="182" green="182" blue="182" name="Sabah" capital="Kota Kinabalu"/>	
+	<sub_region red="180" green="180" blue="180" name="Sarawak" capital="Kuching"/>
+	<sub_region red="178" green="178" blue="178" name="Selangor" capital="Shah Alam"/>
+	<sub_region red="176" green="176" blue="176" name="Terengganu" capital="Kuala Terengganu"/>
+</region>

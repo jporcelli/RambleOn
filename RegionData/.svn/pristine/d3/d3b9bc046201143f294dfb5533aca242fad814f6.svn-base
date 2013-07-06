@@ -1,0 +1,27 @@
+package regiondata;
+
+/**
+ * This class represents a checked exception that is thrown by RegionIO in
+ * response to an attempt to load sub region flag images for a region that does
+ * not have sub region flag images available.
+ *
+ * @author James C. Porcelli, SBU ID # 108900819
+ */
+public class FlagInformationNotAvailableException extends Exception {
+
+    /**
+     * Default no argument, default message constructor.
+     */
+    public FlagInformationNotAvailableException() {
+        super("Flag information not available for this region");
+    }
+
+    /**
+     * Overloaded constructor for passing a custom message
+     *
+     * @param message The message to display as the exception message.
+     */
+    public FlagInformationNotAvailableException(String message) {
+        super(message);
+    }
+}

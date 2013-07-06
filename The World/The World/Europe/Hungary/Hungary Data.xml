@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="Hungary" leader="Janos Ader" capital="Budapest">
+    <sub_region red="199" green="199" blue="199" name="SZABOLCS-SZATMAR BEREG"  capital="Nyiregyhaza" />
+    <sub_region red="181" green="181" blue="181" name="HAJDU-BIHAR"             capital="Debrecen" />
+    <sub_region red="176" green="176" blue="176" name="BORSOD-ABAUJ-ZEMPLEN"    capital="Miskolc" />
+    <sub_region red="161" green="161" blue="161" name="BEKES"                   capital="Bekescsaba" />
+    <sub_region red="156" green="156" blue="156" name="JASZ-NAGYKUN-SZOLNOK"    capital="Szolnok" />
+    <sub_region red="148" green="148" blue="148" name="HEVES"           capital="Eger" />
+    <sub_region red="143" green="143" blue="143" name="NOGRAD"          capital="Salgotarjan" />
+    <sub_region red="135" green="135" blue="135" name="CSONGRAD"        capital="Szeged" />
+    <sub_region red="130" green="130" blue="130" name="BUDAPEST"        capital="" />
+    <sub_region red="122" green="122" blue="122" name="PEST"            capital="Budapest" />
+    <sub_region red="117" green="117" blue="117" name="BACS-KISKUN"     capital="Kecskemet" />
+    <sub_region red="110" green="110" blue="110" name="KOMAROM-ESZTERGOM"       capital="Tatabanya" />
+    <sub_region red="105" green="105" blue="105" name="FEJER"       capital="Szekesfehervar" />
+    <sub_region red="97" green="97" blue="97" name="TOLNA"          capital="Szekszard" />
+    <sub_region red="92" green="92" blue="92" name="BARANYA"        capital="Pecs" />
+    <sub_region red="84" green="84" blue="84" name="SOMOGY"         capital="Kaposvar" />
+    <sub_region red="77" green="77" blue="77" name="GYYR-MOSON-SOPRON"  capital="Gyyr" />
+    <sub_region red="71" green="71" blue="71" name="VESZPREM"           capital="Veszprem" />
+    <sub_region red="61" green="61" blue="61" name="ZALA"   capital="Zalaegerszeg" />
+    <sub_region red="59" green="59" blue="59" name="VAS"    capital="Szombathely" />
+</region>
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="Kazakhstan" leader="Borat Sagdiyev" capital="Astana">
+	<sub_region red="220" green="220" blue="220" name="East Kazakhstan" capital="Oskemen"/>
+	<sub_region red="210" green="210" blue="210" name="Almaty" capital="Taldykorgan"/>
+	<sub_region red="200" green="200" blue="200" name="Pavlodar" capital="Pavlodar"/>
+	<sub_region red="190" green="190" blue="190" name="Karagandy" capital="Karagandy"/>
+	<sub_region red="180" green="180" blue="180" name="Zhambyl" capital="Taraz"/>
+	<sub_region red="170" green="170" blue="170" name="North Kaz" capital="Petropavi"/>
+	<sub_region red="160" green="160" blue="160" name="Akmola" capital="Astana"/>
+	<sub_region red="150" green="150" blue="150" name="South Kaz" capital="Shymkent"/>
+	<sub_region red="140" green="140" blue="140" name="Kostanay" capital="Kostanay"/>
+	<sub_region red="130" green="130" blue="130" name="Kyzlorda" capital="Kyzlorda"/>
+	<sub_region red="120" green="120" blue="120" name="Aktobe" capital="Aktobe"/>
+	<sub_region red="110" green="110" blue="110" name="West Kazakhstan" capital="Oral"/>
+	<sub_region red="100" green="100" blue="100" name="Atyrau" capital="Atyrau"/>
+	<sub_region red="90" green="90" blue="90" name="Mangystau" capital="Aktau"/>
+</region>

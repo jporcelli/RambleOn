@@ -1,0 +1,7 @@
+<region name="Saint Vincent" leader="Norman W. Hipps" capital="Kingstown">
+	<sub_region red="192" green="192" blue="192" name="Charlotte" capital="Charlotte"/>
+	<sub_region red="182" green="182" blue="182" name="Saint David" capital="Saint David"/>
+	<sub_region red="172" green="172" blue="172" name="Saint Patrick" capital="Sait Patrick"/>
+	<sub_region red="162" green="162" blue="162" name="Saint Andrew" capital="Saint Andrew"/>
+	<sub_region red="152" green="152" blue="152" name="Saint George" capital="Saint George"/>
+</region>

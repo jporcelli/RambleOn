@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="Panama" leader="Ricardo Martinelli" capital="Panama City">
+<sub_region red="200" green="200" blue="200" name="Bocas del Toro" capital="Bocas del Toro"/>
+<sub_region red="190" green="190" blue="190" name="Comarca Ngobe - Bugle" capital="Comarca Ngobe - Bugle"/>
+<sub_region red="180" green="180" blue="180" name="Chiriqui" capital="David"/>
+<sub_region red="170" green="170" blue="170" name="Veraguas" capital="Santiago de Veraguas"/>
+<sub_region red="160" green="160" blue="160" name="Herrera" capital="Chitre"/>
+<sub_region red="150" green="150" blue="150" name="Los Santos" capital="Las Tablas"/>
+<sub_region red="140" green="140" blue="140" name="Cocle" capital="Penonome"/>
+<sub_region red="130" green="130" blue="130" name="Colon" capital="Colon"/>
+<sub_region red="120" green="120" blue="120" name="Panama" capital="La Palma"/>
+<sub_region red="110" green="110" blue="110" name="Comarca Kuna Yala" capital="Comarca Kuna Yala"/>
+<sub_region red="100" green="100" blue="100" name="Darien" capital="Panama City"/>
+<sub_region red="90" green="90" blue="90" name="Comarca Embera Wounaan" capital="Comarca Embera Wounaan"/>
+</region>

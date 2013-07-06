@@ -1,0 +1,10 @@
+<region name="Antigua and arbuda" leader="Winston Baldwin Spencer" capital="Saint John's">
+<sub_region red="80" green="80" blue="80" name="Barbuda" capital="Codrington"/>
+<sub_region red="100" green="100" blue="100" name="Redonda" capital="*uninhabited*"/>
+<sub_region red="120" green="120" blue="120" name="Saint George" capital="Piggotts"/>
+<sub_region red="140" green="140" blue="140" name="Saint John" capital="Saint John's"/>
+<sub_region red="160" green="160" blue="160" name="Saint Mary" capital="Bolans"/>
+<sub_region red="180" green="180" blue="180" name="Saint Paul" capital="Falmouth"/>
+<sub_region red="200" green="200" blue="200" namee="Saint Peter" capital="Parham"/>
+<sub_region red="70" green="70" blue="70" name="Saint Philip" capital="Carlisle"/>
+</region>

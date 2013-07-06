@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="South America">
+  <sub_region red="200" green="200" blue="200" name="Argentina"     capital="Buenos Aires" />
+  <sub_region red="198" green="198" blue="198" name="Bolivia"       capital="La Paz" />
+  <sub_region red="196" green="196" blue="196" name="Brazil"        capital="Brasilia" />
+  <sub_region red="194" green="194" blue="194" name="Chile"         capital="Santiago" />
+  <sub_region red="192" green="192" blue="192" name="Colombia"      capital="Bogota" />
+  <sub_region red="190" green="190" blue="190" name="Equador"       capital="Quito" />
+  <sub_region red="188" green="188" blue="188" name="Falkland Islands" capital="Port Stanley" />
+  <sub_region red="186" green="186" blue="186" name="French Guiana" capital="Cayenne" />
+  <sub_region red="184" green="184" blue="184" name="Guyana"        capital="Georgetown" />
+  <sub_region red="182" green="182" blue="182" name="Paraguay"      capital="Asuncion" />
+  <sub_region red="180" green="180" blue="180" name="Peru"          capital="Lima" />
+  <sub_region red="178" green="178" blue="178" name="South Georgia" capital="Grytviken" />
+  <sub_region red="176" green="176" blue="176" name="Suriname"      capital="Paramaribo" />
+  <sub_region red="174" green="174" blue="174" name="Trinidad"      capital="Port of Spain" />
+  <sub_region red="172" green="172" blue="172" name="Uruguay"       capital="Montevideo" />
+  <sub_region red="170" green="170" blue="170" name="Venezuela"     capital="Caracas" />
+</region>

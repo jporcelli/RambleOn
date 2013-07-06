@@ -1,0 +1,10 @@
+<region name="Gabon" leader="Ali Bongo Ondimba" capital="Libreville">
+<sub_region red="250" green="250" blue="250" name="Woleu-Ntem" capital="Oyem"/>
+<sub_region red="240" green="240" blue="240" name="Estuaire" capital="Libreville"/>
+<sub_region red="230" green="230" blue="230" name="Ogoou¨¦-Maritime" capital="Port-Gentil"/>
+<sub_region red="220" green="220" blue="220" name="Moyen-Ogoou¨¦" capital="Lambar¨¦n¨¦"/>
+<sub_region red="210" green="210" blue="210" name="Ogoou¨¦-Ivindo" capital="Makokou"/>
+<sub_region red="200" green="200" blue="200" name="Ngouni¨¦" capital="Mouila"/>
+<sub_region red="190" green="190" blue="190" name="Ogoou¨¦-Lolo" capital="Koulamoutou"/>
+<sub_region red="180" green="180" blue="180" name="Haut-Ogoou¨¦" capital="Franceville"/>
+<sub_region red="170" green="170" blue="170" name="Nyanga" capital="Tchibanga"/>

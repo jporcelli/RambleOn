@@ -1,0 +1,7 @@
+<region name="Latvia" leader="Andris Berzins" capital="Riga">
+<sub_region red="200" green="200" blue="200" name="Kurzeme" capital="Liepaja"/>
+<sub_region red="198" green="198" blue="198" name="Riga" capital="Riga"/>
+<sub_region red="196" green="196" blue="196" name="Latgale" capital="Daugavpils"/>
+<sub_region red="194" green="194" blue="194" name="Zemgale" capital="Jelgava"/>
+<sub_region red="192" green="192" blue="192" name="Vidzeme" capital="Valmiera"/>
+</region>

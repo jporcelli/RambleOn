@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="Gambia" leader="Yahya Jammeh" capital="Banjul">
+	<sub_region red="200" green="200" blue="200" name="Banjul"                    capital="Banjul" />
+    <sub_region red="195" green="195" blue="195" name="Central River Division"    capital="Janjanbureh" />
+    <sub_region red="190" green="190" blue="190" name="Lower River Division"      capital="Mansa Konko" />
+    <sub_region red="185" green="185" blue="185" name="North Bank Division"       capital="Kerewan" />
+    <sub_region red="180" green="180" blue="180" name="Upper River Division"      capital="Basse Santa Su" />
+    <sub_region red="175" green="175" blue="175" name="Western Division"          capital="Brikama" />
+</region>
+

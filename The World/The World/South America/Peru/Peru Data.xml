@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<region name="Peru" leader="Ollanta Humala" capital="Lima">
+<sub_region red="200" green="200" blue="200" name="Tumbes" capital="Tumbes"/>
+<sub_region red="195" green="195" blue="195" name="Piura" capital="Piura"/>
+<sub_region red="190" green="190" blue="190" name="Lambayeque" capital="Chiclayo"/>
+<sub_region red="185" green="185" blue="185" name="Cajamarca" capital="Cajamarca"/>
+<sub_region red="180" green="180" blue="180" name="Amazonas" capital="Chachapoyas"/>
+<sub_region red="175" green="175" blue="175" name="Loreto" capital="Lquitos"/>
+<sub_region red="170" green="170" blue="170" name="La Libertad" capital="Trujillo"/>
+<sub_region red="160" green="160" blue="160" name="San Martin" capital="Moyobamba"/>
+<sub_region red="155" green="155" blue="155" name="Ancash" capital="Huaraz"/>
+<sub_region red="150" green="150" blue="150" name="Huanuco" capital="Huanuco"/>
+<sub_region red="145" green="145" blue="145" name="Lima" capital="Huacho"/>
+<sub_region red="140" green="140" blue="140" name="Pasco" capital="Cerro de Pasco"/>
+<sub_region red="135" green="135" blue="135" name="Junin" capital="Huancayo"/>
+<sub_region red="130" green="130" blue="130" name="Ucayali" capital="Pucallpa"/>
+<sub_region red="120" green="120" blue="120" name="Ica" capital="Ica"/>
+<sub_region red="110" green="110" blue="110" name="Huancavalica" capital="Huancavelica"/>
+<sub_region red="105" green="105" blue="105" name="Ayacucho" capital="Ayacucho"/>
+<sub_region red="100" green="100" blue="100" name="Apurimac" capital="Abancay"/>
+<sub_region red="95" green="95" blue="95" name="Cuzco" capital="Cuzco"/>
+<sub_region red="90" green="90" blue="90" name="Madre de Dios" capital="Puerto Maldonado"/>
+<sub_region red="85" green="85" blue="85" name="Arequipa" capital="Arequipa"/>
+<sub_region red="80" green="80" blue="80" name="Puno" capital="Puno"/>
+<sub_region red="70" green="70" blue="70" name="Moquegua" capital="Moquegua"/>
+<sub_region red="60" green="60" blue="60" name="Tacna" capital="Tacna"/>
+<sub_region red="50" green="50" blue="50" name="Callao" capital="Callao"/>
+</region>
+
+
+

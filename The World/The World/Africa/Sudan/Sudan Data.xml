@@ -1,0 +1,9 @@
+<region name="Sudan" leader="Omar al-Bashir" capital="Khartoum">
+<sub_region red="106" green="106" blue="106" name="Blue Nile" capital="Ad-Damazin"/>
+<sub_region red="42" green="42" blue="42" name="Darfur" capital=""/>
+<sub_region red="122" green="122" blue="122" name="Kassala" capital="Kassala City"/>
+<sub_region red="160" green="160" blue="160" name="Khartoum" capital="Khartoum City"/>
+<sub_region red="74" green="74" blue="74" name="Kurdufan" capital=""/>
+<sub_region red="58" green="58" blue="58" name="Northern" capital="Dongola"/>
+</region>
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="Tanzania" leader="Jakaya Kikwete" capital="Dodoma">
+    <sub_region red="165" green="165" blue="165" name="Mtwara"                  capital="Mtwara" />
+    <sub_region red="164" green="164" blue="164" name="Lindi"                   capital="Lindi" />
+    <sub_region red="163" green="163" blue="163" name="Ruwuma"                  capital="Songea" />
+    <sub_region red="162" green="162" blue="162" name="Dar es Salaam"           capital="Dar es Salaam" />
+    <sub_region red="161" green="161" blue="161" name="Pwani"                   capital="Kibaha" />
+    <sub_region red="160" green="160" blue="160" name="Morogoro"                capital="Morogoro" />
+    <sub_region red="159" green="159" blue="159" name="Iringa"                  capital="Iringa" />
+    <sub_region red="158" green="158" blue="158" name="Mbeya"                   capital="Mbeya" />
+    <sub_region red="157" green="157" blue="157" name="Zanzibar South"          capital="Koani" />
+    <sub_region red="156" green="156" blue="156" name="Zanzibar West"           capital="Zanzibar" />
+    <sub_region red="155" green="155" blue="155" name="Zanzibar North"          capital="Mkokotoni" />
+    <sub_region red="154" green="154" blue="154" name="Pemba South"             capital="Mkoani" />
+    <sub_region red="153" green="153" blue="153" name="Pemba North"             capital="Wete" />
+    <sub_region red="152" green="152" blue="152" name="Tanga"                   capital="Tanga" />
+    <sub_region red="151" green="151" blue="151" name="Dodoma"                  capital="Dodoma" />
+    <sub_region red="150" green="150" blue="150" name="Rukwa"                   capital="Sumbawanga" />
+    <sub_region red="149" green="149" blue="149" name="Kilimanjaro"             capital="Moshi" />
+    <sub_region red="148" green="148" blue="148" name="Manyara"                 capital="Babati" />
+    <sub_region red="147" green="147" blue="147" name="Singida"                 capital="Singida" />
+    <sub_region red="146" green="146" blue="146" name="Tabora"                  capital="Tabora" />
+    <sub_region red="145" green="145" blue="145" name="Arusha"                  capital="Arusha" />
+    <sub_region red="144" green="144" blue="144" name="Shinyanga"               capital="Shinyanga" />
+    <sub_region red="143" green="143" blue="143" name="Kigoma"                  capital="Kigoma" />
+    <sub_region red="142" green="142" blue="142" name="Mara"                    capital="Musoma" />
+    <sub_region red="141" green="141" blue="141" name="Mwanza"                  capital="Mwanza" />
+    <sub_region red="140" green="140" blue="140" name="Kagera"                  capital="Bukoba" />
+
+</region>
+

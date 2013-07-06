@@ -1,0 +1,6 @@
+<region name="South Sudan" leader="Salva Kiir Mayardit" capital="Juba">
+<script/>
+	<sub_region red="100" green="100" blue="100" name="Upper Nile" capital="Malakal"/>
+	<sub_region red="150" green="150" blue="150" name="Equatoria" capital="Juba"/>
+	<sub_region red="200" green="200" blue="200" name="Bahr El Ghazal" capital="Wau"/>
+</region>

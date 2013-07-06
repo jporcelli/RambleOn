@@ -1,0 +1,26 @@
+<region name="Cambodia" leader="Hun Sen" capital="Phnom Penh">
+	<sub_region red="162" green="162" blue="162" name="Banteay Meanchey" capital="Sisophon"/>
+	<sub_region red="164" green="164" blue="164" name="Battambang" capital="Battambang"/>
+	<sub_region red="166" green="166" blue="166" name="Kampong Cham" capital="Kampong Cham"/>
+	<sub_region red="168" green="168" blue="168" name="Kampong Chhnang" capital="Kampong Chhnang"/>
+	<sub_region red="170" green="170" blue="170" name="Kampong Speu" capital="Kampong Speu"/>
+	<sub_region red="172" green="172" blue="172" name="Kampong Thom	" capital="Kampong Thom	"/>
+	<sub_region red="174" green="174" blue="174" name="Kampot" capital="Kampot"/>
+	<sub_region red="176" green="176" blue="176" name="Kandal" capital="Ta Khmao"/>
+	<sub_region red="178" green="178" blue="178" name="Kep" capital="Krong Kep"/>
+	<sub_region red="180" green="180" blue="180" name="Koh Kong" capital="Koh Kong"/>
+	<sub_region red="182" green="182" blue="182" name="Kracheh" capital="Kracheh"/>
+	<sub_region red="184" green="184" blue="184" name="Mondulkiri" capital="Senmonorom"/>
+	<sub_region red="186" green="186" blue="186" name="Oddar Meanchey" capital="Samraong"/>
+	<sub_region red="188" green="188" blue="188" name="Pailin" capital="Pailin"/>
+	<sub_region red="190" green="190" blue="190" name="Phnom Penh" capital="Phnom Penh"/>
+	<sub_region red="192" green="192" blue="192" name="Preah Sihanouk" capital="Sihanoukville"/>
+	<sub_region red="194" green="194" blue="194" name="Preah Vihear" capital="Tbeng Meanchey"/>
+	<sub_region red="196" green="196" blue="196" name="Pursat" capital="Pursat"/>
+	<sub_region red="198" green="198" blue="198" name="Prey Veng" capital="Prey Veng"/>
+	<sub_region red="200" green="200" blue="200" name="Ratanakiri" capital="Banlung"/>
+	<sub_region red="202" green="202" blue="202" name="Siem Reap" capital="Siem Reap"/>
+	<sub_region red="204" green="204" blue="204" name="Stung Treng" capital="Stung Treng"/>
+	<sub_region red="206" green="206" blue="206" name="Svay Rieng" capital="Svay Rieng"/>
+	<sub_region red="208" green="208" blue="208" name="Takéo" capital="Takéo"/>	
+</region>

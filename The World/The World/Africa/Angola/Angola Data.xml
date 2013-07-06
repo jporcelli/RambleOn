@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<region name="Angola" leader="José Eduardo dos Santos" capital="Luanda">
+	<sub_region red="200" green="200" blue="200" name="Capinda" capital="Cabinda"/>
+	<sub_region red="198" green="198" blue="198" name="Bengo" capital="Caxito"/>
+	<sub_region red="196" green="196" blue="196" name="Benguela" capital="Benguela"/>
+	<sub_region red="194" green="194" blue="194" name="Bié" capital="Kuito"/>
+	<sub_region red="192" green="192" blue="192" name="Cuando Cubango" capital="Menongue"/>
+	<sub_region red="190" green="190" blue="190" name="Cuanza Norte" capital="N'dalatando"/>
+	<sub_region red="188" green="188" blue="188" name="Cuanza Sul" capital="Sumbe"/>
+	<sub_region red="186" green="186" blue="186" name="Cunene" capital="Ondjiva"/>
+	<sub_region red="184" green="184" blue="184" name="Huambo" capital="Huambo"/>
+	<sub_region red="182" green="182" blue="182" name="Huila" capital="Lubango"/>
+	<sub_region red="180" green="180" blue="180" name="Luanda" capital="Luanda"/>
+	<sub_region red="178" green="178" blue="178" name="Lunda Norte" capital="Lucapa"/>
+	<sub_region red="176" green="176" blue="176" name="Lunda Sul" capital="Saurimo"/>
+	<sub_region red="174" green="174" blue="174" name="Malanje" capital="Malanje"/>
+	<sub_region red="172" green="172" blue="172" name="Moxico" capital="Luena"/>
+	<sub_region red="170" green="170" blue="170" name="Namibe" capital="Namibe"/>
+	<sub_region red="168" green="168" blue="168" name="Uige" capital="Uige"/>
+	<sub_region red="166" green="166" blue="166" name="Zaire" capital="M'Banza Kongo"/>
+</region>

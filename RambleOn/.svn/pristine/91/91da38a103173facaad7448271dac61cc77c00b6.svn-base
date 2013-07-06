@@ -1,0 +1,136 @@
+package rambleon;
+
+import accountdata.AccountDataManager;
+import java.awt.BorderLayout;
+import java.awt.image.BufferedImage;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import mini_game.MiniGame;
+import mini_game.MiniGameDataModel;
+import mini_game.Sprite;
+import mini_game.SpriteType;
+import static rambleon.RambleOnSettings.*;
+import worlddata.WorldDataManager;
+
+/**
+ * RambleOn is a Mini-Game based loosely on the popular "Stack The States" game.
+ * RambleOn uses the MiniGameFramework as the framework for this mini-game.
+ *
+ * @author James C. Porcelli, SBU ID 108900819
+ */
+public class RambleOn extends MiniGame {
+
+    private AccountDataManager accountsManager;
+    private WorldDataManager worldManager;
+
+    /**
+     *
+     * @param appTitle
+     * @param framesPerSecond
+     */
+    public RambleOn(String appTitle, int framesPerSecond) {
+        //INIT THE MINI-GAME FRAMEWORK
+        super(appTitle, framesPerSecond);
+
+    }
+
+    /**
+     *
+     * @return
+     */
+    public JFrame getWindow() {
+        return window;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public AccountDataManager getAccountsManager() {
+        return accountsManager;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public WorldDataManager getWorldManager() {
+        return worldManager;
+    }
+
+    /**
+     *
+     */
+    @Override
+    public void initData() {
+        //INIT THE DATA MODEL FOR THIS GAME
+        data = new RambleOnDataModel();
+
+        //SET THE GAME DINMENSIONS
+        data.setGameDimensions(GAME_WIDTH, GAME_HEIGHT);
+
+        //INIT THE GAME BOUNDRYS 
+        boundaryLeft = 0;
+        boundaryRight = GAME_WIDTH;
+        boundaryTop = 0;
+        boundaryBottom = GAME_HEIGHT;
+    }
+
+    /**
+     *
+     * @return The data model for this game
+     */
+    public MiniGameDataModel getData() {
+        return data;
+    }
+
+    /**
+     *
+     */
+    @Override
+    public void updateGUI() {
+    }
+
+    /**
+     *
+     */
+    @Override
+    public void reset() {
+    }
+
+    /**
+     *
+     */
+    @Override
+    public void initGUIHandlers() {
+    }
+
+    /**
+     *
+     */
+    @Override
+    public void initGUIControls() {
+        //THE GAME CANVAS EVERYTHING WELL BE RENDERED IN AND DISPLAYED TO
+        canvas = new RambleOnPanel(this, (RambleOnDataModel) data);
+
+        // WE'LL REUSE THESE TO INIT OUR GUICONTROLS
+        SpriteType sT;
+        BufferedImage img;
+        int x, y, vX, vY;
+        Sprite s;
+
+    }
+
+    /**
+     * Driver for this mini-game game application
+     *
+     * @param args the command line arguments, which we will not use for this
+     * application
+     */
+    public static void main(String[] args) {
+        //THIS CLASS MANAGES THE MENU DRIVEN COMPONENTS OF THIS APP
+        RambleOnScreenManager screenManager = new RambleOnScreenManager();
+        //THIS WILL TAKE US THROUGH SCREENS 1 - 4 AS NEEDED
+        screenManager.startApp();
+    }
+}

@@ -1,0 +1,52 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package rambleonevents;
+
+import static rambleon.RambleOnSettings.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import rambleon.RambleOnScreenManager;
+
+/**
+ *
+ * @author James C. Porcelli, SBU ID 108900819
+ */
+public class AccountCreationScreenButtonsHandler implements ActionListener {
+
+    private RambleOnScreenManager screenManager;
+
+    /**
+     *
+     * @param screenManager
+     */
+    public AccountCreationScreenButtonsHandler(RambleOnScreenManager screenManager) {
+        this.screenManager = screenManager;
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+
+        //THE STRING ASSOCIATED WITH THE TOOLTIP OF THE BUTTON THAT GENERATED THE EVENT
+        String associatedToolTip = e.getActionCommand();
+
+        switch (associatedToolTip) {
+
+            case CREATE_ACCOUNT_OK_TOOLTIP: {
+                //MAKE SURE NEW USER NAME IS UNIQUE                
+                break;
+            }
+
+            case CREATE_ACCOUNT_CANCEL_TOOLTIP: {
+                //REMOVE THE CREATE ACCOUNT SCREEN FROM THE WINDOW
+                screenManager.getWindow().remove(screenManager.getAccountCreationScreen());
+                //AND ADD THE ACCOUNTS SCREEN
+                screenManager.getWindow().add(screenManager.getAccountsScreen());
+                //AND REFRESH THE WINDOW
+                screenManager.refreshWindow();
+                break;
+            }
+        }
+    }
+}

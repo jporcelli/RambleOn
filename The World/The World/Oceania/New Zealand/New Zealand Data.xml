@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="New Zealand" leader="John Key" capital="Wellington">
+	<sub_region red="167" green="167" blue="167" name="Northland" capital="Whangarei"/>
+	<sub_region red="168" green="168" blue="168" name="Auckland" capital="Auckland"/>
+	<sub_region red="170" green="170" blue="170" name="Waikato" capital="Hamilton"/>
+	<sub_region red="171" green="171" blue="171" name="Bay of Plenty" capital="Whakante"/>
+	<sub_region red="172" green="172" blue="172" name="Eastland" capital="Whitchita"/>
+	<sub_region red="173" green="173" blue="173" name="Taranaki" capital="Stratford"/>
+	<sub_region red="175" green="175" blue="175" name="Wanawatu" capital="Wanawatu"/>
+	<sub_region red="176" green="176" blue="176" name="Hawkes Bay" capital="Napier"/>
+	<sub_region red="178" green="178" blue="178" name="Wellington" capital="Wellington"/>
+	<sub_region red="179" green="179" blue="179" name="Nelson" capital="Nelson"/>
+	<sub_region red="180" green="180" blue="180" name="Marlborough" capital="Blenheim"/>
+	<sub_region red="181" green="181" blue="181" name="WestCoast" capital="Greymouth"/>
+	<sub_region red="182" green="182" blue="182" name="Canterbury" capital="ChristChurch"/>
+	<sub_region red="183" green="183" blue="183" name="Southland" capital="Invercargill"/>
+	<sub_region red="184" green="184" blue="184" name="Otago" capital="Dunedin"/>
+	<sub_region red="185" green="185" blue="185" name="Stewart Island" capital="Gisborne"/>
+</region>

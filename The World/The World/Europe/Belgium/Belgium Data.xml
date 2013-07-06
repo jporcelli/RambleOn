@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="Belgium" leader="Elio Di Rupo" capital="Brussels">
+    <sub_region red="200" green="200" blue="200" name="West Flanders"   capital="Brugge" />
+    <sub_region red="195" green="195" blue="195" name="East Flanders"   capital="Gent" />
+    <sub_region red="190" green="190" blue="190" name="Hainaut"         capital="Mons" />
+    <sub_region red="185" green="185" blue="185" name="Antwerp"         capital="Antwerpen" />
+    <sub_region red="180" green="180" blue="180" name="Flemish Brabant" capital="Leuven" />
+    <sub_region red="175" green="175" blue="175" name="Walloon Brabant" capital="Wavre" />
+    <sub_region red="170" green="170" blue="170" name="Namur"           capital="Namur" />
+    <sub_region red="165" green="165" blue="165" name="Limburg"         capital="Hasselt" />
+    <sub_region red="160" green="160" blue="160" name="Liège"           capital="Liège" />
+    <sub_region red="155" green="155" blue="155" name="Luxembourg"      capital="Arlon" />
+    
+</region>
+

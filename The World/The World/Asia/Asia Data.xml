@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="Asia">
+  <sub_region red="220" green="220" blue="220" name="Afghanistan" capital="Kabul" leader="Hamid Karzai" />
+  <sub_region red="218" green="218" blue="218" name="Armenia" capital="Yerevan" leader="Serzh Sargsyan"  />
+  <sub_region red="216" green="216" blue="216" name="Azerbaijan" capital="Baku" leader="Ilham Aliyev"  />
+  <sub_region red="214" green="214" blue="214" name="Bahrain" capital="Manama" leader="Hamad bin Isa Al Khalifa"  />
+  <sub_region red="212" green="212" blue="212" name="Bangladesh" capital="Dhaka" leader="Abdul Hamid"  />
+  <sub_region red="210" green="210" blue="210" name="Bhutan" capital="Thimphu" leader="Jigme Khesar Namgyel Wangchuck"  />
+  <sub_region red="208" green="208" blue="208" name="Brunei" capital="Bandar Seri Begawan" leader="Hassanal Bolkiah"  />
+  <sub_region red="206" green="206" blue="206" name="Cambodia" capital="Phnom Penh" leader="Hun Sen"  />
+  <sub_region red="204" green="204" blue="204" name="China" capital="Beijing" leader="Xi Jinping"  />
+  <sub_region red="202" green="202" blue="202" name="Georgia" capital="Tbilisi" leader="Mikheil Saakashvili"  />
+  <sub_region red="200" green="200" blue="200" name="India" capital="New Delhi" leader="Manmohan Singh"  />
+  <sub_region red="198" green="198" blue="198" name="Iran" capital="Tehran" leader="Mahmoud Ahmadinejad"  />
+  <sub_region red="196" green="196" blue="196" name="Iraq" capital="Baghdad" leader="Nouri al-Maliki"  />
+  <sub_region red="194" green="194" blue="194" name="Israel" capital="Jerusalem" leader="Benjamin Netanyahu"  />
+  <sub_region red="192" green="192" blue="192" name="Japan" capital="Tokyo" leader="Shinzo Abe"  />
+  <sub_region red="190" green="190" blue="190" name="Jordan" capital="Amman" leader="Abdullah II"  />
+  <sub_region red="188" green="188" blue="188" name="Kazakhstan" capital="Astana" leader="Nursultan Nazarbayev"  />
+  <sub_region red="186" green="186" blue="186" name="North Korea" capital="Pyongyang" leader="Kim Jong Un"  />
+  <sub_region red="184" green="184" blue="184" name="South Korea" capital="Seoul" leader="Park Geun-hye"  />
+  <sub_region red="182" green="182" blue="182" name="Kuwait" capital="Kuwait City" leader="Sabah Al-Ahmad Al-Jaber Al-Sabah"  />
+  <sub_region red="180" green="180" blue="180" name="Kyrgyzstan" capital="Bishkek" leader="Almazbek Atambayev"  />
+  <sub_region red="178" green="178" blue="178" name="Laos" capital="Vientiane" leader="Choummaly Sayasone"  />
+  <sub_region red="176" green="176" blue="176" name="Lebanon" capital="Beirut" leader="Michel Suleiman"  />
+  <sub_region red="174" green="174" blue="174" name="Malaysia" capital="Kuala Lampur" leader="Abdul Halim"  />
+  <sub_region red="172" green="172" blue="172" name="Maldives" capital="Male" leader="Mohammed Waheed Hassan"  />
+  <sub_region red="170" green="170" blue="170" name="Mongolia" capital="Ulaanbaatar" leader="Tsakhiagiin Elbegdorj"  />
+  <sub_region red="168" green="168" blue="168" name="Myanmar" capital="Nay Pyi Taw" leader="Thein Sein"  />
+  <sub_region red="166" green="166" blue="166" name="Nepal" capital="Kathmandu" leader="Ram Baran Yadav"  />
+  <sub_region red="164" green="164" blue="164" name="Oman" capital="Muscat" leader="Sultan Qaboos bin Said al Said"  />
+  <sub_region red="162" green="162" blue="162" name="Pakistan" capital="Islamabad" leader="Asif Ali Zardari"  />
+  <sub_region red="160" green="160" blue="160" name="Philippines" capital="Manilla" leader="Benigno Aquino III"  />
+  <sub_region red="158" green="158" blue="158" name="Qatar" capital="Doha" leader="Sheikh Hamad bin Khalifa Al Thani"  />
+  <sub_region red="156" green="156" blue="156" name="Russia" capital="Moscow" leader="Vladimir Putin"  />
+  <sub_region red="154" green="154" blue="154" name="Saudi Arabia" capital="Riyadh" leader="Abdullah bin Abdulaziz bin Abdulrahman bin Faisal bin Turki bin Abdullah bin Muhammad bin Saud"  />
+  <sub_region red="152" green="152" blue="152" name="Singapore" capital="Singapore" leader="Tony Tan"  />
+  <sub_region red="150" green="150" blue="150" name="Sri Lanka" capital="Colombo" leader="Mahinda Rajapaksa"  />
+  <sub_region red="148" green="148" blue="148" name="Syria" capital="Damascus" leader="Bashar al-Assad"  />
+  <sub_region red="146" green="146" blue="146" name="Tajikistan" capital="Dushanbe" leader="Emomalii Rahmon"  />
+  <sub_region red="144" green="144" blue="144" name="Thailand" capital="Bangkok" leader="Yingluck Shinawatra"  />
+  <sub_region red="140" green="140" blue="140" name="Turkmenistan" capital="Ashgabat" leader="Gurbanguly Berdimuhamedow"  />
+  <sub_region red="138" green="138" blue="138" name="United Arab Emirates" capital="Abu Dhabi" leader="Khalifa bin Zayed Al Nahyan"  />
+  <sub_region red="136" green="136" blue="136" name="Uzbekistan" capital="Tashkent" leader="Islam Karimov"  />
+  <sub_region red="134" green="134" blue="134" name="Vietnam" capital="Hanoi" leader="Truong Tan Sang" />
+  <sub_region red="132" green="132" blue="132" name="Yemen" capital="Sana'a" leader="Abd Rabbuh Mansur Hadi" />
+  <sub_region red="130" green="130" blue="130" name="Palestine" capital="Jerusalem" leader="Mahmoud Abbas" />
+  <sub_region red="128" green="128" blue="128" name="Taiwan" capital="Taipei" leader="Ma Ying-jeou" />
+</region>

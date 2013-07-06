@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="Ireland" leader="Michael D. Higgins" capital="Dublin">
+    <sub_region red="148" green="148" blue="148" name="Carlow"      capital="Carlow" />
+    <sub_region red="215" green="215" blue="215" name="Cavan"        capital="Cavan" />
+    <sub_region red="164" green="164" blue="164" name="Clare"           capital="Ennis" />
+    <sub_region red="122" green="122" blue="122" name="Cork"         capital="Cork" />
+    <sub_region red="230" green="230" blue="230" name="Donegal"          capital="Letterkenny" />
+    <sub_region red="185" green="185" blue="185" name="Dublin"        capital="Dublin" />
+    <sub_region red="170" green="170" blue="170" name="Galway"          capital="Galway" />
+    <sub_region red="117" green="117" blue="117" name="Kerry"          capital="Tralee" />
+    <sub_region red="180" green="180" blue="180" name="Kildare"         capital="New Bridge" />
+    <sub_region red="144" green="144" blue="144" name="Kilkenny"          capital="Kilkenny" />
+    <sub_region red="153" green="153" blue="153" name="Laois"           capital="Portlaoise" />
+    <sub_region red="225" green="225" blue="225" name="Leitrim"       capital="Carrick-on-Shannon" />
+    <sub_region red="127" green="127" blue="127" name="Limerick"   capital="Limerick" />
+    <sub_region red="196" green="196" blue="196" name="Longford"           capital="Longford" />
+    <sub_region red="205" green="205" blue="205" name="Louth"          capital="Drogheda" />
+    <sub_region red="200" green="200" blue="200" name="Mayo"           capital="Castlebar" />
+    <sub_region red="187" green="187" blue="187" name="Meath"        capital="Navan" />
+    <sub_region red="210" green="210" blue="210" name="Monaghan"        capital="Monaghan" />
+    <sub_region red="176" green="176" blue="176" name="Offaly"           capital="Tullamore" />
+    <sub_region red="199" green="199" blue="199" name="Roscommon"         capital="Roscommon" />
+    <sub_region red="220" green="220" blue="220" name="Sligo"          capital="Sligo" />
+    <sub_region red="158" green="158" blue="158" name="Tipperary"       capital="Clonmel" />
+    <sub_region red="133" green="133" blue="133" name="Waterford"          capital="Waterford" />
+    <sub_region red="190" green="190" blue="190" name="Westmeath"          capital="Athlone" />
+    <sub_region red="154" green="154" blue="154" name="Wexford"         capital="Wexford" />
+    <sub_region red="138" green="138" blue="138" name="Wicklow"         capital="Bray" />
+</region>
+
+
+

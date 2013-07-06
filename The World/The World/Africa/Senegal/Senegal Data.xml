@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<region name="Senegal" leader="Macky Sall" capital="Dakar">
+    <sub_region red="206" green="206" blue="206" name="Saint Louis" capital="Saint Louis"/>
+    <sub_region red="194" green="194" blue="194" name="Louga" capital="Louga"/>
+    <sub_region red="182" green="182" blue="182" name="Matam" capital="Matam"/>
+    <sub_region red="168" green="168" blue="168" name="Thies" capital="Thies"/>
+    <sub_region red="155" green="155" blue="155" name="Dakar" capital="Dakar"/>
+    <sub_region red="138" green="138" blue="138" name="Diourbel" capital="Diourbel"/>
+    <sub_region red="129" green="129" blue="129" name="Fatick" capital="Fatick"/>
+    <sub_region red="122" green="122" blue="122" name="Kaolack" capital="Kaolack"/>
+    <sub_region red="110" green="110" blue="110" name="Tambacounda" capital="Tambacounda"/>
+    <sub_region red="108" green="108" blue="108" name="Kolda" capital="Kolda"/>
+    <sub_region red="104" green="104" blue="104" name="Ziguinchor" capital="Ziguinchor"/>
+</region>

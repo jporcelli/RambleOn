@@ -1,0 +1,33 @@
+package rambleonevents;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import rambleon.RambleOn;
+import static rambleon.RambleOn.*;
+
+/**
+ *
+ * @author James Porcelli, SBU ID 108900819
+ */
+public class ExitGameButtonHandler implements ActionListener {
+
+    private RambleOn game;
+
+    /**
+     *
+     * @param game
+     */
+    public ExitGameButtonHandler(RambleOn game) {
+        this.game = game;
+    }
+
+    /**
+     *
+     * @param e
+     */
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        game.getScreenManager().writeData();
+        game.killApplication();
+    }
+}

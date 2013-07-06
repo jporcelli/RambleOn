@@ -1,0 +1,97 @@
+package rambleon;
+
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.Insets;
+import javax.swing.BorderFactory;
+import javax.swing.border.Border;
+
+/**
+ * RambleOnSettings defines all necessary game settings for RambleOn including
+ * String constant values, data constant values, and file paths for externally
+ * stored game data which we will be utilizing in this application.
+ *
+ * @author James C. Porcelli, SBU ID 108900819
+ */
+public class RambleOnSettings {
+
+    public static final String APP_TITLE = "Ramble On";
+    // THESE CONSTANTS SETUP THE GAME DIMENSIONS. THE GAME WIDTH
+    // AND HEIGHT SHOULD MIRROR THE BACKGROUND IMAGE DIMENSIONS. WE
+    // WILL NOT RENDER ANYTHING OUTSIDE THOSE BOUNDS.
+    public static final int GAME_WIDTH = 1200;
+    public static final int GAME_HEIGHT = 700;
+    //THESE ARE THE FOUR DIFFERENT GAME MODES AVAILABLE TO PLAYERS OF THIS GAME
+    public static final String SUB_REGION_MODE = "SUB_REGION_MODE";
+    public static final String FLAG_MODE = "FLAG_MODE";
+    public static final String CAPITAL_MODE = "CAPITAL_MODE";
+    public static final String LEADER_MODE = "LEADER_MODE";
+    //THE NUMBER OF DIFFERENT STATS AND MODES
+    public static final int NUM_GAME_MODES = 4;
+    public static final int NUM_GAME_STATS = 3;
+    //AN INITITIAL STATS VALUE
+    public static final int INIT_STAT_VALUE = 0;
+    //THESE ARE THE GAME STATS WE WILL BE KEEPING TRACK OF
+    public static final String GAMES_PLAYED = "GAMES_PLAYED";
+    public static final String HIGH_SCORE = "HIGH_SCORE";
+    public static final String FASTEST_TIME = "FASTEST_TIME";
+    //THE PATH TO ALL THE ARTWORK FOR THIS APP
+    public static final String ARTWORK_PATH = "./data/artwork/";
+    //THE DIFFERENT STATES POSSIBLE FOR A SPRITE
+    public static final String VISIBLE_STATE = "VISIBLE";
+    public static final String INVISIBLE_STATE = "INVISIBLE_STATE";
+    //IMAGE NAMES AND FILE NAMES
+    public static final String WELCOME_SCREEN = "WELCOME_SCREEN";
+    public static final String WELCOME_SCREEN_FILE = "stack_the_states_welcome.png";
+    public static final String NEW_ACCOUNT_BUTTON_ICON = "ADD_USER";
+    public static final String NEW_ACCOUNT_BUTTON_ICON_FILE = "add_button.png";
+    public static final String ACCOUNT_MENU_BANNER = "ACCOUNT_MENU_BANNER";
+    public static final String ACCOUNT_MENU_BANNER_FILE = "accounts_banner.png";
+    public static final String CURRENT_ACCOUNT_BACK_BUTTON = "CURRENT_ACCOUNT_BACK_BUTTON";
+    public static final String CURRENT_ACCOUNT_BACK_BUTTON_FILE = "prev_page.png";
+    public static final String CURRENT_ACCOUNT_START_BUTTON = "CURRENT_ACCOUNT_START_BUTTON";
+    public static final String CURRENT_ACCOUNT_START_BUTTON_FILE = "next_page.png";
+    public static final String STACK_THE_STATES_ICON = "STACK_THE_STATES_ICON";
+    public static final String STACK_THE_STATES_ICON_FILE = "stack_the_states_icon.png";
+    public static final String CURRENT_ACCOUNT_STATS_TITLE = "CURRENT_ACCOUNT_STATS_TITLE";
+    public static final String CURRENT_ACCOUNT_STATS_TITLE_FILE = "player_stats.png";
+    //MOUSE OVER TOOL TIPS
+    public static final String WELCOME_SCREEN_TOOLTIP = "Click To Begin";
+    public static final String NEW_USER_TOOLTIP = "Create New User";
+    public static final String BACK_BUTTON_TOOLTIP = "Back To Previous Page";
+    public static final String PLAY_BUTTON_TOOLTIP = "Play Game";
+    //INSETS, TOOLBARS, AND OTHER SETTINGS
+    public static final int BUTTON_INSET = 1;
+    public static final Border TOOLBAR_BORDER = BorderFactory.createRaisedBevelBorder();
+    //FONTS
+    public static final Font HEADER_FONT = new Font("Serif", Font.BOLD, 35);
+    public static final Font LABEL_FONT = new Font("Serif", Font.BOLD, 20);
+    public static final Font STATS_TABLE_LABEL_FONT = new Font("Serif", Font.BOLD, 30);
+    //STRING LABELS
+    public static final String ACCOUNTS_PAGE_TITLE_HEADER = "RambleOn Player Accounts";
+    public static final String CREATE_NEWUSER_LABEL = "Create New User";
+    public static final String REGIONS_PLAYED_ROOT_LABEL = "Regions Played";
+    public static final String BACK_TO_ACCOUNTS_PAGE_LABEL = "Back To Player Accounts";
+    public static final String FOWARD_TO_GAME_MODE_LABEL = "Foward To Play RambleOn";
+    public static final String CURRENT_ACCOUNT_PAGE_TITLE_HEADER = "RambleOn Account Overview";
+    public static final String SUB_REGION_MODE_LABEL = "Sub Region Mode";
+    public static final String FLAG_MODE_LABEL = "Flag Mode";
+    public static final String CAPITAL_MODE_LABEL = "Capital Mode";
+    public static final String LEADER_MODE_LABEL = "Leader Mode";
+    public static final String FASTEST_TIME_STAT_LABEL = "Fastest Time";
+    public static final String TIMES_PLAYES_STAT_LABEL = "      Times Played";
+    public static final String HIGH_SCORE_STAT_LABEL = "High Score";
+    //INSETS
+    public static final Insets INSETS = new Insets(5, 15, 5, 15);
+    //RAMBLE ON COLOR SCHEME COLORS
+    public static final Color RAMBLE_ON_BLUE = new Color(3, 44, 152);
+    public static final Color RAMBLE_ON_GREEN = new Color(116, 220, 89);
+    //X PAD, Y PAD VALUES
+    public static final int IPADX = 5;
+    public static final int IPADY = 10;
+    //DATA VALUES
+    public static final int SPLIT_PANE_LEFT_LOCATION = 400;
+    public static final int FRAMES_PER_SECOND = 30;
+    public static final int STATS_TABLE_ROW_HEIGHT = 60;
+    public static final int ACCOUNTS_TABLE_ROW_HEIGHT = 75;
+}

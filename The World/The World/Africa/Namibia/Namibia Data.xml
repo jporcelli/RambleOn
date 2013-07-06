@@ -1,0 +1,15 @@
+<region name="Namibia" leader="Hifikepunye Pohamba" capital="Windhoek">
+<sub_region red="200" green="200" blue="200" name="Caprivi Region" capital="Katima Mulilo"/>
+<sub_region red="198" green="198" blue="198" name="Erongo Region" capital="Swakopmund"/>
+<sub_region red="196" green="196" blue="196" name="Hardap Region" capital="Mariental"/>
+<sub_region red="194" green="194" blue="194" name="Karas Region" capital="Keetmanshoop"/>
+<sub_region red="192" green="192" blue="192" name="Kavango Region" capital="Rundu"/>
+<sub_region red="190" green="190" blue="190" name="Khomas Region" capital="Windhoek"/>
+<sub_region red="188" green="188" blue="188" name="Kunene Region" capital="Opuwo"/>
+<sub_region red="186" green="186" blue="186" name="Ohangwena Region" capital="Eenhana"/>
+<sub_region red="184" green="184" blue="184" name="Omaheke Region" capital="Gobabis"/>
+<sub_region red="182" green="182" blue="182" name="Omusati Region" capital="Outapi"/>
+<sub_region red="180" green="180" blue="180" name="Oshana Region" capital="Oshakati"/>
+<sub_region red="178" green="178" blue="178" name="Oshikoto Region" capital="Omuthiya"/>
+<sub_region red="176" green="176" blue="176" name="Otjozondjupa Region" capital="Otjiwarongo"/>
+</region>

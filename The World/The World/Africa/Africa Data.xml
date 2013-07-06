@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="Africa">
+  <sub_region red="220" green="220" blue="220" name="Algeria" capital="Algiers" leader="Abdelaziz Bouteflika" />
+  <sub_region red="218" green="218" blue="218" name="Angola" capital="Luanda" leader="Jose Eduardo dos Santos" />
+  <sub_region red="216" green="216" blue="216" name="Benin" capital="Porto Novo" leader="Yayi Boni"  />
+  <sub_region red="214" green="214" blue="214" name="Botswana" capital="Gaborone" leader="Ian Khama"  />
+  <sub_region red="212" green="212" blue="212" name="Burkina Faso" capital="Ouagadougou" leader="Blaise Compaore"  />
+  <sub_region red="210" green="210" blue="210" name="Burundi" capital="Bujumbura" leader="Pierre Nkurunziza"  />
+  <sub_region red="208" green="208" blue="208" name="Cameroon" capital="Yaounde" leader="Paul Biya"  />
+  <sub_region red="206" green="206" blue="206" name="Canary Islands" capital="Santa Cruz" leader="Paulino Rivero"  />
+  <sub_region red="204" green="204" blue="204" name="Cape Verde" capital="Bangui" leader="Jorge Carlos Fonseca"  />
+  <sub_region red="202" green="202" blue="202" name="Central African Republic" capital="Bangui" leader="Michel Djotodia"  />
+  <sub_region red="200" green="200" blue="200" name="Ceuta" capital="Ceuta" leader="Juan Jesus Vivas Lara"  />
+  <sub_region red="198" green="198" blue="198" name="Chad" capital="N'Djamena" leader="Idriss Deby Itno"  />
+  <sub_region red="196" green="196" blue="196" name="Comoros" capital="Moroni" leader="Ikililou Dhoinine"  />
+  <sub_region red="194" green="194" blue="194" name="Democratic Republic of Congo" capital="Joseph Kabila" leader="A"  />
+  <sub_region red="192" green="192" blue="192" name="Republic of the Congo" capital="Brazzaville" leader="Joseph Kabila"  />
+  <sub_region red="190" green="190" blue="190" name="Djibouti" capital="Djibouti" leader="Ismail Omar Guelleh"  />
+  <sub_region red="188" green="188" blue="188" name="Egypt" capital="Cairo" leader="Mohamed Morsi"  />
+  <sub_region red="186" green="186" blue="186" name="Equatorial Guinea" capital="Malabo" leader="Teodoro Obiang Nguema"  />
+  <sub_region red="184" green="184" blue="184" name="Eritrea" capital="Asmara" leader="Isaias Afewerki"  />
+  <sub_region red="182" green="182" blue="182" name="Ethiopia" capital="Addis Ababa" leader="Girma Wolde-Giorgis"  />
+  <sub_region red="180" green="180" blue="180" name="Funchal" capital="Funchal" leader="Miguel Filipe Machado de Albuquerque"  />
+  <sub_region red="178" green="178" blue="178" name="Gabon" capital="Libreville" leader="Ali Bongo Ondimba"  />
+  <sub_region red="176" green="176" blue="176" name="Gambia" capital="Banjul" leader="Yahya Jammeh"  />
+  <sub_region red="174" green="174" blue="174" name="Ghana" capital="Accra" leader="John Dramani Mahama"  />
+  <sub_region red="172" green="172" blue="172" name="Guinea" capital="Conakry" leader="Alpha Conde"  />
+  <sub_region red="170" green="170" blue="170" name="Guinea-Bissau" capital="Bissau" leader="Manuel Serifo Nhamadjo"  />
+  <sub_region red="168" green="168" blue="168" name="Cote d'Ivoire" capital="Yamoussoukro" leader="Alassane Ouattara"  />
+  <sub_region red="166" green="166" blue="166" name="Kenya" capital="Nairobi" leader="Uhuru Kenyatta"  />
+  <sub_region red="164" green="164" blue="164" name="Lesotho" capital="Maseru" leader="Letsie III"  />
+  <sub_region red="162" green="162" blue="162" name="Liberia" capital="Monrovia" leader="Ellen Johnson Sirleaf"  />
+  <sub_region red="160" green="160" blue="160" name="Libya" capital="Tripoli" leader="Mohammed al-Magariaf"  />
+  <sub_region red="158" green="158" blue="158" name="Madagascar" capital="Antananarivo" leader="Omer Beriziky"  />
+  <sub_region red="156" green="156" blue="156" name="Malawi" capital="Lilongwe" leader="Joyce Banda"  />
+  <sub_region red="154" green="154" blue="154" name="Mali" capital="Bamako" leader="Dioncounda Traore"  />
+  <sub_region red="152" green="152" blue="152" name="Mauritania" capital="Nouakchott" leader="Mohamed Ould Abdel Aziz"  />
+  <sub_region red="150" green="150" blue="150" name="Mauritius" capital="Port Louis" leader="Kailash Purryag"  />
+  <sub_region red="148" green="148" blue="148" name="Mayotte" capital="Mamoudzou" leader="Daniel Zaidani"  />
+  <sub_region red="146" green="146" blue="146" name="Melilla" capital="Melilla" leader="Juan Jose Imbroda"  />
+  <sub_region red="144" green="144" blue="144" name="Morocco" capital="Rabat" leader="Mohammed VI"  />
+  <sub_region red="142" green="142" blue="142" name="Mozambique" capital="Maputo" leader="Armando Guebuza"  />
+  <sub_region red="140" green="140" blue="140" name="Namibia" capital="Windhoek" leader="Hifikepunye Pohamba"  />
+  <sub_region red="138" green="138" blue="138" name="Niger" capital="Niamey" leader="Mahamadou Issoufou"  />
+  <sub_region red="136" green="136" blue="136" name="Nigeria" capital="Abuja" leader="Goodluck Jonathan"  />
+  <sub_region red="134" green="134" blue="134" name="Reunion" capital="Saint-Denis" leader="Didier Robert"  />
+  <sub_region red="132" green="132" blue="132" name="Rwanda" capital="Kigali" leader="Paul Kagame" />
+  <sub_region red="130" green="130" blue="130" name="Sao Tome and Principe" capital="Sao Tome" leader="Manuel Pinto da Costa"  />
+  <sub_region red="128" green="128" blue="128" name="Senegal" capital="Dakar" leader="Macky Sall"  />
+  <sub_region red="126" green="126" blue="126" name="Seychelles" capital="Victoria" leader="James Michel"  />
+  <sub_region red="124" green="124" blue="124" name="Sierra Leone" capital="Freetown" leader="Ernest Bai Koroma"  />
+  <sub_region red="122" green="122" blue="122" name="Somalia" capital="Mogadishu" leader="Hassan Sheikh Mohamud"  />
+  <sub_region red="120" green="120" blue="120" name="South Africa" capital="Pretoria" leader="Jacob Zuma"  />
+  <sub_region red="118" green="118" blue="118" name="South Sudan" capital="Juba" leader="Salva Kiir Mayardit"  />
+  <sub_region red="116" green="116" blue="116" name="St. Helena" capital="Jamestown" leader="Mark Andrew Capes"  />
+  <sub_region red="114" green="114" blue="114" name="Sudan" capital="Khartoum" leader="Omar al-Bashir"  />
+  <sub_region red="112" green="112" blue="112" name="Swaziland" capital="Lobamba" leader="King Mswati III"  />
+  <sub_region red="110" green="110" blue="110" name="Tanzania" capital="Dodoma" leader="Jakaya Kikwete"  />
+  <sub_region red="108" green="108" blue="108" name="Togo" capital="Lome" leader="Faure Gnassingbe"  />
+  <sub_region red="106" green="106" blue="106" name="Tunisia" capital="Tunis" leader="Moncef Marzouki"  />
+  <sub_region red="104" green="104" blue="104" name="Uganda" capital="Kampala" leader="Yoweri Museveni"  />
+  <sub_region red="102" green="102" blue="102" name="Western Sahara" capital="Lehlou" leader="Mohamed Abdelaziz"  />
+  <sub_region red="100" green="100" blue="100" name="Zambia" capital="Lusaka" leader="Michael Sata"  />
+  <sub_region red="98" green="98" blue="98" name="Zimbabwe" capital="Harare" leader="Robert Mugabe"  />
+</region>

@@ -1,0 +1,43 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package rambleonevents;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import rambleon.RambleOn;
+import rambleon.RambleOnDataModel;
+import static rambleon.RambleOnSettings.*;
+
+/**
+ *
+ * @author James Porcelli, SBU ID 108900819
+ */
+public class FlagModeButtonHandler implements ActionListener {
+
+    private RambleOn game;
+
+    /**
+     *
+     * @param game
+     */
+    public FlagModeButtonHandler(RambleOn game) {
+        this.game = game;
+    }
+
+    /**
+     *
+     * @param e
+     */
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        //MAKE SURE THE BUTTON IS IN AN ENABLED STATE, ELSE DO NOTHIN
+        if (game.getGUIButtons().get(FLAG_TYPE).getState().equals(ENABLED_STATE)) {
+            ((RambleOnDataModel) game.getData()).initFlagModeStack();
+            //SET THE FLAG INDICATING WE ARE DONE WITH COUNTRY SELECTION AND
+            //THEREFORE ARE IN GAME MODE
+            ((RambleOnDataModel) game.getData()).setInRegionSelection(false);
+        }
+    }
+}

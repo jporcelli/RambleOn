@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<region name="Greece" leader="Karolos Papoulias" capital="Athens">
+    <sub_region red="207" green="207" blue="207" name="East Macedonia and Thrace" capital="Komotini"/>
+    <sub_region red="198" green="198" blue="198" name="Central Macedonia" capital="Thessaloniki"/>
+    <sub_region red="177" green="177" blue="177" name="West Macedonia" capital="Kozani"/>
+    <sub_region red="148" green="148" blue="148" name="Epirus" capital="Ioannina"/>
+    <sub_region red="137" green="137" blue="137" name="Ionian Islands" capital="Corfu"/>
+    <sub_region red="131" green="131" blue="131" name="West Greece" capital="Patras"/>
+    <sub_region red="121" green="121" blue="121" name="Thessaly" capital="Larissa"/>
+    <sub_region red="110" green="110" blue="110" name="Central Greece" capital="Lamia"/>
+    <sub_region red="106" green="106" blue="106" name="Peloponnese" capital="Tripoli"/>
+    <sub_region red="99" green="99" blue="99" name="Attica" capital="Athens"/>
+    <sub_region red="90" green="90" blue="90" name="South Aegean" capital="Ermoupoli"/>
+    <sub_region red="82" green="82" blue="82" name="Crete" capital="Heraklion"/>
+    <sub_region red="69" green="69" blue="69" name="North Aegean" capital="Mytilene"/>
+</region>

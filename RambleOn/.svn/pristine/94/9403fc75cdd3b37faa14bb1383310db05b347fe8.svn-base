@@ -1,0 +1,45 @@
+package rambleonevents;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import rambleon.RambleOn;
+import rambleon.RambleOnDataModel;
+import rambleon.RambleOnModeType;
+import static rambleon.RambleOnSettings.*;
+
+/**
+ *
+ *
+ * @author James Porcelli
+ */
+public class CloseWinDisplayHandler implements ActionListener {
+
+    //THE GAME WE ARE MAKING CHANGES FOR
+    private RambleOn game;
+
+    /**
+     *
+     * @param game
+     */
+    public CloseWinDisplayHandler(RambleOn game) {
+        this.game = game;
+    }
+
+    /**
+     *
+     * @param e
+     */
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        //STOP THE CURRENT REGION NATIONAL ANTHEM IF IT IS PLAYING IF NOT NO HARM DONE
+        game.getAudio().stop(((RambleOnDataModel) game.getData()).getDataManager().getCurrentRegion().getName());
+        //SIMULATE A RIGHT CLICK I.E GO BACK TO THE PARENT REGION
+        ((RambleOnDataModel) game.getData()).handleRightClick(0, 0);
+        //RESET THE CURRENT GAME MODE TO 'REGION SELECTION'
+        ((RambleOnDataModel) game.getData()).setCurMode(RambleOnModeType.REGION_SELECTION);
+        //RESET THE GAME STATE TO IN PROGRESS INSTEAD OF 'WIN' I.E OVER
+        game.getData().beginGame();
+        //AND SET THE CURRENT AUDIO BACK TO THE TRACKED SONG ON LOOP
+        game.getAudio().play(TRACKED_SONG, true);
+    }
+}

@@ -1,0 +1,24 @@
+<region name="France" leader="Francois Hollande" capital="Paris">
+	<sub_region red="200" green="200" blue="200" name="Nord Pas de Calais" capital="Lille"/>
+	<sub_region red="195" green="195" blue="195" name="Picardie" capital="Amiens"/>
+	<sub_region red="190" green="190" blue="190" name="Haute Normandie" capital="Rouen"/>
+	<sub_region red="185" green="185" blue="185" name="Ile de France" capital="Paris"/>
+	<sub_region red="180" green="180" blue="180" name="Chamagne Ardenne" capital="Chalons en Champagne"/>
+	<sub_region red="175" green="175" blue="175" name="Basse Normandie" capital="Caen"/>
+	<sub_region red="170" green="170" blue="170" name="Centre" capital="Orleans"/>
+	<sub_region red="165" green="165" blue="165" name="Bourgogne" capital="Dijon"/>
+	<sub_region red="160" green="160" blue="160" name="Franche Campte" capital="Besancon"/>
+	<sub_region red="155" green="155" blue="155" name="Lorraine" capital="Metz"/>
+	<sub_region red="145" green="145" blue="145" name="Alsace" capital="Strasbourg"/>
+	<sub_region red="140" green="140" blue="140" name="Rhone Alpes" capital="Lyon"/>
+	<sub_region red="135" green="135" blue="135" name="Auvergne" capital="Clermont Ferrand"/>
+	<sub_region red="130" green="130" blue="130" name="Limousin" capital="Limoges"/>
+	<sub_region red="125" green="125" blue="125" name="Poitou Charentes" capital="Poitilers"/>
+	<sub_region red="120" green="120" blue="120" name="Pays de la Loire" capital="Nantes"/>
+	<sub_region red="115" green="115" blue="115" name="Bretagne" capital="Rennes"/>
+	<sub_region red="110" green="110" blue="110" name="Aquitaine" capital="Bordeaux"/>
+	<sub_region red="105" green="105" blue="105" name="Mid Pyrennees" capital="Toulouse"/>
+	<sub_region red="100" green="100" blue="100" name="Languedoc Roussillon" capital="Montpellier"/>
+	<sub_region red="95" green="95" blue="95" name="Provence Alpes Cote d'Azur" capital="Marseille"/>
+	<sub_region red="90" green="90" blue="90" name="Corse" capital="Ajaccio"/>
+</region>	

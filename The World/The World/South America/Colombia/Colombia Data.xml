@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="Colombia" leader="Juan Manuel Santos" capital="Bogotá">
+    <sub_region red="200" green="200" blue="200" name="La Guajira"	capital="Riohacha" />
+    <sub_region red="199" green="199" blue="199" name="Magdalena"	capital="Santa Marta" />
+    <sub_region red="198" green="198" blue="198" name="Atlántico"	capital="Barranquilla" />
+    <sub_region red="197" green="197" blue="197" name="Cesar"           capital="Valledupar" />
+    <sub_region red="196" green="196" blue="196" name="Bolívar"         capital="Cartagena" />
+    <sub_region red="195" green="195" blue="195" name="Sucre"           capital="Sincelejo" />
+    <sub_region red="194" green="194" blue="194" name="Córdoba"         capital="Montería" />
+    <sub_region red="193" green="193" blue="193" name="N. de Santander"	capital="Cúcuta" />
+    <sub_region red="192" green="192" blue="192" name="Antioquia"	capital="Medellín" />
+    <sub_region red="191" green="191" blue="191" name="Santander"	capital="Bucaramanga" />
+    <sub_region red="190" green="190" blue="190" name="Chocó"           capital="Quibdó" />
+    <sub_region red="189" green="189" blue="189" name="Caldas"          capital="Manizales" />
+    <sub_region red="188" green="188" blue="188" name="Cundinamarca"	capital="Bogotá" />
+    <sub_region red="187" green="187" blue="187" name="Boyacá"          capital="Tunja" />
+    <sub_region red="186" green="186" blue="186" name="Casanare"	capital="Yopal" />
+    <sub_region red="185" green="185" blue="185" name="Valle de Cauca"	capital="Cali" />
+    <sub_region red="184" green="184" blue="184" name="Huila"           capital="Neiva" />
+    <sub_region red="183" green="183" blue="183" name="Meta"            capital="Villavicencio" />
+    <sub_region red="182" green="182" blue="182" name="Vichada"         capital="Puerto Carreño" />
+    <sub_region red="181" green="181" blue="181" name="Caquetá"         capital="Florencia" />
+    <sub_region red="180" green="180" blue="180" name="Gauinía"         capital="Inírida" />
+    <sub_region red="179" green="179" blue="179" name="Guaviare"	capital="San José del Guaviare" />
+    <sub_region red="178" green="178" blue="178" name="Cauca"           capital="Popayán" />
+    <sub_region red="177" green="177" blue="177" name="Nariño"          capital="Pasto" />
+    <sub_region red="176" green="176" blue="176" name="Putumayo"	capital="Mocoa" />
+    <sub_region red="175" green="175" blue="175" name="Quindío"         capital="Armenia" />
+    <sub_region red="174" green="174" blue="174" name="Risaralda"	capital="Pereira" />
+    <sub_region red="173" green="173" blue="173" name="Vaupés"          capital="Mitú" />
+    <sub_region red="172" green="172" blue="172" name="Tolima"          capital="Ibagué" />
+    <sub_region red="171" green="171" blue="171" name="Arauca"          capital="Arauca" />
+    <sub_region red="170" green="170" blue="170" name="Amazonas"	capital="Leticia" />
+</region>

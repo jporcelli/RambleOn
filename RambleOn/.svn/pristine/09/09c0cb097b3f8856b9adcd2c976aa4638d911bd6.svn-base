@@ -1,0 +1,13 @@
+package rambleon;
+
+/**
+ * These four states describe the current screen the user is at in the
+ * application.
+ *
+ * @author James C. Porcelli, SBU ID 108900819
+ */
+public enum ScreenState {
+
+    WELCOME_SCREEN, ACCOUNTS_SCREEN, ACCOUNT_CREATION_SCREEN,
+    CURRENT_ACCOUNT_SCREEN, DONT_REFRESH
+};

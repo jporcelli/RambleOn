@@ -1,0 +1,47 @@
+package regiondata;
+
+/**
+ * This class provides the constants needed for reading region data from XML
+ * files using RegionData.XSD this includes all the element and attribute
+ * names.
+ *
+ * @author James C. Porcelli, SBU ID # 108900819
+ */
+public class RegionIOSettings {
+
+    // THIS IS THE NAME OF THE SCHEMA THAT THIS PLUGIN USES. NOTE THAT
+    // THIS SCHEMA FILE WILL BE INCLUDED IN THE LIBRARY'S JAR FILE
+    // WHEN WE DEPLOY IT
+    public static final String REGION_DATA_SCHEMA = "RegionData.xsd";
+    //FILE STRUCTURE ROOT DIR
+    public static final String ROOT = "..";
+    //PATH TO ALL REGION DATA XML FILES
+    public static final String WORLD_DIR = ROOT + "/The World/The World/";
+    //SOME CONSTANTS FOR USE IN DIRECTORY TRAVERSAL AND FILE LOOKUPS
+    public static final String THE_WORLD = "The World";
+    public static final String EUROPE = "Europe/";
+    public static final String NORTH_AMERICA = "North America/";
+    public static final String SOUTH_AMERICA = "South America/";
+    public static final String ASIA = "Asia/";
+    public static final String AFRICA = "Africa/";
+    public static final String OCEANIA = "Oceania/";
+    public static final String XML_DATA_FILE = " Data.xml";
+    public static final String MAP_IMAGE = " Map.png";
+    public static final String LEADER_IMAGE = " Leader.jpg";
+    public static final String FLAG_IMAGE = " Flag.jpg";
+    // CONSTANTS FOR LOADING DATA FROM THE XML FILES
+    public static final String REGION_NODE = "region";
+    public static final String SUB_REGION_NODE = "sub_region";
+    public static final String ID_ATTRIBUTE = "id";
+    public static final String NAME_ATTRIBUTE = "name";
+    public static final String LEADER_ATTRIBUTE = "leader";
+    public static final String CAPITAL_ATTRIBUTE = "capital";
+    public static final String RED_ATTRIBUTE = "red";
+    public static final String GREEN_ATTRIBUTE = "green";
+    public static final String BLUE_ATTRIBUTE = "blue";
+    public static final String TYPE_ATTRIBUTE = "type";
+    // FOR NICELY FORMATTED XML OUTPUT
+    public static final String XML_INDENT_PROPERTY = "{http://xml.apache.org/xslt}indent-amount";
+    public static final String XML_INDENT_VALUE = "5";
+    public static final String YES_VALUE = "yes";
+}

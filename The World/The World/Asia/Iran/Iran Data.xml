@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="Iran" leader="Mahmoud Ahmadinejad" capital="Tehran">
+    <sub_region red="200" green="200" blue="200" name="Razavi Khorasan"      capital="Mashhad" />
+    <sub_region red="198" green="198" blue="198" name="North Khorasan"        capital="Bojnurd" />
+    <sub_region red="196" green="196" blue="196" name="South Khorasan"           capital="Birjand" />
+    <sub_region red="194" green="194" blue="194" name="Sistan and Baluchistan"         capital="Zahedan" />
+    <sub_region red="192" green="192" blue="192" name="Hormozgan"          capital="Bandar Abbas" />
+    <sub_region red="190" green="190" blue="190" name="Kerman"        capital="Kerman" />
+    <sub_region red="188" green="188" blue="188" name="Yazd"          capital="Yazd" />
+    <sub_region red="186" green="186" blue="186" name="Semnan"          capital="Semnan" />
+    <sub_region red="184" green="184" blue="184" name="Golestan"         capital="Gorgan" />
+    <sub_region red="182" green="182" blue="182" name="Esfahan"          capital="Esfahan" />
+    <sub_region red="180" green="180" blue="180" name="Fars"           capital="Shiraz" />
+    <sub_region red="178" green="178" blue="178" name="Bushehr"       capital="Bushehr" />
+    <sub_region red="176" green="176" blue="176" name="Kohkiluyeh and Buyer Ahmad"   capital="Yasuj" />
+    <sub_region red="174" green="174" blue="174" name="Chahar Mahaal and Bakhtiari"           capital="Shahrekord" />
+    <sub_region red="172" green="172" blue="172" name="Khuzestan"          capital="Ahvaz" />
+    <sub_region red="170" green="170" blue="170" name="Ilam"           capital="Ilam" />
+    <sub_region red="168" green="168" blue="168" name="Lorestan"        capital="Khorramabad" />
+    <sub_region red="166" green="166" blue="166" name="Markazi"           capital="Arak" />
+    <sub_region red="164" green="164" blue="164" name="Qom"         capital="Qom" />
+    <sub_region red="162" green="162" blue="162" name="Tehran"          capital="Tehran" />
+    <sub_region red="160" green="160" blue="160" name="Mazandaran"       capital="Sari" />
+    <sub_region red="158" green="158" blue="158" name="Gilan"          capital="Rasht" />
+    <sub_region red="156" green="156" blue="156" name="Qazvin"          capital="Qazvin" />
+    <sub_region red="154" green="154" blue="154" name="Zanjan"         capital="Zanjan" />
+    <sub_region red="152" green="152" blue="152" name="Hamadan"         capital="Hamadan" />
+    <sub_region red="150" green="150" blue="150" name="Kermanshah"            capital="Kermanshah" />
+    <sub_region red="148" green="148" blue="148" name="Kurdistan"        capital="Sanandaj" />
+    <sub_region red="146" green="146" blue="146" name="West Azarbaijan"         capital="Orumiyeh" />
+    <sub_region red="144" green="144" blue="144" name="East Azarbaijan"           capital="Tabriz" />
+    <sub_region red="142" green="142" blue="142" name="Ardabil"           capital="Ardabil" />
+</region>
+

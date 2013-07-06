@@ -1,0 +1,107 @@
+package accountdata;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.TreeMap;
+import javax.swing.JOptionPane;
+
+/**
+ * This is a data management class for Accounts, providing a means to add,
+ * remove, and find accounts.
+ *
+ * @author James Porcelli
+ */
+public class AccountDataManager implements Serializable{
+
+    //A MAPPING OF ACTIVE ACCOUNTS FOR THE APP FROM USERNAME TO ACCOUNT OBJECT
+    private TreeMap<String, Account> accounts;
+    private ArrayList<String> userNames;
+    //THERE IS ONLY ONE CURRENT ACCOUNT AT A TIME DURNG EXECUTION OF THE APPLICATION
+    private Account currentAccount;
+
+    /**
+     * Default constructor, Initialized all necessary data structures for the
+     * accounts manager.
+     */
+    public AccountDataManager() {
+        //INIT THE DATA STRUCTURE WHERE WELL STORE ALL OUR ACCOUNT DATA FROM THE 
+        //RAMBLEON DATA STORE 
+        accounts = new TreeMap<>();
+        //LIST OF ACTIVE USER NAMES
+        userNames = new ArrayList<>();
+    }
+
+    /**
+     * Creates and adds a new account to the accounts database
+     *
+     * @precondition The user name being passed has already been verified to be
+     * unique against the set of active account user names
+     *
+     * @param newUserName
+     */
+    public Account createNewAccount(String newUserName) {
+        //CREATE A NEW ACCOUNT
+        Account newAccount = new Account(newUserName);
+        //CREATE THE MAPPING FOR USERNAME TO ACCOUNT
+        accounts.put(newUserName, newAccount);
+        //AND ADD THE USERNAME TO THE LIST OF USER NAMES OF ACTIVE ACCOUNTS
+        userNames.add(newUserName);
+        //AND RETURN THE NEW ACCOUNT OBJECT IN CASE THE CALLED NEEDS ACCESS IMMMEDIATLY
+        return newAccount;
+    }
+
+    /**
+     * Determine if a proposed new account user name is unique to the user names
+     * of active accounts
+     *
+     * @param newUserName
+     * @return
+     */
+    public boolean isNewUserNameUnique(String newUserName) {
+        //GET AN ITERATOR TO THE LIST OF ACTIVE USER NAMES
+        Iterator<String> userNameIterator = userNames.iterator();
+        //CHECK THE LIST AGAISNT THE NAME PROPOSED AS A NEW USER NAME
+        while (userNameIterator.hasNext()) {
+            //IF WE FIND A MATCH THEN THE PROPOSED NAME IS NOT UNIQUE
+            if (userNameIterator.next().equals(newUserName)) {
+                //RETURN FALSE
+                return false;
+            }
+        }
+        //PROPOSED NAME IS UNIQUE RETURN TRUE
+        return true;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public ArrayList<String> getUserNames() {
+        return userNames;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public TreeMap<String, Account> getAccounts() {
+        return accounts;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public Account getCurrentAccount() {
+        return currentAccount;
+    }
+
+    /**
+     *
+     * @param currentAccount
+     */
+    public void setCurrentAccount(Account currentAccount) {
+        this.currentAccount = currentAccount;
+    }
+}

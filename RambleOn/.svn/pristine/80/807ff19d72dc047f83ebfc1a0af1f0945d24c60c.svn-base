@@ -1,0 +1,21 @@
+package worlddata;
+
+import java.io.Serializable;
+
+/**
+ * This enum will be used to differentiate between different categories/levels
+ * of regions.
+ *
+ * @author Richard McKenna Debugging Enterprises
+ * @version 1.0
+ * @author James C. Pocelli, SBU ID 108900819
+ * @version 1.1
+ */
+public enum RegionType implements Serializable{
+
+    WORLD,
+    CONTINENT,
+    NATION,
+    STATE,
+    COUNTY
+}

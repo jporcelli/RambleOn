@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<region capital="Stockholm" leader="Fredrik Reinfeldt" name="Sweden">
+	<sub_region capital="Lulea" name="Norrbotten" blue="200" green="200" red="200"/>
+	<sub_region capital="Umea" name="Vasterbotten" blue="202" green="202" red="202"/>
+	<sub_region capital="Ostersund" name="Jamtland" blue="204" green="204" red="204"/>
+	<sub_region capital="Harnosand" name="Vasternorrland" blue="206" green="206" red="206"/>
+	<sub_region capital="Falun" name="Dalarna" blue="208" green="208" red="208"/>
+	<sub_region capital="Gavle" name="Gavleborg" blue="210" green="210" red="210"/>
+	<sub_region capital="Karlstad" name="Varmland" blue="212" green="212" red="212"/>
+	<sub_region capital="Orebro" name="Orebro" blue="214" green="214" red="214"/>
+	<sub_region capital="Vasteras" name="Vastmanland" blue="216" green="216" red="216"/>
+	<sub_region capital="Uppsala" name="Uppsala" blue="218" green="218" red="218"/>
+	<sub_region capital="Gothenburg" name="Vastra Gotaland" blue="220" green="220" red="220"/>
+	<sub_region capital="Halmstad" name="Halland" blue="222" green="222" red="222"/>
+	<sub_region capital="Jonkoping" name="Jonkoping" blue="224" green="224" red="224"/>
+	<sub_region capital="Linkoping" name="Ostergotland" blue="226" green="226" red="226"/>
+	<sub_region capital="Nykoping" name="Sodermanland" blue="228" green="228" red="228"/>
+	<sub_region capital="Stockholm" name="Stockholm" blue="230" green="230" red="230"/>
+	<sub_region capital="Malmo" name="Skane" blue="232" green="232" red="232"/>
+	<sub_region capital="Vaxjo" name="Kronoberg" blue="234" green="234" red="234"/>
+	<sub_region capital="Karlskrona" name="Blekinge" blue="236" green="236" red="236"/>
+	<sub_region capital="Kalmar" name="Kalmar" blue="238" green="238" red="238"/>
+	<sub_region capital="Visby" name="Gotland" blue="240" green="240" red="240"/> 
+</region>

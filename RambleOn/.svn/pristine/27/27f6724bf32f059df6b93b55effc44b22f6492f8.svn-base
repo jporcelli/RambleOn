@@ -1,0 +1,358 @@
+package rambleon;
+
+import accountdata.AccountDataManager;
+import java.awt.Color;
+import java.awt.geom.Point2D;
+import java.awt.geom.Point2D.Double;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.GregorianCalendar;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.LinkedList;
+import mini_game.MiniGame;
+import mini_game.MiniGameDataModel;
+import rambleonsprites.TextualSprite;
+import regiondata.Region;
+import regiondata.RegionDataManager;
+import regiondata.RegionIO;
+import static regiondata.RegionIOSettings.*;
+import static rambleon.RambleOnSettings.*;
+import xml_utilities.InvalidXMLFileFormatException;
+
+/**
+ * This class represents the data model for our game application. This class is
+ * concerned with the data for the application, and only with the data. We
+ * manage game play data such as account data, as well as all region data i.e
+ * regions maps, and pixel values. This class is also responsible for keeping
+ * data pertaining to the current game i.e the score and statistics until the
+ * current game finishes and the data is passed off to the accounts manager for
+ * storage.
+ *
+ * @author James C. Porcelli, SBU ID 108900819
+ */
+public class RambleOnDataModel extends MiniGameDataModel {
+
+    //REGION DATA/MAPS IMPORTER
+    private RegionIO regionImporter;
+    //THE SCHEMA FOR REGION DATA XML FILES
+    public static final File xmlSchema = new File(REGION_DATA_SCHEMA);
+    //GAME DATA MANAGERS
+    private AccountDataManager accountsManager;
+    private RegionDataManager dataManager;
+    //MAPPINGS TO EACH REGIONS GREY SCALE VALUE
+    private HashMap<Color, String> colorToSubRegionMappings;
+    private HashMap<String, Color> subRegionToColorMappings;
+    //EACH REGIONS PIXEL LIST
+    private HashMap<String, ArrayList<Point2D.Double>> pixels;
+    //LIST OF REGIONS CURRENTLY IN RED STATE
+    private LinkedList<String> redSubRegions;
+    //REGIONS ON THE GAME STACK
+    private LinkedList<TextualSprite> subRegionStack;
+    //START TIME FOR THIS GAME 
+    private GregorianCalendar startTime;
+    //END TIME OF GAME WIN
+    private GregorianCalendar winEndingTime;
+    //NUMBER OF INCORRECT GUESSES
+    private int incorrectGuesses;
+    //STATE FLAG FOR WHETHER WE ARE STILL IN COUNTRY SELECTION OR PLAYING THE ACTUAL GAME
+    private boolean inCountrySelection;
+
+    /**
+     * Initialize the games data model and all the corresponding data structures
+     * that make up that model. As well since we only construct this model once
+     * per application run we initialize the manager by loading the world map.
+     * Once we have the world map in the manager we can move forward with the
+     * application.
+     */
+    public RambleOnDataModel() {
+        //INIT THE DATA MANAGER
+        accountsManager = new AccountDataManager();
+        dataManager = new RegionDataManager();
+        //INIT THE IMPORTER
+        regionImporter = new RegionIO(xmlSchema);
+        //INIT THE LIST DATA STRUCTURES
+        colorToSubRegionMappings = new HashMap<>();
+        subRegionToColorMappings = new HashMap<>();
+        pixels = new HashMap<>();
+        redSubRegions = new LinkedList<>();
+        subRegionStack = new LinkedList<>();
+        startTime = new GregorianCalendar();
+        winEndingTime = new GregorianCalendar();
+        //INIT THE INCORRECT GUESSES VALUE
+        incorrectGuesses = 0;
+        //INIT THE APP STATE FLAG
+        inCountrySelection = true;
+
+        //GET THE WORLD MAP
+        File theWorldFile = new File(WORLD_DIR + "The World" + XML_DATA_FILE);
+        //LOAD THE WORLD MAP ON START UP
+
+
+        try {
+            //LOAD THE WORLD MAP AND DATA INTO THE MANAGER
+            regionImporter.loadRegion(theWorldFile, dataManager);
+            //INITIALIZE THE THE PIXELS LIST WITH THE WORLD MAP IMAGE
+ //           initSubRegionPixels(dataManager.getCurrentMap());
+
+            //IF THIS HAPPENES WE CANNOT GO FURTHER SO THIS SHOULD NEVER HAPPEN
+        } catch (InvalidXMLFileFormatException | IOException a) {
+            System.out.println("Fatal error during inital loading of region data" + a.toString());
+            System.exit(0);
+        }
+    }
+
+    /**
+     *
+     * @return
+     */
+    public AccountDataManager getAccountsManager() {
+        return accountsManager;
+    }
+
+    /**
+     *
+     * @param accountsManager
+     */
+    public void setAccountsManager(AccountDataManager accountsManager) {
+        this.accountsManager = accountsManager;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public RegionDataManager getDataManager() {
+        return dataManager;
+    }
+
+    /**
+     *
+     * @param dataManager
+     */
+    public void setDataManager(RegionDataManager dataManager) {
+        this.dataManager = dataManager;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public HashMap<Color, String> getColorToSubRegionMappings() {
+        return colorToSubRegionMappings;
+    }
+
+    /**
+     *
+     * @param colorToSubRegionMappings
+     */
+    public void setColorToSubRegionMappings(HashMap<Color, String> colorToSubRegionMappings) {
+        this.colorToSubRegionMappings = colorToSubRegionMappings;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public HashMap<String, Color> getSubRegionToColorMappings() {
+        return subRegionToColorMappings;
+    }
+
+    /**
+     *
+     * @param subRegionToColorMappings
+     */
+    public void setSubRegionToColorMappings(HashMap<String, Color> subRegionToColorMappings) {
+        this.subRegionToColorMappings = subRegionToColorMappings;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public HashMap<String, ArrayList<Double>> getPixels() {
+        return pixels;
+    }
+
+    /**
+     *
+     * @param pixels
+     */
+    public void setPixels(HashMap<String, ArrayList<Double>> pixels) {
+        this.pixels = pixels;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public LinkedList<String> getRedSubRegions() {
+        return redSubRegions;
+    }
+
+    /**
+     *
+     * @param redSubRegions
+     */
+    public void setRedSubRegions(LinkedList<String> redSubRegions) {
+        this.redSubRegions = redSubRegions;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public LinkedList<TextualSprite> getSubRegionStack() {
+        return subRegionStack;
+    }
+
+    /**
+     *
+     * @param subRegionStack
+     */
+    public void setSubRegionStack(LinkedList<TextualSprite> subRegionStack) {
+        this.subRegionStack = subRegionStack;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public GregorianCalendar getStartTime() {
+        return startTime;
+    }
+
+    /**
+     *
+     * @param startTime
+     */
+    public void setStartTime(GregorianCalendar startTime) {
+        this.startTime = startTime;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public GregorianCalendar getWinEndingTime() {
+        return winEndingTime;
+    }
+
+    /**
+     *
+     * @param winEndingTime
+     */
+    public void setWinEndingTime(GregorianCalendar winEndingTime) {
+        this.winEndingTime = winEndingTime;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public int getIncorrectGuesses() {
+        return incorrectGuesses;
+    }
+
+    /**
+     *
+     * @param incorrectGuesses
+     */
+    public void setIncorrectGuesses(int incorrectGuesses) {
+        this.incorrectGuesses = incorrectGuesses;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public boolean isInCountrySelection() {
+        return inCountrySelection;
+    }
+
+    /**
+     *
+     * @param inCountrySelection
+     */
+    public void setInCountrySelection(boolean inCountrySelection) {
+        this.inCountrySelection = inCountrySelection;
+    }
+
+    /**
+     *
+     * @param game
+     */
+    public void updateDebugText(MiniGame game) {
+    }
+
+    /**
+     *
+     * @param game
+     */
+    public void updateAll(MiniGame game) {
+    }
+
+    /**
+     *
+     * @param game
+     */
+    public void reset(MiniGame game) {
+    }
+
+    /**
+     * Initialize the list of pixel values associated with every sub region
+     *
+     * @param img The background image to traverse and analyze
+     */
+    private void initSubRegionPixels(BufferedImage img) {
+        //THE ENTIRE 900 X 700 REGION IMAGE
+        BufferedImage background_image = img;
+
+        //SCAN THE ENTIRE IMAGE AT LOAD TIME TO ANALYZE PIXEL DATA
+        for (int i = 0; i < IMAGE_WIDTH; i++) {
+            for (int j = 0; j < IMAGE_HEIGHT; j++) {
+
+                //GET THE PIXEL AT CORDINATES (i, j) COLOR
+                int pixel_int_color = background_image.getRGB(i, j);
+                Color pixel_color = new Color(pixel_int_color);
+
+                //TO ITERATE THROUGH THE LIST OF REGIONS
+                Iterator<String> subRegionsIterator = dataManager.getAllRegions().keySet().iterator();
+
+                //TEST PIXEL COLOR AGAISNT EACH SUB REGIONS GREY SCALE VALUE
+                while (subRegionsIterator.hasNext()) {
+                    Region cur_region = dataManager.getAllRegions().get(subRegionsIterator.next());
+
+                    //IF THE PIXEL COLOR MATCHES THE SUB REGIONS GREY SCALE COLOR
+                    if (pixel_color.equals(cur_region.getGreyScale())) {
+                        //ADD THE PIXEL CORDINATES TO THIS SUBREGIONS LIST OF PIXELS
+                        ArrayList<Point2D.Double> subRegionPixels = pixels.get(cur_region.getName());
+                        subRegionPixels.add(new Point2D.Double(i, j));
+                        //IF WE FIND A MATCHING GREY SCALE VALUE MOVE ON TO NEXT PIXEL
+                        break;
+                    }
+
+                }
+
+            }
+        }
+
+    }
+
+    /**
+     *
+     * @param game
+     * @param mouseX
+     * @param mouseY
+     */
+    @Override
+    public void checkMousePressOnSprites(MiniGame game, int mouseX, int mouseY) {
+        //STILL IN COUNTRY SELECTION
+        if (inCountrySelection) {
+        } else //WE ARE IN THE MIDDLE OF GAME PLAY
+        {
+        }
+    }
+}

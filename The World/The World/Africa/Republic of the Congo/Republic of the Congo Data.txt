@@ -1,0 +1,11 @@
+<region name="Republic of the Congo" leader="Joseph Kabila" capital="Brazzaville">
+<sub_region red="250" green="250" blue="250" name="Likouala" capital="Impfondo"/>
+<sub_region red="240" green="240" blue="240" name="Sangha" capital="Ou¨¦sso"/>
+<sub_region red="230" green="230" blue="230" name="Cuvette-Ouest" capital="Ewo"/>
+<sub_region red="220" green="220" blue="220" name="Cuvette" capital="Owando"/>
+<sub_region red="210" green="210" blue="210" name="Plateaux" capital="Djambala"/>
+<sub_region red="200" green="200" blue="200" name="Pool" capital="Kinkala"/>
+<sub_region red="190" green="190" blue="190" name="Bouenza" capital="Madingou"/>
+<sub_region red="180" green="180" blue="180" name="L¨¦koumou" capital="Sibiti"/>
+<sub_region red="170" green="170" blue="170" name="Niari" capital="Dolisie"/>
+<sub_region red="160" green="160" blue="160" name="Kouilou" capital="Pointe-Noire"/>

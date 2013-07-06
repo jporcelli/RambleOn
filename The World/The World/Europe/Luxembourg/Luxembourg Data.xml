@@ -1,0 +1,15 @@
+<region name="Luxembourg" leader="Jean Claude Juncker" capital="Luxembourg">
+	<sub_region red="100" green="100" blue="100" name="Dudelange" capital="Dudelange"/>
+	<sub_region red="105" green="105" blue="105" name="Esch-sur-Alzette" capital="Esch-sur-Alzette"/>
+	<sub_region red="110" green="110" blue="110" name="Remich" capital="Remich"/>
+	<sub_region red="115" green="115" blue="115" name="Grevenmacher" capital="Grevenmacher"/>
+	<sub_region red="120" green="120" blue="120" name="Luxembourg" capital="Luxembourg"/>
+	<sub_region red="125" green="125" blue="125" name="Capellen" capital="Capellen"/>
+	<sub_region red="130" green="130" blue="130" name="Redange" capital="Redange"/>
+	<sub_region red="135" green="135" blue="135" name="Mersch" capital="Mersch"/>
+	<sub_region red="140" green="140" blue="140" name="Echternach" capital="Echternach"/>
+	<sub_region red="145" green="145" blue="145" name="Diekirch" capital="Diekirch"/>
+	<sub_region red="150" green="150" blue="150" name="Wiltz" capital="Wiltz"/>
+	<sub_region red="155" green="155" blue="155" name="Vianden" capital="Vianden"/>
+	<sub_region red="160" green="160" blue="160" name="Clervaux" capital="Clervaux"/>
+</region>

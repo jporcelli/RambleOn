@@ -1,0 +1,65 @@
+package regiondata;
+
+import java.util.TreeMap;
+
+/**
+ * Region data management class for accessing and storing the regions currently
+ * in use by the application.
+ *
+ * @author James C. Porcelli, SBU ID # 108900819
+ */
+public class RegionDataManager {
+
+    //THE CURRENTLY SELECTED REGION
+    //THIS CAN BE CONSIDERED AS THE ROOT NODE
+    //OF A TREE REPRESENTATION OF THE CURRENTLY
+    //SELECTED REGION AND ALL ITS SUB REGIONS
+    private Region currentRegion;
+    //THIS IS WHERE WE'LL STORE ONE OF EACH REGION
+    //THIS CAN BE CONSIDERED AS ALL CHILDREN OF THE ROOT
+    //NODE AND ALL SUB TREES OF THE TREE ROOTED AT THE
+    //CURRENT REGION 
+    private TreeMap<String, Region> allRegions;
+
+    /**
+     * Create the regions manager.
+     */
+    public RegionDataManager() {
+        this.allRegions = new TreeMap<>();
+    }
+
+    /**
+     * Removes all of the regions currently in the manager.
+     */
+    public void clearRegions() {
+        allRegions.clear();
+    }
+
+    /**
+     * Adds a region to the tree of regions currently available to the
+     * application
+     *
+     * @param regionToAdd
+     */
+    public void addRegion(Region regionToAdd) {
+        allRegions.put(regionToAdd.getName(), regionToAdd);
+    }
+
+    //GETTER AND SETTER FOR CURRENT REGION ATTRIBUTE
+    public Region getCurrentRegion() {
+        return currentRegion;
+    }
+
+    public void setCurrentRegion(Region currentRegion) {
+        this.currentRegion = currentRegion;
+    }
+
+    //GETTER AND SETTER FOR ALL REGIONS TREEMAP
+    public TreeMap<String, Region> getAllRegions() {
+        return allRegions;
+    }
+
+    public void setAllRegions(TreeMap<String, Region> allRegions) {
+        this.allRegions = allRegions;
+    }
+}

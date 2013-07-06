@@ -1,0 +1,6 @@
+<region name="Western Sahara" leader="Mohamed Abdelaziz" capital="El Aaiún">
+<sub_region red="200" green="200" blue="200" name="Boujdour" capital="Boujdour"/>
+<sub_region red="195" green="195" blue="195" name="Es Semara" capital="Es Semara"/>
+<sub_region red="190" green="190" blue="190" name="Laayoune" capital="Laayoune"/>
+<sub_region red="185" green="185" blue="185" name="Oued el Dahab" capital="Oued el Dahab"/>
+</region>

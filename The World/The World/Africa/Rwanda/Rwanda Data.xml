@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="Rwanda" leader="Paul Kagame" capital="Kigali">
+    <sub_region red="179" green="179" blue="179" name="Western"      capital="Kibuye" />
+    <sub_region red="169" green="169" blue="169" name="Southern"      capital="Nyanza" />
+    <sub_region red="159" green="159" blue="159" name="Northern"      capital="Byumba" />
+    <sub_region red="149" green="149" blue="149" name="Kigali"      capital="Kigali" />
+    <sub_region red="139" green="139" blue="139" name="Eastern"      capital="Rwamagana" />
+    
+</region>
+

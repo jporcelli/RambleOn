@@ -1,0 +1,50 @@
+package rambleon;
+
+import mini_game.MiniGame;
+import static rambleon.RambleOnSettings.*;
+
+/**
+ * RambleOn is a Mini-Game based loosely on the
+ * popular "Stack The States" game. RambleOn uses
+ * the MiniGameFramework as the framework for this
+ * mini-game.
+ * 
+ * @author James C. Porcelli, SBU ID 108900819
+ */
+public class RambleOn extends MiniGame {    
+       
+    public RambleOn(String appTitle, int framesPerSecond) {
+        super(appTitle, framesPerSecond);
+    }
+
+    @Override
+    public void initData() {
+        data = new RambleOnDataModel();
+    }
+
+    @Override
+    public void updateGUI() {
+    }
+
+    @Override
+    public void reset() {
+    }
+
+    @Override
+    public void initGUIHandlers() {
+    }
+
+    @Override
+    public void initGUIControls() {
+        canvas = new RambleOnPanel(this, (RambleOnDataModel)data);
+    }
+
+    /**
+     * Driver for this mini-game game application
+     * 
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        RambleOn game = new RambleOn(APP_TITLE, FRAMES_PER_SECOND);
+    }
+}

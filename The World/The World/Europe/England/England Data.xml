@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="England" leader="David Cameron" capital="London">
+    <sub_region red="200" green="200" blue="200" name="Bedfordshire"      capital="Bedford" />
+    <sub_region red="198" green="198" blue="198" name="Berkshire"         capital="Newbury" />
+    <sub_region red="196" green="196" blue="196" name="City of Bristol"   capital="Bristol" />
+    <sub_region red="194" green="194" blue="194" name="Buckinghamshire"   capital="Aylesbury" />
+    <sub_region red="192" green="192" blue="192" name="Cambridgeshire"    capital="Cambridge" />
+    <sub_region red="190" green="190" blue="190" name="Cheshire"          capital="Chester" />
+    <sub_region red="186" green="186" blue="186" name="Cornwall"          capital="Truro" />
+    <sub_region red="184" green="184" blue="184" name="Cumbria"           capital="Carlisle" />
+    <sub_region red="182" green="182" blue="182" name="Derbyshire"        capital="Matlock" />
+    <sub_region red="180" green="180" blue="180" name="Devon"             capital="Exeter" />
+    <sub_region red="178" green="178" blue="178" name="Dorset"            capital="Dorchester" />
+    <sub_region red="176" green="176" blue="176" name="Durham"            capital="Durham" />
+    <sub_region red="174" green="174" blue="174" name="East Riding of Yorkshire"           capital="Beverley" />
+    <sub_region red="172" green="172" blue="172" name="East Sussex"       capital="Lewes" />
+    <sub_region red="170" green="170" blue="170" name="Essex"             capital="Chelmsford" />
+    <sub_region red="168" green="168" blue="168" name="Gloucestershire"   capital="Gloucester" />
+    <sub_region red="166" green="166" blue="166" name="Greater London"    capital="London" />
+    <sub_region red="164" green="164" blue="164" name="Greater Manchester" capital="Manchester" />
+    <sub_region red="162" green="162" blue="162" name="Hampshire"         capital="Winchester" />
+    <sub_region red="160" green="160" blue="160" name="Herefordshire"     capital="Hereford" />
+    <sub_region red="158" green="158" blue="158" name="Hertfordshire"     capital="Hertford" />
+    <sub_region red="156" green="156" blue="156" name="Isle of Wight"     capital="Newport" />
+    <sub_region red="154" green="154" blue="154" name="Kent"              capital="Maidstone" />
+    <sub_region red="152" green="152" blue="152" name="Lancashire"        capital="Preston" />
+    <sub_region red="150" green="150" blue="150" name="Leicestershire"    capital="Leicester" />
+    <sub_region red="148" green="148" blue="148" name="Lincolnshire"      capital="Lincoln" />
+    <sub_region red="146" green="146" blue="146" name="Merseyside"        capital="Liverpool" />
+    <sub_region red="144" green="144" blue="144" name="Norfolk"           capital="Norwich" />
+    <sub_region red="142" green="142" blue="142" name="North Yorkshire"   capital="Northallerton" />
+    <sub_region red="140" green="140" blue="140" name="Northamptonshire"  capital="Northampton" />
+    <sub_region red="138" green="138" blue="138" name="Northumberland"    capital="Morpeth" />
+    <sub_region red="136" green="136" blue="136" name="Nottinghamshire"   capital="West Bridgford" />
+    <sub_region red="134" green="134" blue="134" name="Oxfordshire"       capital="Oxford" />
+    <sub_region red="132" green="132" blue="132" name="Rutland"           capital="Oakham" />
+    <sub_region red="130" green="130" blue="130" name="Shropshire"        capital="Shrewsbury" />
+    <sub_region red="128" green="128" blue="128" name="Somerset"          capital="Taunton" />
+    <sub_region red="126" green="126" blue="126" name="South Yorkshire"   capital="Barnsley" />
+    <sub_region red="124" green="124" blue="124" name="Staffordshire"     capital="Stafford" />
+    <sub_region red="122" green="122" blue="122" name="Suffolk"           capital="Ipswich" />
+    <sub_region red="120" green="120" blue="120" name="Surrey"            capital="Kingston upon Thames" />
+    <sub_region red="118" green="118" blue="118" name="Tyne and Wear"     capital="Gateshead" />
+    <sub_region red="116" green="116" blue="116" name="Warwickshire"      capital="Warwick" />
+    <sub_region red="114" green="114" blue="114" name="West Midlands"     capital="Birmingham" />
+    <sub_region red="112" green="112" blue="112" name="West Sussex"       capital="Chichester" />
+    <sub_region red="110" green="110" blue="110" name="West Yorkshire"    capital="Wakefield" />
+    <sub_region red="108" green="108" blue="108" name="Wiltshire"         capital="Trowbridge" />
+    <sub_region red="106" green="106" blue="106" name="Worcestershire"    capital="Worcester" />
+</region>
+

@@ -1,0 +1,42 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package rambleonevents;
+
+import static rambleon.RambleOnSettings.*;
+import javax.swing.event.TreeSelectionEvent;
+import javax.swing.event.TreeSelectionListener;
+import rambleon.RambleOnScreenManager;
+
+/**
+ *
+ * @author James C. Porcelli, SBU ID 108900819
+ */
+public class WorldTreeHandler implements TreeSelectionListener {
+
+    private RambleOnScreenManager screenManager;
+
+    /**
+     *
+     * @param screenManager
+     */
+    public WorldTreeHandler(RambleOnScreenManager screenManager) {
+        this.screenManager = screenManager;
+    }
+
+    /**
+     *
+     * @param e
+     */
+    @Override
+    public void valueChanged(TreeSelectionEvent e) {
+        //IF A NODE IN THE TREE IS SELECTED AND IS NOT THE ROOT NODE WHICH IS JUST A LABEL FOR THE TREE
+        if (!(e.getPath().getLastPathComponent().toString().equals(REGIONS_PLAYED_ROOT_LABEL))) {
+            //THEN UPDATE THE TABLE WITH THE CURRENT PLAYERS STATS FOR THAT REGIONA
+            screenManager.updateTable(screenManager.getAccountsManager().getCurrentAccount().getRegionStats().get(e.getPath().getLastPathComponent().toString()));
+            System.out.println("TABLE UPDATED");
+        }
+
+    }
+}

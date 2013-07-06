@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><region name="Cuba" leader="Raul Castro" capital="Havana">
+<sub_region red="220" green="220" blue="220" name="Guantanamo" capital="Guantanamo"/>
+<sub_region red="205" green="205" blue="205" name="Santiago de Cuba" capital="Santiago de Cuba"/>
+<sub_region red="190" green="190" blue="190" name="Granma" capital="Bayamo"/>
+<sub_region red="175" green="175" blue="175" name="Holguin" capital="Holguin"/>
+<sub_region red="160" green="160" blue="160" name="Las Tunas" capital="Las Tunas"/>
+<sub_region red="145" green="145" blue="145" name="Camaguey" capital="Camaguey"/>
+<sub_region red="130" green="130" blue="130" name="Ciego de Avila" capital="Ciego de Avila"/>
+<sub_region red="115" green="115" blue="115" name="Sancti Spiritus" capital="Sancti Spiritus"/>
+<sub_region red="100" green="100" blue="100" name="Villa Clara" capital="Santa Clara"/>
+<sub_region red="85" green="85" blue="85" name="Cienfuegos" capital="Cienfuegos"/>
+<sub_region red="70" green="70" blue="70" name="Matanzas" capital="Matanzas"/>
+<sub_region red="55" green="55" blue="55" name="Isla de la Juventud" capital="Nueva Gerona"/>
+<sub_region red="40" green="40" blue="40" name="La Habana" capital="Havana"/>
+<sub_region red="25" green="25" blue="25" name="Pinar del Rio" capital="Pinar del Rio"/>
+</region>

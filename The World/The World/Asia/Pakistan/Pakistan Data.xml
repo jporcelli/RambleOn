@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<region name="Pakistan" leader="Asif Ali Zardari" capital="Islamabad">
+    <sub_region red="160" green="160" blue="160" name="Balochistan" capital="Quetta"/>
+    <sub_region red="148" green="148" blue="148" name="Punjab" capital="Lahore"/>
+    <sub_region red="150" green="150" blue="150" name="Sindh" capital="Karachi"/>
+    <sub_region red="140" green="140" blue="140" name="Khyber Pakhtunkhwa" capital="Peshawar"/>
+    <sub_region red="136" green="136" blue="136" name="FATA" capital="Miran Shah"/>
+    <sub_region red="126" green="126" blue="126" name="Azad Kashmir" capital="Muzaffarabad"/>
+    <sub_region red="122" green="122" blue="122" name="Gilgit–Baltistan" capital="Gilgit"/>
+</region>

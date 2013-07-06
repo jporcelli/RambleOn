@@ -1,0 +1,23 @@
+<region name="Ecuador" leader="Rafael Correa" capital="Quito">
+	<sub_region red="200" green="200" blue="200" name="Esmeraldas" capital="Esmeraldas"/>
+	<sub_region red="195" green="195" blue="195" name="Carchi" capital="Tulcan"/>
+	<sub_region red="190" green="190" blue="190" name="Imbabura" capital="Ibarra"/>
+	<sub_region red="185" green="185" blue="185" name="Sucumbios" capital="Nueva Loja"/>
+	<sub_region red="180" green="180" blue="180" name="Pichincha" capital="Quito"/>
+	<sub_region red="175" green="175" blue="175" name="Manabi" capital="Portoviejo"/>
+	<sub_region red="170" green="170" blue="170" name="Cotopaxi" capital="Latacunga"/>
+	<sub_region red="165" green="165" blue="165" name="Orellana" capital="Puerto Francisco de Orellana"/>
+	<sub_region red="160" green="160" blue="160" name="Pastaza" capital="Puyo"/>
+	<sub_region red="155" green="155" blue="155" name="Tangurahua" capital="Ambato"/>
+	<sub_region red="150" green="150" blue="150" name="Bolivar" capital="Guaranda"/>
+	<sub_region red="145" green="145" blue="145" name="Chimborazo" capital="Riobamba"/>
+	<sub_region red="140" green="140" blue="140" name="Los Rios" capital="Babahoyo"/>
+	<sub_region red="135" green="135" blue="135" name="Guayas" capital="Guayaquil"/>
+	<sub_region red="130" green="130" blue="130" name="Morona Santiago" capital="Macas"/>
+	<sub_region red="125" green="125" blue="125" name="Canar" capital="Azogues"/>
+	<sub_region red="120" green="120" blue="120" name="Azuay" capital="Cuenca"/>
+	<sub_region red="115" green="115" blue="115" name="El Oro" capital="Machala"/>
+	<sub_region red="110" green="110" blue="110" name="Loja" capital="Loja"/>
+	<sub_region red="105" green="105" blue="105" name="Zamora Chinchipe" capital="Zamora"/>
+	<sub_region red="100" green="100" blue="100" name="Galapagos" capital="Puerto Baquerizo Moreno"/>
+</region>

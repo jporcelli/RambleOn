@@ -1,0 +1,26 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package rambleonevents;
+
+import javax.swing.event.TreeSelectionEvent;
+import javax.swing.event.TreeSelectionListener;
+import rambleon.RambleOnScreenManager;
+
+/**
+ *
+ * @author Owner
+ */
+public class WorldTreeHandler implements TreeSelectionListener{
+
+    private RambleOnScreenManager screenManager;
+    
+    public WorldTreeHandler(RambleOnScreenManager screenManager){}
+    
+    @Override
+    public void valueChanged(TreeSelectionEvent e) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+    
+}

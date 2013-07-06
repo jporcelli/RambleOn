@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="Portugal" leader="Aníbal Cavaco Silva" capital="Lisbon">
+    <sub_region red="71" green="71" blue="71" name="Viana do Castelo"      capital="Viana do Castelo" />
+    <sub_region red="88" green="88" blue="88" name="Braga"        capital="Braga" />
+    <sub_region red="156" green="156" blue="156" name="Porto"           capital="Porto" />
+    <sub_region red="105" green="105" blue="105" name="Vila Real"         capital="Vila Real" />
+    <sub_region red="122" green="122" blue="122" name="Bragança"          capital="Bragança" />
+    <sub_region red="190" green="190" blue="190" name="Viseu"        capital="Viseu" />
+    <sub_region red="173" green="173" blue="173" name="Aveiro"          capital="Aveiro" />
+    <sub_region red="72" green="72" blue="72" name="Coimbra"          capital="Coimbra" />
+    <sub_region red="207" green="207" blue="207" name="Guarda"         capital="Guarda" />
+    <sub_region red="89" green="89" blue="89" name="Castelo Branco"          capital="Castelo Branco" />
+    <sub_region red="174" green="174" blue="174" name="Portalegre"           capital="Portalegre" />
+    <sub_region red="73" green="73" blue="73" name="Évora"       capital="Évora" />
+    <sub_region red="120" green="120" blue="120" name="Faro"   capital="Faro" />
+    <sub_region red="103" green="103" blue="103" name="Beja"           capital="Beja" />
+    <sub_region red="140" green="140" blue="140" name="Setúbal"          capital="Setúbal" />
+    <sub_region red="157" green="157" blue="157" name="Santarém"           capital="Santarém" />
+    <sub_region red="106" green="106" blue="106" name="Leiria"        capital="Leiria" />
+    <sub_region red="123" green="123" blue="123" name="Lisbon"           capital="Libson" />
+    <sub_region red="137" green="137" blue="137" name="Azores"         capital="Ponta Delgada" />
+    <sub_region red="154" green="154" blue="154" name="Madeira"         capital="Funchal" />
+</region>

@@ -1,0 +1,39 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package rambleonevents;
+
+import static rambleon.RambleOnSettings.*;
+import javax.swing.event.TreeSelectionEvent;
+import javax.swing.event.TreeSelectionListener;
+import rambleon.RambleOnScreenManager;
+
+/**
+ *
+ * @author James C. Porcelli, SBU ID 108900819
+ */
+public class WorldTreeHandler implements TreeSelectionListener {
+
+    private RambleOnScreenManager screenManager;
+
+    /**
+     *
+     * @param screenManager
+     */
+    public WorldTreeHandler(RambleOnScreenManager screenManager) {
+        this.screenManager = screenManager;
+    }
+
+    /**
+     *
+     * @param e
+     */
+    @Override
+    public void valueChanged(TreeSelectionEvent e) {
+        if (!(e.getPath().getLastPathComponent().toString().equals(TEMP_REGIONS_PLAYED_ROOT))) {
+          screenManager.addTableToPanel(screenManager.getAccountsManager().getCurrentAccount().getRegionStats().get(e.getPath().getLastPathComponent().toString()));
+
+        }
+    }
+}

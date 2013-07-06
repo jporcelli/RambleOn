@@ -1,0 +1,94 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package rambleonevents;
+
+import accountdata.Account;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.io.Serializable;
+import javax.swing.JOptionPane;
+import rambleon.RambleOnScreenManager;
+import static rambleon.RambleOnSettings.*;
+
+/**
+ * Handles events for all buttons on the account creation screen.
+ *
+ * @author James C. Porcelli, SBU ID 108900819
+ */
+public class AccountCreationScreenButtonsHandler implements ActionListener, Serializable {
+
+    //THE SCREEN MANAGER THIS HANDLER HANDLES EVENTS FOR
+    private RambleOnScreenManager screenManager;
+
+    /**
+     * Create a handler for the buttons on the create new account screen.
+     *
+     * @param screenManager
+     */
+    public AccountCreationScreenButtonsHandler(RambleOnScreenManager screenManager) {
+        this.screenManager = screenManager;
+    }
+
+    /**
+     * Handles buttons presses for the buttons on the create account screen.
+     *
+     * @param e The event fired for the button that was pressed on the create
+     * account screen.
+     */
+    @Override
+    public void actionPerformed(ActionEvent e) {
+
+        //THE STRING ASSOCIATED WITH THE TOOLTIP OF THE BUTTON THAT GENERATED THE EVENT
+        String associatedToolTip = e.getActionCommand();
+
+        //SWITCH BASED ON THE TOOLTIP OF THE BUTTON PRESS
+        switch (associatedToolTip) {
+
+            case CREATE_ACCOUNT_OK_TOOLTIP: {
+                //MAKE SURE NEW USER NAME IS UNIQUE
+                //GET THE PROPOSED USER NAME
+                String newUserName = screenManager.getUserNameFromTextField();
+                //CHECK THE PROPOSED USER NAME AGAISNT THE NAMES OF ALL ACTIVE ACCOUNTS AND FOR THE EMPTY STRING
+                if (!(screenManager.getAccountsManager().isNewUserNameUnique(newUserName)) || newUserName.equals("")) {
+                    //GIVE FEEDBACK AS TO ALREADY IN USE STATUS OF PROPOSED USER NAME
+                    JOptionPane.showMessageDialog(screenManager.getWindow(), "User Name Is Invalid\n    Please Try Again", "RambleOn!", JOptionPane.ERROR_MESSAGE);
+                } else {
+                    //CREATE A NEW ACCOUNT FOR THE SPECIFIED USER NAME 
+                    Account newAccount = screenManager.getAccountsManager().createNewAccount(newUserName);
+                    //THE USER NAME WAS UNIQUE SO PROCEED TO THE CURRENT ACCOUNT SCREEN FOR THE NEW ACCOUNT
+                    screenManager.getAccountsManager().setCurrentAccount(newAccount);
+
+                    //SEE IF ITS THE FIRST TIME AT THE CURRENT ACCOUNT SCREEN
+                    if (screenManager.getCurrentAccountScreen() == null) {
+                        //IF SO INIT THE SCREEN BEFORE WE SWAP THE PANELS
+                        screenManager.initCurrentAccountScreen();
+                    }
+                    //CLEAR THE TABLE FROM LAST TIME
+                    screenManager.resetStatTableCells();
+                    //REMOVE THE CREATE ACCOUNT SCREEN FROM THE WINDOW
+                    screenManager.getWindow().remove(screenManager.getAccountCreationScreen());
+                    //AND ADD THE CURRENT ACCOUNTS SCREEN
+                    screenManager.getWindow().add(screenManager.getCurrentAccountScreen());
+                    //REFRESH THE REGIONS PLAYED TREE
+                    screenManager.initRegionsPlayedTree();
+                    //AND REFRESH THE WINDOW
+                    screenManager.refreshWindow();
+
+                }
+                break;
+            }
+
+            case CREATE_ACCOUNT_CANCEL_TOOLTIP: {
+                //REMOVE THE CREATE ACCOUNT SCREEN FROM THE WINDOW
+                screenManager.getWindow().remove(screenManager.getAccountCreationScreen());
+                //AND ADD THE ACCOUNTS SCREEN
+                screenManager.getWindow().add(screenManager.getAccountsScreen());
+                //AND REFRESH THE WINDOW
+                screenManager.refreshWindow();
+                break;
+            }
+        }
+    }
+}

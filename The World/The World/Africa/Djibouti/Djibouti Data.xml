@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="Djibouti" leader="Ismaïl Omar Guelleh" capital="Djibouti">
+    <sub_region red="200" green="200" blue="200" name="Obock"      capital="Obock" />
+    <sub_region red="180" green="180" blue="180" name="Tadjourah"  capital="Tadjourah" />
+    <sub_region red="160" green="160" blue="160" name="Dikhil"     capital="Dikhil" />
+    <sub_region red="140" green="140" blue="140" name="Djibouti"   capital="Djibouti" />
+    <sub_region red="120" green="120" blue="120" name="Ali Sabieh" capital="Ali Sabieh" />
+</region>
+

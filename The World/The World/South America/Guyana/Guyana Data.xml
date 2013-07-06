@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="Guyana" leader="Donald Ramotar" capital="Georgetown">
+    <sub_region red="200" green="200" blue="200" name="Barima-Waini"                        capital="Mabaruma" />   
+    <sub_region red="190" green="190" blue="190" name="Pomeroon-Supenaam"                   capital="Anna Regina" />
+    <sub_region red="180" green="180" blue="180" name="Essequibo Islands-West Demerara"   capital="Vreed en Hoop" />
+    <sub_region red="170" green="170" blue="170" name="Demerara-Mahaica"                    capital="Paradise" />
+    <sub_region red="160" green="160" blue="160" name="Mahaica-Berbice"                     capital="Fort Welligton" />
+    <sub_region red="150" green="150" blue="150" name="East Berbice-Corentyne"              capital="New Amsterdam" />
+    <sub_region red="140" green="140" blue="140" name="Cuyuni-Mazaruni"                     capital="Bartica" />
+    <sub_region red="130" green="130" blue="130" name="Potaro-Siparuni"                     capital="Mahdia" />
+    <sub_region red="120" green="120" blue="120" name="Upper Takutu-Upper Essequibo"        capital="Lethem" />
+    <sub_region red="110" green="110" blue="110" name="Upper Demerara-Berbice"              capital="Linden" />
+</region>
+

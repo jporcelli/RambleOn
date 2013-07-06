@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="Togo" leader="Faure Gnassingbe" capital="Lome">
+    <sub_region red="195" green="195" blue="195" name="Savanes"      capital="Dapaong" />
+    <sub_region red="155" green="155" blue="155" name="Kara"        capital="Kara" />
+    <sub_region red="125" green="125" blue="125" name="Centrale"           capital="Sokode" />
+    <sub_region red="97" green="97" blue="97" name="Plateaux"         capital="Atakpame" />
+    <sub_region red="78" green="78" blue="78" name="Maritime"          capital="Lome" />
+</region>
+

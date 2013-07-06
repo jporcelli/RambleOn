@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="Wales" leader="Carwyn Jones" capital="Cardiff">		
+	<sub_region red="200" green="200" blue="200" name="Blaenau Gwent"      	capital="Ebbw Vale" />
+	<sub_region red="198" green="198" blue="198" name="Bridgend"      		capital="Bridgend" />
+	<sub_region red="196" green="196" blue="196" name="Caerphilly"      	capital="Hengoed" />
+	<sub_region red="194" green="194" blue="194" name="Cardiff"      		capital="Cardiff" />
+	<sub_region red="192" green="192" blue="192" name="Carmarthenshire"     capital="Carmarthen" />
+	<sub_region red="190" green="190" blue="190" name="Ceredigion"      	capital="Aberaeron" />
+	<sub_region red="188" green="188" blue="188" name="Conwy"      			capital="Conwy" />
+	<sub_region red="186" green="186" blue="186" name="Denbighshire"      	capital="Ruthin" />
+	<sub_region red="184" green="184" blue="184" name="Flintshire"      	capital="Mold" />
+	<sub_region red="182" green="182" blue="182" name="Gwynedd"      		capital="Caernarfon" />
+	<sub_region red="180" green="180" blue="180" name="Isle of Anglesey"    capital="Llangefni" />
+	<sub_region red="178" green="178" blue="178" name="Merthyr Tydfil"      capital="Merthyr Tydfil" />
+	<sub_region red="176" green="176" blue="176" name="Monmouthshire" 		capital="Cwmbran" />
+	<sub_region red="174" green="174" blue="174" name="Neath Port Talbot" 	capital="Port Talbot" />
+	<sub_region red="172" green="172" blue="172" name="Newport"      		capital="Newport" />
+	<sub_region red="170" green="170" blue="170" name="Pembrokeshire"      	capital="Haverfordwest" />
+	<sub_region red="168" green="168" blue="168" name="Powys"      			capital="Llandrindod Wells" />
+	<sub_region red="166" green="166" blue="166" name="Rhondda Cynon Taf"   capital="Clydach Vale" />
+	<sub_region red="164" green="164" blue="164" name="Swansea"      		capital="Swansea" />
+	<sub_region red="162" green="162" blue="162" name="Torfaen"      		capital="Pontypool" />
+	<sub_region red="160" green="160" blue="160" name="Vale of Glamorgan"   capital="Barry" />
+	<sub_region red="158" green="158" blue="158" name="Wrexham"      		capital="Wrexham" />
+</region>

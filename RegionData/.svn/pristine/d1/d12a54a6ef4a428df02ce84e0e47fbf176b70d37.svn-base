@@ -1,0 +1,29 @@
+package regiondata;
+
+//LIBRARIES TO USE
+import java.io.File;
+
+/**
+ * This interface provides the requirements for an importer plug-in to be used
+ * for loading region data from an XML file. Note that this interface, does not 
+ * have a particular XML file structure/schema. So various formats could be used, 
+ * which would be up to the plug-in developer.
+ *
+ * @author James C. Porcelli, SBU ID # 108900819
+ */
+public interface RegionImporter {
+
+    /**
+     * Loads the geographic contents of regionsFile into dataManager.
+     *
+     * @param regionsFile The XML file from which the data will be extracted.
+     *
+     * @param dataManager The data read from the file will be loaded into this
+     * region data manager which will store and make available to the programmer
+     * all the information contained therein.
+     *
+     * @return Returns true if the world loaded successfully, false otherwise.
+     */
+    public boolean loadRegion(File regionsFile, RegionDataManager dataManager);    
+    
+}

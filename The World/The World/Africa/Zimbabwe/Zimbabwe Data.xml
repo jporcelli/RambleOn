@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="Zimbabwe" leader="Robert Mugabe" capital="Harare">
+    <sub_region red="201" green="201" blue="201" name="Matabeleland North"        capital="Lupane" />
+    <sub_region red="202" green="202" blue="202" name="Matebeleland South"           capital="Gwanda" />
+    <sub_region red="203" green="203" blue="203" name="Bulawayo"         capital="Bulawayo" />
+    <sub_region red="204" green="204" blue="204" name="Midlands Province"          capital="Gweru" />
+    <sub_region red="205" green="205" blue="205" name="Mashonaland West"        capital="Chinhoyi" />
+    <sub_region red="206" green="206" blue="206" name="Mashonaland Central"          capital="Bindura" />
+    <sub_region red="207" green="207" blue="207" name="Harare"          capital="Harare" />
+    <sub_region red="208" green="208" blue="208" name="Mashonaland East"         capital="Marondera" />
+    <sub_region red="209" green="209" blue="209" name="Manicaland"          capital="Mutare" />
+    <sub_region red="210" green="210" blue="210" name="Masvingo Province"           capital="Masvingo" />
+</region>
+

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="Reunion" leader="Didier Robert" capital="Saint-Denis">
+    <sub_region red="200" green="200" blue="200" name="Saint-Denis"   capital="Saint-Denis" />
+    <sub_region red="180" green="180" blue="180" name="Saint-Benoît"  capital="Saint-Benoît" />
+    <sub_region red="160" green="160" blue="160" name="Saint-Pierre"  capital="Saint-Pierre" />
+    <sub_region red="140" green="140" blue="140" name="Saint-Paul"    capital="Saint-Paul" />
+</region>
+

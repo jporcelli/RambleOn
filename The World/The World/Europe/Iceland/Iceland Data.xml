@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="Iceland" leader="Johanna Siguroardottir" capital="Reykjavik">
+    <sub_region red="200" green="200" blue="200" name="Austurland"         capital="Egilsstaoir" />
+    <sub_region red="190" green="190" blue="190" name="Norourland eystra"  capital="Akureyri" />
+    <sub_region red="180" green="180" blue="180" name="Suourland"          capital="Selfoss" />
+    <sub_region red="170" green="170" blue="170" name="Norourland vestra"  capital="Sauoarkrokur" />
+    <sub_region red="160" green="160" blue="160" name="Vesturland"         capital="Borgarnes" />
+    <sub_region red="150" green="150" blue="150" name="Vestfiroir"         capital="Isafjorour" />
+    <sub_region red="140" green="140" blue="140" name="Hofuoborgarsvaeoi"  capital="Reykjavik" />
+    <sub_region red="130" green="130" blue="130" name="Suournes"           capital="Keflavik" />
+</region>
+

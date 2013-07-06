@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="Bolivia" leader="Evo Morales" capital="Sucre">
+    <sub_region red="200" green="200" blue="200" name="Pando"        capital="Cobija" />
+    <sub_region red="195" green="200" blue="200" name="La Paz"       capital="La Paz" />
+    <sub_region red="195" green="195" blue="200" name="Beni"         capital="La Santísima Trinidad" />
+    <sub_region red="190" green="190" blue="200" name="Cochabamba"   capital="Cochabamba" />
+    <sub_region red="190" green="190" blue="190" name="Oruro"        capital="Oruro" />
+    <sub_region red="180" green="180" blue="180" name="Potosi"       capital="Potosi" />
+    <sub_region red="175" green="180" blue="180" name="Chuquisaca"   capital="Sucre" />
+    <sub_region red="170" green="170" blue="170" name="Tarija"       capital="Tarija" />
+    <sub_region red="175" green="175" blue="175" name="Santa Cruz"   capital="Santa Cruz de la Sierra" />
+</region>

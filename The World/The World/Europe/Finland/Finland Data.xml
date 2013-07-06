@@ -1,0 +1,20 @@
+<region name="Finland" leader="Sauli Niinisto" capital="Helsinki">
+    <sub_region red="200" green="200" blue="200" name="Lapland" capital="Rovaniemi"/>
+    <sub_region red="195" green="195" blue="195" name="Northern Ostrobothnia" capital="Oulu"/>
+    <sub_region red="190" green="190" blue="190" name="Kainuu" capital="Kajaani"/>
+    <sub_region red="185" green="185" blue="185" name="North Karelia" capital="Joensuu"/>
+    <sub_region red="180" green="180" blue="180" name="Northern Savonia" capital="Kuopio"/>
+    <sub_region red="175" green="175" blue="175" name="Southern Savonia" capital="Mikkeli"/>
+    <sub_region red="170" green="170" blue="170" name="Southern Ostrobothnia" capital="Seinajoki"/>
+    <sub_region red="165" green="165" blue="165" name="Central Ostrobothnia" capital="Kokkola"/>
+    <sub_region red="160" green="160" blue="160" name="Ostrobothnia" capital="Vaasa"/>
+    <sub_region red="155" green="155" blue="155" name="Pirkanmaa" capital="Tampere"/>
+    <sub_region red="150" green="150" blue="150" name="Central Finland" capital="Jyvaskyla"/>
+    <sub_region red="145" green="145" blue="145" name="Satakunta" capital="Pori"/>
+    <sub_region red="140" green="140" blue="140" name="Finland Proper" capital="Turku"/>
+    <sub_region red="135" green="135" blue="135" name="South Karelia" capital="Lappeenranta"/>
+    <sub_region red="130" green="130" blue="130" name="Travastia Proper" capital="Hameenlinna"/>
+    <sub_region red="125" green="125" blue="125" name="Kymenlaakso" capital="Kotka"/>
+    <sub_region red="120" green="120" blue="120" name="Paijat Hame" capital="Lahti"/>
+    <sub_region red="110" green="110" blue="110" name="Uusimaa" capital="Helsinki"/>
+</region>

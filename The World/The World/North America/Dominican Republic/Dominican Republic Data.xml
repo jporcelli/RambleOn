@@ -1,0 +1,34 @@
+<region name="Dominican Republic" leader="Danilo Medina" capital="Santo Domingo">
+<sub_region red="200" green="200" blue="200" name="Monte Cristi" capital="Monte Cristi"/>
+<sub_region red="198" green="198" blue="198" name="Puerto Plata" capital="Puerto Plata"/>
+<sub_region red="196" green="196" blue="196" name="Dajabon" capital="Dajabon"/>
+<sub_region red="194" green="194" blue="194" name="Santiago Rodriguez" capital="Sabaneta"/>
+<sub_region red="192" green="192" blue="192" name="Valverde" capital="Mao"/>
+<sub_region red="190" green="190" blue="190" name="Santiago" capital="Santiago de los Caballeros"/>
+<sub_region red="188" green="188" blue="188" name="Espaillat" capital="Moca"/>
+<sub_region red="186" green="186" blue="186" name="Hermanas Mirabel" capital="Salcedo"/>
+<sub_region red="184" green="184" blue="184" name="Maria Trinidad Sanchez" capital="Nagua"/>
+<sub_region red="182" green="182" blue="182" name="Samana" capital="Samana"/>
+<sub_region red="180" green="180" blue="180" name="Duarte" capital="San Francisco de Macoris"/>
+<sub_region red="178" green="178" blue="178" name="La  Vega" capital="La  Vega"/>
+<sub_region red="176" green="176" blue="176" name="San Juan" capital="San Juan de la Maguana"/>
+<sub_region red="174" green="174" blue="174" name="Elias Pina" capital="Comendador"/>
+<sub_region red="172" green="172" blue="172" name="Independencia" capital="Jimani"/>
+<sub_region red="170" green="170" blue="170" name="Pedernales" capital="Pedernales"/>
+<sub_region red="168" green="168" blue="168" name="Barahona" capital="Barahona"/>
+<sub_region red="166" green="166" blue="166" name="Baoruco" capital="Neiba"/>
+<sub_region red="164" green="164" blue="164" name="Azua" capital="Azua"/>
+<sub_region red="162" green="162" blue="162" name="Peravia" capital="Bani"/>
+<sub_region red="160" green="160" blue="160" name="San Jose de Ocoa" capital="San Jose de Ocoa"/>
+<sub_region red="158" green="158" blue="158" name="Monsenor Nouel" capital="Bonaco"/>
+<sub_region red="156" green="156" blue="156" name="Sanchez Ramirez" capital="Cotui"/>
+<sub_region red="154" green="154" blue="154" name="San Cristobal" capital="San Cristobal"/>
+<sub_region red="152" green="152" blue="152" name="Santo Domingo" capital="Santo Domingo Este"/>
+<sub_region red="150" green="150" blue="150" name="Distrito Nacional" capital="Santo Domingo"/>
+<sub_region red="148" green="148" blue="148" name="Monte Plata" capital="Monte Plata"/>
+<sub_region red="146" green="146" blue="146" name="La Romana" capital="La Romana"/>
+<sub_region red="144" green="144" blue="144" name="Hato Mayor" capital="Hato Mayor"/>
+<sub_region red="142" green="142" blue="142" name="San Pedro de Macoris" capital="San Pedro de Macoris"/>
+<sub_region red="140" green="140" blue="140" name="El Seibo" capital="El Seibo"/>
+<sub_region red="138" green="138" blue="138" name="La Altagracia" capital="Higuey"/>
+</region>

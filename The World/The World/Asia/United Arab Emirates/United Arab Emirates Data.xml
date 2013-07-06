@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<region name = "United Arab Emirates" leader = "Khalifa bin Zayed Al Nahyan" capital = "Abu Dhabi">
+    <sub_region red = "199" green = "199" blue = "199" name = "Abu Dhabi" capital = "Abu Dhabi"/>
+    <sub_region red = "185" green = "185" blue = "185" name = "Dubai" capital = "Dubai"/>
+    <sub_region red = "193" green = "193" blue = "193" name = "Sharjah" capital = "Sharjah"/>
+    <sub_region red = "170" green = "170" blue = "170" name = "Umm al-Quwain" capital = "Umm al-Qaiwain"/>
+    <sub_region red = "206" green = "206" blue = "206" name = "Ras al-Khaimah" capital = "Ras al-Khaimah"/>
+    <sub_region red = "177" green = "177" blue = "177" name = "Ajman" capital = "Ajman"/>
+    <sub_region red = "153" green = "153" blue = "153" name = "Fujairah" capital = "Fujairah"/>
+</region> 

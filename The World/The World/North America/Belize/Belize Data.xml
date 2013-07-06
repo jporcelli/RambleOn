@@ -1,0 +1,8 @@
+<region name="Belize" leader="Dean Barrow" capital="Belmopan">
+<sub_region red="200" green="200" blue="200" name="Belize" capital="Belize City"/>
+<sub_region red="175" green="175" blue="175" name="Cayo" capital="San Ignacio"/>
+<sub_region red="225" green="225" blue="225" name="Orange Walk" capital="Orange Walk Town"/>
+<sub_region red="250" green="250" blue="250" name="Corozal" capital="Corozal Town"/>
+<sub_region red="150" green="150" blue="150" name="Stann Creek" capital="Dangriga"/>
+<sub_region red="125" green="125" blue="125" name="Toledo" capital="Punta Gorda"/>
+</region>

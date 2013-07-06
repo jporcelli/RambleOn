@@ -1,0 +1,8 @@
+<region name="Grenada" leader="Tillman Thomas" capital="St. George's">
+	<sub_region red="160" green="160" blue="160" name="Carriacou" capital="Hillsborough"/>
+	<sub_region red="180" green="180" blue="180" name="St. Patrick" capital="Sauteurs"/>
+	<sub_region red="190" green="190" blue="190" name="St. Mark" capital="Victoria"/>
+	<sub_region red="200" green="200" blue="200" name="St. Andrew" capital="GrenVille"/>
+	<sub_region red="210" green="210" blue="210" name="St. John" capital="Gouvave"/>
+	<sub_region red="220" green="220" blue="220" name="St. David" capital="St. David's"/>
+	<sub_region red="230" green="230" blue="230" name="St. George" capital="St. George's"/>

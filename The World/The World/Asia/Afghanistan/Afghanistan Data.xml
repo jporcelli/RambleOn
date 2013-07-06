@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="Afghanistan" leader="Hamid Karzai" capital="Kabul">
+    <sub_region red="200" green="200" blue="200" name="Badakhshan"      capital="Fayzabad" />
+    <sub_region red="198" green="198" blue="198" name="Nuristan"        capital="Parun" />
+    <sub_region red="196" green="196" blue="196" name="Kunar"           capital="Asadabad" />
+    <sub_region red="194" green="194" blue="194" name="Laghman"         capital="Mihtarlam" />
+    <sub_region red="192" green="192" blue="192" name="Kapisa"          capital="Mahmud-i-Raqi" />
+    <sub_region red="190" green="190" blue="190" name="Panjshir"        capital="Bazarak" />
+    <sub_region red="188" green="188" blue="188" name="Takhar"          capital="Taloqan" />
+    <sub_region red="186" green="186" blue="186" name="Kunduz"          capital="Kunduz" />
+    <sub_region red="184" green="184" blue="184" name="Baghlan"         capital="Puli Khumri" />
+    <sub_region red="182" green="182" blue="182" name="Parwan"          capital="Charikar" />
+    <sub_region red="180" green="180" blue="180" name="Kabul"           capital="Kabul" />
+    <sub_region red="178" green="178" blue="178" name="Nangrahar"       capital="Jalalabad" />
+    <sub_region red="176" green="176" blue="176" name="Maidan Wardak"   capital="Maidan Shar" />
+    <sub_region red="174" green="174" blue="174" name="Logar"           capital="Pul-i-Alam" />
+    <sub_region red="172" green="172" blue="172" name="Paktia"          capital="Gardez" />
+    <sub_region red="170" green="170" blue="170" name="Khost"           capital="Khost" />
+    <sub_region red="168" green="168" blue="168" name="Samangan"        capital="Samangan" />
+    <sub_region red="166" green="166" blue="166" name="Balkh"           capital="Mazar-i-Sharif" />
+    <sub_region red="164" green="164" blue="164" name="Jowzjan"         capital="Sheberghan" />
+    <sub_region red="162" green="162" blue="162" name="Faryab"          capital="Maymana" />
+    <sub_region red="160" green="160" blue="160" name="Sar-e Pol"       capital="Sar-e Pol" />
+    <sub_region red="158" green="158" blue="158" name="Bamyan"          capital="Bamyan" />
+    <sub_region red="156" green="156" blue="156" name="Ghazni"          capital="Ghazni" />
+    <sub_region red="154" green="154" blue="154" name="Paktika"         capital="Sharana" />
+    <sub_region red="152" green="152" blue="152" name="Badghis"         capital="Qala i Naw" />
+    <sub_region red="150" green="150" blue="150" name="Ghor"            capital="Chaghcharan" />
+    <sub_region red="148" green="148" blue="148" name="Daykundi"        capital="Nili" />
+    <sub_region red="146" green="146" blue="146" name="Oruzgan"         capital="Tarinkot" />
+    <sub_region red="144" green="144" blue="144" name="Zabul"           capital="Qalat" />
+    <sub_region red="142" green="142" blue="142" name="Herat"           capital="Herat" />
+    <sub_region red="140" green="140" blue="140" name="Farah"           capital="Farah" />
+    <sub_region red="138" green="138" blue="138" name="Nimruz"          capital="Zaranj" />
+    <sub_region red="136" green="136" blue="136" name="Helmand"         capital="Lashkar Gah" />
+    <sub_region red="134" green="134" blue="134" name="Kandahar"        capital="Kandahar" />
+</region>
+

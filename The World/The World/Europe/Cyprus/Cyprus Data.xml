@@ -1,0 +1,8 @@
+<region name="Cyprus" leader="Nicos Anastasiades" capital="Nicosia">
+	<sub_region red="200" green="200" blue="200" name="Famagusta" capital="Famagusta"/>
+	<sub_region red="199" green="199" blue="199" name="Kyrenia" capital="Kyrenia"/>
+	<sub_region red="198" green="198" blue="198" name="Nicosia" capital="Nicosia"/>
+	<sub_region red="197" green="197" blue="197" name="Larnara" capital="Larnara"/>
+	<sub_region red="196" green="196" blue="196" name="Limassol" capital="Limassol"/>
+	<sub_region red="195" green="195" blue="195" name="Paphos" capital="Paphos"/>
+</region>	

@@ -1,0 +1,9 @@
+<region name="Australia" leader="Julia Gillard" capital="Canberra">
+	<sub_region red="140" green="140" blue="140" name="Western Australia" capital="Perth"/>
+	<sub_region red="150" green="150" blue="150" name="Northern Territory" capital="Darwin"/>
+	<sub_region red="160" green="160" blue="160" name="South Australia" capital="Adelaide"/>
+	<sub_region red="170" green="170" blue="170" name="Queensland" capital="Brisbane"/>
+	<sub_region red="180" green="180" blue="180" name="New South Wales" capital="Sydney"/>
+	<sub_region red="190" green="190" blue="190" name="Australia Capital Territory" capital="Canberra"/>
+	<sub_region red="200" green="200" blue="200" name="Victoria" capital="Melbourne"/>
+	<sub_region red="210" green="210" blue="210" name="Tasmania" capital="Hobart"/>

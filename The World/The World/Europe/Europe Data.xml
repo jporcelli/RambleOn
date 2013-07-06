@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="Europe">
+  <sub_region red="220" green="220" blue="220" name="Albania" capital="Tirana" />
+  <sub_region red="218" green="218" blue="218" name="Andorra" capital="Andorra la Vella" />
+  <sub_region red="216" green="216" blue="216" name="Austria" capital="Vienna" />
+  <sub_region red="214" green="214" blue="214" name="Belarus" capital="Minsk" />
+  <sub_region red="212" green="212" blue="212" name="Belgium" capital="Brussels" />
+  <sub_region red="210" green="210" blue="210" name="Bosnia and Herzegovina" capital="Sarajevo" />
+  <sub_region red="208" green="208" blue="208" name="Bulgaria" capital="Sofia" />
+  <sub_region red="206" green="206" blue="206" name="Croatia"  capital="Zagreb" />
+  <sub_region red="204" green="204" blue="204" name="Cyprus" capital="Nicosia" />
+  <sub_region red="202" green="202" blue="202" name="Czech Republic" capital="Prague" />
+  <sub_region red="200" green="200" blue="200" name="Denmark" capital="Copenhagen" />
+  <sub_region red="198" green="198" blue="198" name="Estonia" capital="Tallinn" />
+  <sub_region red="196" green="196" blue="196" name="Finland" capital="Helsinki" />
+  <sub_region red="194" green="194" blue="194" name="France" capital="Paris" />
+  <sub_region red="192" green="192" blue="192" name="Germany" capital="Berlin" />
+  <sub_region red="190" green="190" blue="190" name="Greece" capital="Athens" />
+  <sub_region red="188" green="188" blue="188" name="Hungary" capital="Budapest" />
+  <sub_region red="186" green="186" blue="186" name="Iceland" capital="Reykjavik" />
+  <sub_region red="184" green="184" blue="184" name="Italy" capital="Rome" />
+  <sub_region red="182" green="182" blue="182" name="Latvia" capital="Riga" />
+  <sub_region red="180" green="180" blue="180" name="Liechtenstein" capital="Vaduz" />
+  <sub_region red="178" green="178" blue="178" name="Lithuania" capital="Vilnius" />
+  <sub_region red="176" green="176" blue="176" name="Luxembourg" capital="Luxembourg" />
+  <sub_region red="174" green="174" blue="174" name="Macedonia" capital="Skopje" />
+  <sub_region red="172" green="172" blue="172" name="Malta" capital="Valletta" />
+  <sub_region red="170" green="170" blue="170" name="Moldova" capital="Chisinau" />
+  <sub_region red="168" green="168" blue="168" name="Monaco" capital="Monaco" />
+  <sub_region red="166" green="166" blue="166" name="Montanegro" capital="Podgorica" />
+  <sub_region red="164" green="164" blue="164" name="Netherlands" capital="Amsterdam" />
+  <sub_region red="162" green="162" blue="162" name="Norway" capital="Oslo" />
+  <sub_region red="160" green="160" blue="160" name="Poland" capital="Warsaw" />
+  <sub_region red="158" green="158" blue="158" name="Portugal" capital="Lisbon" />
+  <sub_region red="156" green="156" blue="156" name="Romania" capital="Bucharest" />
+  <sub_region red="154" green="154" blue="154" name="Russia" capital="Moscow" />
+  <sub_region red="152" green="152" blue="152" name="San Marino" capital="San Marino" />
+  <sub_region red="150" green="150" blue="150" name="Serbia" capital="Belgrade" />
+  <sub_region red="148" green="148" blue="148" name="Slovakia" capital="Bratislava" />
+  <sub_region red="146" green="146" blue="146" name="Slovenia" capital="Ljubljana" />
+  <sub_region red="144" green="144" blue="144" name="Spain" capital="Madrid" />
+  <sub_region red="142" green="142" blue="142" name="Sweden" capital="Stockholm" />
+  <sub_region red="140" green="140" blue="140" name="Switzerland" capital="Bern" />
+  <sub_region red="138" green="138" blue="138" name="Turkey" capital="Ankara" />
+  <sub_region red="136" green="136" blue="136" name="Ukraine" capital="Kiev" />
+  <sub_region red="134" green="134" blue="134" name="Vatican City" capital="Vatican City" />
+  <sub_region red="132" green="132" blue="132" name="England" capital="London" />
+  <sub_region red="130" green="130" blue="130" name="Northern Ireland" capital="Belfast" />
+  <sub_region red="128" green="128" blue="128" name="Scotland" capital="Edinburgh" />
+  <sub_region red="126" green="126" blue="126" name="Wales" capital="Cardiff" />
+  <sub_region red="124" green="124" blue="124" name="Kosovo" capital="Pristina" />
+  <sub_region red="122" green="122" blue="122" name="Faroe Islands" capital="Torshavn" />
+  <sub_region red="112" green="112" blue="112" name="Jan Mayen" capital="Longyearbyen" />
+  <sub_region red="110" green="110" blue="110" name="Sicily" capital="Palermo" />
+  <sub_region red="108" green="108" blue="108" name="Corsica" capital="Ajaccio" />
+  <sub_region red="106" green="106" blue="106" name="Sardinia" capital="Cagliari" />
+  <sub_region red="104" green="104" blue="104" name="Ireland" capital="Dublin" />
+</region>

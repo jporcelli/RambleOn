@@ -1,0 +1,97 @@
+package accountdata;
+
+import java.util.ArrayList;
+import java.util.TreeMap;
+
+/**
+ * This is a data management class for Accounts, providing a means to add,
+ * remove, and find accounts.
+ *
+ * @author James Porcelli
+ */
+public class AccountDataManager {
+
+    //A MAPPING OF ACTIVE ACCOUNTS FOR THE APP FROM USERNAME TO ACCOUNT OBJECT
+    private TreeMap<String, Account> accounts;
+    private ArrayList<String> userNames;
+    // THIS WILL DO THE READING/WRITING OF FILES. NOTE THAT
+    // THE CONCRETE CLASS IMPLEMENTATION MUST BE PROVIDED
+    private AccountImporterExporter accountIO;
+    //THERE IS ONLY ONE CURRENT ACCOUNT AT A TIME DURNG EXECUTION OF THE APPLICATION
+    private Account currentAccount;
+
+    /**
+     * Default constructor, it will initialize all necessary data structures
+     * such that XML files may be loaded. Note that a constructed
+     * importer/exporter must be set separately.
+     */
+    public AccountDataManager() {
+        //INIT THE DATA STRUCTURE WHERE WELL STORE ALL OUR ACCOUNT DATA FROM THE 
+        //RAMBLEON DATA STORE (XML FILE)
+        accounts = new TreeMap<>();
+
+        userNames = new ArrayList<>();
+
+        //TEST VALUES FOR BETA ONLY
+        userNames.add("TEST1");
+        userNames.add("TEST2");
+        userNames.add("TEST3");
+        userNames.add("TEST4");
+    }
+
+    public ArrayList<String> getUserNames() {
+        return userNames;
+    }
+
+    public void setUserNames(ArrayList<String> userNames) {
+        this.userNames = userNames;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public TreeMap<String, Account> getAccounts() {
+        return accounts;
+    }
+
+    /**
+     *
+     * @param accounts
+     */
+    public void setAccounts(TreeMap<String, Account> accounts) {
+        this.accounts = accounts;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public AccountImporterExporter getAccountIO() {
+        return accountIO;
+    }
+
+    /**
+     *
+     * @param accountIO
+     */
+    public void setAccountIO(AccountImporterExporter accountIO) {
+        this.accountIO = accountIO;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public Account getCurrentAccount() {
+        return currentAccount;
+    }
+
+    /**
+     *
+     * @param currentAccount
+     */
+    public void setCurrentAccount(Account currentAccount) {
+        this.currentAccount = currentAccount;
+    }
+}

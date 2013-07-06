@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="Madagascar" leader="Omer Beriziky" capital="Antananarivo">
+	<sub_region red="167" green="167" blue="167" name="Diana" capital="Antsiranana"/>
+	<sub_region red="168" green="168" blue="168" name="Sofia" capital="Maintirano"/>
+	<sub_region red="169" green="169" blue="169" name="Atsinanana" capital="Toamasina"/>
+	<sub_region red="170" green="170" blue="170" name="Atsimo-Andrefana" capital="Toliara"/>
+	<sub_region red="171" green="171" blue="171" name="Antananarivo" capital="Antananarivo"/>
+	<sub_region red="172" green="172" blue="172" name="Haute Matsiatra" capital="Fianarantsoa"/>
+</region>

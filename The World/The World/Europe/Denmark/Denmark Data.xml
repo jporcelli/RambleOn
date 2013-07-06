@@ -1,0 +1,17 @@
+<region name="Denmark" leader="Helle Thorning-Schmidt" capital="Copenhagen">
+	<sub_region red="200" green="200" blue="200" name="Staden Kobenhavn" capital="Copenhagen"/>
+	<sub_region red="195" green="195" blue="195" name="Kobenhavn" capital="copenhagen"/>
+	<sub_region red="190" green="190" blue="190" name="Frederilksborg" capital="Hillerad"/>
+	<sub_region red="185" green="185" blue="185" name="Roskilde" capital="Roskilde"/>
+	<sub_region red="180" green="180" blue="180" name="Vestsjaelland" capital="Sore"/>
+	<sub_region red="175" green="175" blue="175" name="Storstram" capital="Nykobing"/>
+	<sub_region red="170" green="170" blue="170" name="Bornholm" capital="Renne"/>
+	<sub_region red="165" green="165" blue="165" name="Fyn" capital="Odense"/>
+	<sub_region red="160" green="160" blue="160" name="Sonderjylland" capital="Abenra"/>
+	<sub_region red="155" green="155" blue="155" name="Ribe" capital="Ribe"/>
+	<sub_region red="150" green="150" blue="150" name="Vejle" capital="Vejle"/>
+	<sub_region red="145" green="145" blue="145" name="Ringkebing" capital="Ringkebing"/>
+	<sub_region red="140" green="140" blue="140" name="Arhus" capital="Arhus"/>
+	<sub_region red="135" green="135" blue="135" name="Viborg" capital="Viborg"/>
+	<sub_region red="130" green="130" blue="130" name="Nordjylland" capital="Alborg"/>
+</region>	

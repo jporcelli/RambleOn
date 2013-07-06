@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="Norway" leader="Jens Stoltenberg" capital="Oslo">
+	<sub_region red="210" green="210" blue="210" name="Finnmark" capital="Vadso"/>
+	<sub_region red="200" green="200" blue="200" name="Troms" capital="Tromso"/>
+	<sub_region red="190" green="190" blue="190" name="Nordland" capital="Bodo"/>
+	<sub_region red="180" green="180" blue="180" name="Nord-Trondelag" capital="Steinkjer"/>
+	<sub_region red="175" green="175" blue="175" name="Oslo" capital="City of Oslo"/>
+	<sub_region red="170" green="170" blue="170" name="Sor-Trondelag" capital="Trondheim"/>
+	<sub_region red="160" green="160" blue="160" name="More Og Romsdal" capital="Molde"/>
+	<sub_region red="150" green="150" blue="150" name="Sogn Og Fjordane" capital="Leikanger"/>
+	<sub_region red="140" green="140" blue="140" name="Hordaland" capital="Bergen"/>
+	<sub_region red="130" green="130" blue="130" name="Rogaland" capital="Stavenger"/>
+	<sub_region red="120" green="120" blue="120" name="Vest-Agder" capital="Kristiansand"/>
+	<sub_region red="110" green="110" blue="110" name="Aust-Agder" capital="Arendal"/>
+	<sub_region red="100" green="100" blue="100" name="Telemark" capital="Skien"/>
+	<sub_region red="90" green="90" blue="90" name="Buskerud" capital="Drammen"/>
+	<sub_region red="80" green="80" blue="80" name="Oppland" capital="Lillehammer"/>
+	<sub_region red="70" green="70" blue="70" name="Hedmark" capital="Hamar"/>
+	<sub_region red="60" green="60" blue="60" name="Akershus" capital="Oslo"/>
+	<sub_region red="50" green="50" blue="50" name="Vestfold" capital="Tonsberg"/>
+	<sub_region red="40" green="40" blue="40" name="Ostfold" capital="Sarpsborg"/>
+</region>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<region capital="Abuja" leader="Goodluck Jonathan" name="Nigeria">
+	<sub_region capital="Sokoto" name="Sokoto" blue="150" green="150" red="150"/>
+	<sub_region capital="Birnin Kebbi" name="Kebbi" blue="152" green="152" red="152"/>
+	<sub_region capital="Gusau" name="Zamfara" blue="154" green="154" red="154"/>
+	<sub_region capital="Katsina" name="Katsina" blue="156" green="156" red="156"/>
+	<sub_region capital="Minna" name="Niger" blue="158" green="158" red="158"/>
+	<sub_region capital="Ilorin" name="Kwara" blue="160" green="160" red="160"/>	
+	<sub_region capital="Ibadan" name="Oyo" blue="162" green="162" red="162"/>	
+	<sub_region capital="Osogbo" name="Osun" blue="164" green="164" red="164"/>	
+	<sub_region capital="Abeokuta" name="Ogun" blue="166" green="166" red="166"/>	
+	<sub_region capital="Ikeja" name="Lagos" blue="168" green="168" red="168"/>	
+	<sub_region capital="Akure" name="Ondo" blue="170" green="170" red="170"/>	
+	<sub_region capital="Ado Ekiti" name="Ekiti" blue="172" green="172" red="172"/>
+	<sub_region capital="Lokoja" name="Kogi" blue="174" green="174" red="174"/>
+	<sub_region capital="Benin City" name="Edo" blue="176" green="176" red="176"/>
+	<sub_region capital="Asaba" name="Delta" blue="178" green="178" red="178"/>
+	<sub_region capital="Yenagoa" name="Bayelsa" blue="180" green="180" red="180"/>
+	<sub_region capital="Port Harcourt" name="Rivers" blue="182" green="182" red="182"/>
+	<sub_region capital="Owerri" name="Imo" blue="184" green="184" red="184"/>
+	<sub_region capital="Awka" name="Anambra" blue="186" green="186" red="186"/>
+	<sub_region capital="Uyo" name="Akwa Ibom" blue="188" green="188" red="188"/>	
+	<sub_region capital="Umuahia" name="Abia" blue="190" green="190" red="190"/>	
+	<sub_region capital="Calabar" name="Cross River" blue="192" green="192" red="192"/>	
+	<sub_region capital="Abakaliki" name="Ebonyi" blue="194" green="194" red="194"/>	
+	<sub_region capital="Enugu" name="Enugu" blue="196" green="196" red="196"/>	
+	<sub_region capital="Makurdi" name="Benue" blue="198" green="198" red="198"/>
+	<sub_region capital="Jalingo" name="Taraba" blue="200" green="200" red="200"/>	
+	<sub_region capital="Yola" name="Adamawa" blue="202" green="202" red="202"/>	
+	<sub_region capital="Maiduguri" name="Borno" blue="204" green="204" red="204"/>	
+	<sub_region capital="Damaturu" name="Yobe" blue="206" green="206" red="206"/>	
+	<sub_region capital="Gombe" name="Gombe" blue="208" green="208" red="208"/>	
+	<sub_region capital="Bauchi" name="Bauchi" blue="210" green="210" red="210"/>	
+	<sub_region capital="Jos" name="Plateau" blue="212" green="212" red="212"/>
+	<sub_region capital="Lafia" name="Nasarawa" blue="214" green="214" red="214"/>	
+	<sub_region capital="Abuja" name="Federal Capital" blue="216" green="216" red="216"/>
+	<sub_region capital="Kaduna" name="Kaduna" blue="218" green="218" red="218"/>
+	<sub_region capital="Kano" name="Kano" blue="220" green="220" red="220"/>
+	<sub_region capital="Dutse" name="Jigawa" blue="222" green="222" red="222"/>
+</region>

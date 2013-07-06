@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="The World">
+  <sub_region red="225" green="225" blue="225" name="Africa" />
+  <sub_region red="200" green="200" blue="200" name="Antarctica" />
+  <sub_region red="175" green="175" blue="175" name="Asia" />
+  <sub_region red="150" green="150" blue="150" name="Europe" />
+  <sub_region red="125" green="125" blue="125" name="North America" />
+  <sub_region red="100" green="100" blue="100" name="Oceania" />
+  <sub_region red="75" green="75" blue="75" name="South America" />
+</region>

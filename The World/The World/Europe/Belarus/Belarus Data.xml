@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<region name = "Belarus" leader = "Alexander Lukashenko" capital = "Minsk">
+    <sub_region red="220" green="220" blue="220" name="Vitebsk Region" capital="Vitebsk"/>
+    <sub_region red="200" green="200" blue="200" name= "Mogilev Region" capital="Mogilev"/>
+    <sub_region red="180" green="180" blue="180" name="Gomel Region" capital="Gomel"/>
+    <sub_region red="160" green="160" blue="160" name="Minsk Region" capital="Minsk"/>
+    <sub_region red="140" green="140" blue="140" name="Brest Region" capital="Brest"/>
+    <sub_region red="120" green="120" blue="120" name="Grodno Region" capital="Grodno"/>
+</region>

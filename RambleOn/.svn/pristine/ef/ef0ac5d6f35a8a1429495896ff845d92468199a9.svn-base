@@ -1,0 +1,434 @@
+package rambleon;
+
+import accountdata.AccountDataManager;
+import java.awt.Color;
+import java.awt.event.MouseEvent;
+import java.awt.geom.Point2D;
+import java.awt.geom.Point2D.Double;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.GregorianCalendar;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.SwingUtilities;
+import mini_game.MiniGame;
+import mini_game.MiniGameDataModel;
+import static rambleon.RambleOnSettings.*;
+import rambleonsprites.TextualSprite;
+import regiondata.Region;
+import regiondata.RegionDataManager;
+import regiondata.RegionIO;
+import static regiondata.RegionIOSettings.*;
+import xml_utilities.InvalidXMLFileFormatException;
+
+/**
+ * This class represents the data model for our game application. This class is
+ * concerned with the data for the application, and only with the data. We
+ * manage game play data such as account data, as well as all region data i.e
+ * regions maps, and pixel values. This class is also responsible for keeping
+ * data pertaining to the current game i.e the score and statistics until the
+ * current game finishes and the data is passed off to the accounts manager for
+ * storage.
+ *
+ * @author James C. Porcelli, SBU ID 108900819
+ */
+public class RambleOnDataModel extends MiniGameDataModel {
+
+    //REGION DATA/MAPS IMPORTER
+    private RegionIO regionImporter;
+    //THE SCHEMA FOR REGION DATA XML FILES
+    private final File xmlSchema = new File(REGION_DATA_SCHEMA);
+    //GAME DATA MANAGERS
+    private AccountDataManager accountsManager;
+    private RegionDataManager dataManager;
+    //MAPPINGS TO EACH REGIONS GREY SCALE VALUE
+    private HashMap<Color, String> colorToSubRegionMappings;
+    private HashMap<String, Color> subRegionToColorMappings;
+    //EACH REGIONS PIXEL LIST
+    private HashMap<String, ArrayList<Point2D.Double>> pixels;
+    //LIST OF REGIONS CURRENTLY IN RED STATE
+    private LinkedList<String> redSubRegions;
+    //REGIONS ON THE GAME STACK
+    private LinkedList<TextualSprite> subRegionStack;
+    //START TIME FOR THIS GAME 
+    private GregorianCalendar startTime;
+    //END TIME OF GAME WIN
+    private GregorianCalendar winEndingTime;
+    //NUMBER OF INCORRECT GUESSES
+    private int incorrectGuesses;
+    //STATE FLAG FOR WHETHER WE ARE STILL IN COUNTRY SELECTION OR PLAYING THE ACTUAL GAME
+    private boolean inRegionSelection;
+    //THE WORLD MAP
+    private final File theWorldFile = new File(WORLD_DIR + "The World" + XML_DATA_FILE);
+
+    /**
+     * Initialize the games data model and all the corresponding data structures
+     * that make up that model. As well since we only construct this model once
+     * per application run we initialize the manager by loading the world map.
+     * Once we have the world map in the manager we can move forward with the
+     * application.
+     */
+    public RambleOnDataModel() {
+        //INIT THE DATA MANAGER
+        accountsManager = new AccountDataManager();
+        dataManager = new RegionDataManager();
+        //INIT THE IMPORTER
+        regionImporter = new RegionIO(xmlSchema);
+        //INIT THE LIST DATA STRUCTURES
+        colorToSubRegionMappings = new HashMap<>();
+        subRegionToColorMappings = new HashMap<>();
+        pixels = new HashMap<>();
+        redSubRegions = new LinkedList<>();
+        subRegionStack = new LinkedList<>();
+        startTime = new GregorianCalendar();
+        winEndingTime = new GregorianCalendar();
+        //INIT THE INCORRECT GUESSES VALUE
+        incorrectGuesses = 0;
+        //INIT THE APP STATE FLAG
+        inRegionSelection = true;
+
+    }
+
+    /**
+     *
+     * @return
+     */
+    public AccountDataManager getAccountsManager() {
+        return accountsManager;
+    }
+
+    /**
+     *
+     * @param accountsManager
+     */
+    public void setAccountsManager(AccountDataManager accountsManager) {
+        this.accountsManager = accountsManager;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public RegionDataManager getDataManager() {
+        return dataManager;
+    }
+
+    /**
+     *
+     * @param dataManager
+     */
+    public void setDataManager(RegionDataManager dataManager) {
+        this.dataManager = dataManager;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public HashMap<Color, String> getColorToSubRegionMappings() {
+        return colorToSubRegionMappings;
+    }
+
+    /**
+     *
+     * @param colorToSubRegionMappings
+     */
+    public void setColorToSubRegionMappings(HashMap<Color, String> colorToSubRegionMappings) {
+        this.colorToSubRegionMappings = colorToSubRegionMappings;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public HashMap<String, Color> getSubRegionToColorMappings() {
+        return subRegionToColorMappings;
+    }
+
+    /**
+     *
+     * @param subRegionToColorMappings
+     */
+    public void setSubRegionToColorMappings(HashMap<String, Color> subRegionToColorMappings) {
+        this.subRegionToColorMappings = subRegionToColorMappings;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public HashMap<String, ArrayList<Double>> getPixels() {
+        return pixels;
+    }
+
+    /**
+     *
+     * @param pixels
+     */
+    public void setPixels(HashMap<String, ArrayList<Double>> pixels) {
+        this.pixels = pixels;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public LinkedList<String> getRedSubRegions() {
+        return redSubRegions;
+    }
+
+    /**
+     *
+     * @param redSubRegions
+     */
+    public void setRedSubRegions(LinkedList<String> redSubRegions) {
+        this.redSubRegions = redSubRegions;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public LinkedList<TextualSprite> getSubRegionStack() {
+        return subRegionStack;
+    }
+
+    /**
+     *
+     * @param subRegionStack
+     */
+    public void setSubRegionStack(LinkedList<TextualSprite> subRegionStack) {
+        this.subRegionStack = subRegionStack;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public GregorianCalendar getStartTime() {
+        return startTime;
+    }
+
+    /**
+     *
+     * @param startTime
+     */
+    public void setStartTime(GregorianCalendar startTime) {
+        this.startTime = startTime;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public GregorianCalendar getWinEndingTime() {
+        return winEndingTime;
+    }
+
+    /**
+     *
+     * @param winEndingTime
+     */
+    public void setWinEndingTime(GregorianCalendar winEndingTime) {
+        this.winEndingTime = winEndingTime;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public int getIncorrectGuesses() {
+        return incorrectGuesses;
+    }
+
+    /**
+     *
+     * @param incorrectGuesses
+     */
+    public void setIncorrectGuesses(int incorrectGuesses) {
+        this.incorrectGuesses = incorrectGuesses;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public boolean isInCountrySelection() {
+        return inRegionSelection;
+    }
+
+    /**
+     *
+     * @param inCountrySelection
+     */
+    public void setInCountrySelection(boolean inCountrySelection) {
+        this.inRegionSelection = inCountrySelection;
+    }
+
+    /**
+     *
+     * @param game
+     */
+    public void updateDebugText(MiniGame game) {
+    }
+
+    /**
+     *
+     * @param game
+     */
+    public void updateAll(MiniGame game) {
+    }
+
+    /**
+     * Resets all the game data and initializes the background to the world map
+     * which is where game play starts.
+     *
+     * @param game The game that we are reseting the data for which uses the
+     * mini game frame work.
+     */
+    @Override
+    public void reset(MiniGame game) {
+        try {
+            //LOAD THE WORLD MAP AND DATA INTO THE MANAGER
+            regionImporter.loadRegion(theWorldFile, dataManager);
+
+            //IF THIS HAPPENES WE CANNOT GO FURTHER SO THIS SHOULD NEVER HAPPEN
+        } catch (InvalidXMLFileFormatException | IOException a) {
+            System.out.println("Fatal error during inital loading of region data");
+            System.exit(0);
+        }
+
+        //PROTOCALL FOR EACH TIME A NEW CURRENT REGION IS LOADED INCLUDING AT STARTUP OR RESET
+        newCurrentRegionProtocall();
+    }
+
+    /**
+     * Initialize the list of pixel values associated with every sub region
+     *
+     * @param img The background image to traverse and analyze
+     */
+    public void initSubRegionPixels(BufferedImage img) {
+        //SCAN THE ENTIRE IMAGE AT LOAD TIME TO ANALYZE PIXEL DATA
+        for (int i = 0; i < IMAGE_WIDTH; i++) {
+            for (int j = 0; j < IMAGE_HEIGHT; j++) {
+
+                //GET THE PIXEL AT CORDINATES (i, j) COLOR
+                int pixel_int_color = img.getRGB(i, j);
+                Color pixel_color = new Color(pixel_int_color);
+
+                //TO ITERATE THROUGH THE LIST OF REGIONS
+                Iterator<String> subRegionsIterator = dataManager.getAllRegions().keySet().iterator();
+
+                //TEST PIXEL COLOR AGAISNT EACH SUB REGIONS GREY SCALE VALUE
+                while (subRegionsIterator.hasNext()) {
+                    Region cur_region = dataManager.getAllRegions().get(subRegionsIterator.next());
+
+                    //IF THE PIXEL COLOR MATCHES THE SUB REGIONS GREY SCALE COLOR
+                    if (pixel_color.equals(cur_region.getGreyScale())) {
+                        //ADD THE PIXEL CORDINATES TO THIS SUBREGIONS LIST OF PIXELS
+                        ArrayList<Point2D.Double> subRegionPixels = pixels.get(cur_region.getName());
+                        subRegionPixels.add(new Point2D.Double(i, j));
+                        //IF WE FIND A MATCHING GREY SCALE VALUE MOVE ON TO NEXT PIXEL
+                        break;
+                    }
+
+                }
+
+            }
+        }
+
+    }
+
+    /**
+     * Initialize the sub region to color mappings for the current regions sub
+     * regions. This should be done every time a new region is loaded.
+     */
+    public void initSubRegionMappings() {
+        Iterator<String> regionIterator = dataManager.getAllRegionsNamesIterator();
+        while (regionIterator.hasNext()) {
+            String subRegionName = regionIterator.next();
+            Region subRegion = dataManager.getAllRegions().get(subRegionName);
+
+            subRegionToColorMappings.put(subRegionName, subRegion.getGreyScale());
+            colorToSubRegionMappings.put(subRegion.getGreyScale(), subRegionName);
+        }
+    }
+
+    /**
+     * Proto-call used each time a new region is loaded. This method is a facade
+     * method that encapsulates all the routines we need to execute each time a
+     * new region is loaded.
+     */
+    public void newCurrentRegionProtocall() {
+        //TO ITERATE THROUGH THE LIST OF INITIAL SUB REGIONS 
+        Iterator<String> subRegionsIterator = dataManager.getAllRegionsNamesIterator();
+
+        //CREATE THE PIXEL LISTS FOR THE CONTINENTS
+        while (subRegionsIterator.hasNext()) {
+            Region cur_region = dataManager.getAllRegions().get(subRegionsIterator.next());
+            pixels.put(cur_region.getName(), new ArrayList());
+        }
+
+        initSubRegionPixels(dataManager.getCurrentMap());
+        initSubRegionMappings();
+    }
+
+    /**
+     *
+     * @param mouseX
+     * @param mouseY
+     * @return
+     */
+    public Region regionSelected(int mouseX, int mouseY) {
+
+        BufferedImage img = dataManager.getCurrentMap();
+
+        int rgb = img.getRGB(mouseX, mouseY);
+        Color pixelColor = new Color(rgb);
+        String clickedSubRegion = colorToSubRegionMappings.get(pixelColor);
+        if (clickedSubRegion == null) {
+            //NO MAPPING FOUND
+            return null;
+        } else if (subRegionStack.isEmpty() && clickedSubRegion != null) {
+            //GAME NOT STARTED, REGION SELECTION
+            return dataManager.getAllRegions().get(clickedSubRegion);
+        }
+        return null;
+    }
+
+    /**
+     *
+     * @param game
+     * @param mouseX
+     * @param mouseY
+     */
+    @Override
+    public void checkMousePressOnSprites(MiniGame game, int mouseX, int mouseY, MouseEvent me) {
+        //STILL IN COUNTRY SELECTION
+        if (inRegionSelection) {
+            if (dataManager.getCurrentRegion().getName().equals(THE_WORLD)) {
+                //LEFT CLICK, WE TRAVERSE DOWNWARD IN THE REGION HEIRARCHY
+                if (SwingUtilities.isLeftMouseButton(me)) {
+                    Region regionSelected = regionSelected(mouseX, mouseY);
+                    if (regionSelected != null) {
+                        String selectedRegionData = theWorldFile.getParent() + "/" + regionSelected.getName() + "/" + regionSelected.getName() + XML_DATA_FILE;
+                        try {
+                            regionImporter.loadRegion(new File(selectedRegionData), dataManager);
+                        } catch (InvalidXMLFileFormatException | IOException ex) {
+                            Logger.getLogger(RambleOnDataModel.class.getName()).log(Level.SEVERE, null, ex);
+                        }
+                        newCurrentRegionProtocall();
+                    }
+                }
+            }
+
+        } else //WE ARE IN THE MIDDLE OF GAME PLAY
+        {
+        }
+    }
+}

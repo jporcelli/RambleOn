@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="Morocco" leader="Mohammed VI" capital="Rabat">
+    <sub_region red="215" green="215" blue="215" name="Laâyoune-Boujdour-Sakia El Hamra"      capital="El Aaiún" />
+    <sub_region red="210" green="210" blue="210" name="Guelmim-Es Semara"        capital="Guelmim" />
+    <sub_region red="200" green="200" blue="200" name="Souss-Massa-Drâa"           capital="Agadir" />
+    <sub_region red="195" green="195" blue="195" name="Marrakech-Tensift-El Haouz"         capital="Marrakesh" />
+    <sub_region red="187" green="187" blue="187" name="Doukkala-Abda"          capital="Safi" />
+    <sub_region red="176" green="176" blue="176" name="Grand Casablanca"        capital="Casablanca" />
+    <sub_region red="167" green="167" blue="167" name="Chaouia-Ouardigha"          capital="Settat" />
+    <sub_region red="160" green="160" blue="160" name="Tadla-Azilal"          capital="Béni Mellal" />
+    <sub_region red="155" green="155" blue="155" name="Rabat-Salé-Zemmour-Zaer"         capital="Rabat" />
+    <sub_region red="149" green="149" blue="149" name="Meknès-Tafilalet"          capital="Meknès" />
+    <sub_region red="143" green="143" blue="143" name="Gharb-Chrarda-Béni Hssen"           capital="Kénitra" />
+    <sub_region red="139" green="139" blue="139" name="Tangier-Tétouan"       capital="Tangier" />
+    <sub_region red="131" green="131" blue="131" name="Taza-Al Hoceima-Taounate"   capital="Al Hoceima" />
+    <sub_region red="129" green="129" blue="129" name="Fès-Boulemane"           capital="Fès" />
+    <sub_region red="122" green="122" blue="122" name="Oriental"          capital="Oujda" />
+</region>
+

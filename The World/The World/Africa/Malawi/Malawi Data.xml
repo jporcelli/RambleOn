@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="Malawi" leader="Joyce Banda" capital="Lilongwe">
+    <sub_region red="179" green="179" blue="179" name="Chitipa"      capital="Chitipa" />
+    <sub_region red="159" green="159" blue="159" name="Karonga"      capital="Karonga" />
+    <sub_region red="139" green="139" blue="139" name="Rumphi"      capital="Rumphi" />
+    <sub_region red="119" green="119" blue="119" name="Mzimba"      capital="Mzimba" />
+    <sub_region red="99" green="99" blue="99" name="Nkhata Bay"      capital="Nkhata Bay" />
+    <sub_region red="79" green="79" blue="79" name="Kasungu"      capital="Kasungu" />
+    <sub_region red="59" green="59" blue="59" name="Mchinji"      capital="Mchinji" />
+    <sub_region red="39" green="39" blue="39" name="Ntcheu"      capital="Ntcheu" />
+    <sub_region red="189" green="189" blue="189" name="Chikwawa"      capital="Chikwawa" />
+    <sub_region red="169" green="169" blue="169" name="Nkhotakota"      capital="Nkhotakota" />
+    <sub_region red="149" green="149" blue="149" name="Ntchisi"      capital="Ntchisi" />
+    <sub_region red="129" green="129" blue="129" name="Dowa"      capital="Dowa" />
+    <sub_region red="109" green="109" blue="109" name="Lilongwe"      capital="Lilongwe" />
+    <sub_region red="89" green="89" blue="89" name="Salima"      capital="Salima" />
+    <sub_region red="69" green="69" blue="69" name="Dedza"      capital="Dedza" />
+    <sub_region red="49" green="49" blue="49" name="Mongochi"      capital="Mongochi" />
+    <sub_region red="29" green="29" blue="29" name="Mwanza"      capital="Mwanza" />
+    <sub_region red="199" green="199" blue="199" name="Nsanje"      capital="Nsanje" />
+    <sub_region red="209" green="209" blue="209" name="Thyolo"      capital="Thyolo" />
+    <sub_region red="219" green="219" blue="219" name="Blantyre"      capital="Blantyre" />
+    <sub_region red="229" green="229" blue="229" name="Chiradzulu"      capital="Chiradzulu" />
+    <sub_region red="239" green="239" blue="239" name="Mulanje"      capital="Mulanje" />
+    <sub_region red="150" green="150" blue="150" name="Zomba"      capital="Zomba" />
+    <sub_region red="165" green="165" blue="165" name="Machinga"      capital="Machinga" />  
+    
+</region>
+

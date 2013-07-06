@@ -1,0 +1,12 @@
+package rambleon;
+
+/**
+ *
+ * @author James C. Porcelli, SBU ID 108900819
+ */
+public class RambleOnSettings {
+
+    public static final String APP_TITLE = "Ramble On";
+    
+    public static final int FRAMES_PER_SECOND = 30;
+}

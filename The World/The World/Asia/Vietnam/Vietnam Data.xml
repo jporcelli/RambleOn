@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<region name="Vietnam" leader="Truong Tan Sang" capital="Ha Nio">
+<sub_region red="250" green="250" blue="250" name="Northeast" capital="Hai Phong City"/>
+<sub_region red="240" green="240" blue="240" name="Northwest" capital="Dien Bien Phu"/>
+<sub_region red="230" green="230" blue="230" name="Red River Delta" capital="Hai Phong City"/>
+<sub_region red="220" green="220" blue="220" name="North Central Coast" capital="Thua Thien - Hue City"/>
+<sub_region red="210" green="210" blue="210" name="South Central Coast" capital="Da Nang City"/>
+<sub_region red="200" green="200" blue="200" name="Central Highlands" capital="Lam Dong"/>
+<sub_region red="190" green="190" blue="190" name="Southeast" capital="Ho Chi Minh City"/>
+<sub_region red="180" green="180" blue="180" name="Mekong River Delta" capital="Can Tho City"/>
+</region>

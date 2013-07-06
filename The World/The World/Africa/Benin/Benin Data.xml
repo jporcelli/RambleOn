@@ -1,0 +1,14 @@
+<region name="Benin" leader="Yayi Boni" capital="Porto-Novo">
+<sub_region red="170" green="170" blue="170" name="Alibori" capital="Kandi"/>
+<sub_region red="160" green="160" blue="160" name="Atakora" capital="Natitingou"/>
+<sub_region red="150" green="150" blue="150" name="Borgou" capital="Parakou"/>
+<sub_region red="140" green="140" blue="140" name="Donga" capital="Djougou"/>
+<sub_region red="130" green="130" blue="130" name="Collines" capital="Savalou"/>
+<sub_region red="120" green="120" blue="120" name="Zou" capital="Abomey"/>
+<sub_region red="110" green="110" blue="110" name="Plateau" capital="Pobe"/>
+<sub_region red="100" green="100" blue="100" name="Kouffo" capital="Aplahoue"/>
+<sub_region red="90" green="90" blue="90" name="Mono" capital="Lokossa"/>
+<sub_region red="80" green="80" blue="80" name="Atlantique" capital="Ouidah"/>
+<sub_region red="70" green="70" blue="70" name="Littoral" capital="Cotonou"/>
+<sub_region red="60" green="60" blue="60" name="Oueme" capital="Porto-Novo"/>
+</region>

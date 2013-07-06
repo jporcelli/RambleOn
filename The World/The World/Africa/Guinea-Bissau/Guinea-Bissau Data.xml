@@ -1,0 +1,11 @@
+<region name="Guinea-Bissau" leader="Manuel Serifo Nhamadjo" capital="Bissau">
+<sub_region red="130" green="130" blue="130" name="Bafata" capital="Bafata"/>
+<sub_region red="135" green="135" blue="135" name="Biombo" capital="Quinhamel"/>
+<sub_region red="140" green="140" blue="140" name="Bissau" capital="Bissau"/>
+<sub_region red="145" green="145" blue="145" name="Bolama" capital="Bolama"/>
+<sub_region red="150" green="150" blue="150" name="Cacheu" capital="Cacheu"/>
+<sub_region red="155" green="155" blue="155" name="Gabu" capital="Gabu"/>
+<sub_region red="160" green="160" blue="160" name="Oio" capital="Farim"/>
+<sub_region red="165" green="165" blue="165" name="Quinara" capital="Buba"/>
+<sub_region red="170" green="170" blue="170" name="Tombali" capital="Catio"/>
+</region>

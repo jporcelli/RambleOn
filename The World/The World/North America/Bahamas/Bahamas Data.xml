@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="Bahamas" leader="Perry Christie" capital="Nassau">
+    <sub_region red="200" green="200" blue="200" name="Grand Bahama"          capital="West End" />
+    <sub_region red="195" green="195" blue="195" name="Abacos"                capital="Marsh Habour" />
+    <sub_region red="190" green="190" blue="190" name="Bimini"                capital="Bimini" />
+    <sub_region red="185" green="185" blue="185" name="Berry Islands"         capital="Bullocks Harbor" />
+    <sub_region red="180" green="180" blue="180" name="Andros"                capital="Magwe" />
+    <sub_region red="175" green="175" blue="175" name="Nassau"                capital="Nassau" />
+    <sub_region red="170" green="170" blue="170" name="Harbour Island"        capital="Dunmore Town" />
+    <sub_region red="165" green="165" blue="165" name="Exumas"                capital="George Town" />
+    <sub_region red="160" green="160" blue="160" name="Cat Island"            capital="New Bight" />
+    <sub_region red="155" green="155" blue="155" name="Long Island"           capital="Clarence Town" />
+    <sub_region red="150" green="150" blue="150" name="Rum Cay"               capital="Port Nelson" />
+    <sub_region red="145" green="145" blue="145" name="Acklins"               capital="Spring Point" />
+    <sub_region red="140" green="140" blue="140" name="Mayaguana"             capital="Abraham's Bay" />
+    <sub_region red="135" green="135" blue="135" name="Inagua"                capital="Matthew Town" />
+</region>
+

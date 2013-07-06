@@ -1,0 +1,12 @@
+<region name="Ghana" leader="John Dramani Mahama" capital="Accra">
+<sub_region red="230" green="230" blue="230" name="Upper West" capital="Wa"/>
+<sub_region red="220" green="220" blue="220" name="Upper East" capital="Bolgatanga"/>
+<sub_region red="210" green="210" blue="210" name="Northern" capital="Tamale"/>
+<sub_region red="200" green="200" blue="200" name="Brong-Ahafo" capital="Sunyani"/>
+<sub_region red="190" green="190" blue="190" name="Ashanti" capital="Kumasi"/>
+<sub_region red="180" green="180" blue="180" name="Eastern" capital="Koforidua"/>
+<sub_region red="170" green="170" blue="170" name="Volta" capital="Ho"/>
+<sub_region red="160" green="160" blue="160" name="Western" capital="Sekondi-Takoradi"/>
+<sub_region red="150" green="150" blue="150" name="Central" capital="Cape Coast"/>
+<sub_region red="140" green="140" blue="140" name="Greater Accra" capital="Accra"/>
+</region>

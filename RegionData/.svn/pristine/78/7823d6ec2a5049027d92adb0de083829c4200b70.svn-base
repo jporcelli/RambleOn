@@ -1,0 +1,16 @@
+package regiondata;
+
+import java.io.File;
+
+/**
+ * This interface provides the requirements for an importer plug-in 
+ * to be used for loading region data from an XML file. Note that this 
+ * library, and thus this interface, does not have a particular
+ * XML file structure/schema. So various formats could be used, which
+ * would be up to the plug-in developer.
+ * 
+ * @author James C. Porcelli, SBU ID # 108900819
+ */
+public interface RegionImporter {
+    
+}

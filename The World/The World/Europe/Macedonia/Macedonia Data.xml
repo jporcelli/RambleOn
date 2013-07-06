@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<region name = "Macedonia" leader = "Nikola Gruevski" capital = "Skopje">
+    <sub_region red="220" green="220" blue="220" name="Northeastern Region" capital="Kratovo"/>
+    <sub_region red="200" green="200" blue="200" name= "Eastern Region" capital="Stip"/>
+    <sub_region red="180" green="180" blue="180" name="Southeastern Region" capital="Strumica"/>
+    <sub_region red="160" green="160" blue="160" name="Skopje Region" capital="Skopje"/>
+    <sub_region red="140" green="140" blue="140" name="Vardar Region" capital="Veles"/>
+    <sub_region red="120" green="120" blue="120" name="Pelagonia Region" capital="Bitola"/>
+    <sub_region red="100" green="100" blue="100" name="Polog Region" capital="Gostivar"/>
+    <sub_region red="80" green="80" blue="80" name="Southwestern Region" capital="Struga"/>
+</region>

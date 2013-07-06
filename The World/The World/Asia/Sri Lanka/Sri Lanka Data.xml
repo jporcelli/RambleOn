@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="Sri Lanka" leader="Mahinda Rajapaksa" capital="Sri Jayawardenapura Kotte">
+    <sub_region red="200" green="200" blue="200" name="Northern Province"               capital="Jaffna" />
+    <sub_region red="195" green="195" blue="195" name="North Western Province"          capital="Kurunegala" />
+    <sub_region red="190" green="190" blue="190" name="North Central Province"          capital="Anuradhapura" />
+    <sub_region red="185" green="185" blue="185" name="Eastern Province"                capital="Trincomalee" />
+    <sub_region red="180" green="180" blue="180" name="Western Province"                capital="Colombo" />
+    <sub_region red="175" green="175" blue="175" name="Sabaragamuwa Province"           capital="Ratnapura" />
+    <sub_region red="170" green="170" blue="170" name="Central Province"                capital="Kandy" />
+    <sub_region red="165" green="165" blue="165" name="Uva Province"                    capital="Badulla" />
+    <sub_region red="160" green="160" blue="160" name="Southern Province"               capital="Galle" />
+    
+</region>
+

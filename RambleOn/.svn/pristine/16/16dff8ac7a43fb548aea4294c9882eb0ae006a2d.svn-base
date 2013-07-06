@@ -1,0 +1,37 @@
+package rambleonevents;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import rambleon.RambleOnScreenManager;
+
+/**
+ *
+ * @author James C. Porcelli, SBU ID 108900819
+ */
+public class CreateAccountButtonHandler implements ActionListener {
+
+    private RambleOnScreenManager screenManager;
+
+    /**
+     *
+     * @param screenManager
+     */
+    public CreateAccountButtonHandler(RambleOnScreenManager screenManager) {
+        this.screenManager = screenManager;
+    }
+
+    /**
+     *
+     * @param e
+     */
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        screenManager.initAccountCreationScreen();
+        //REMOVE THE ACCOUNTS SCREEN FROM THE MAIN WINDOW
+        screenManager.getWindow().remove(screenManager.getAccountsScreen());
+        //AND ADD THE ACCOUNT CREATION SCREEN
+        screenManager.getWindow().add(screenManager.getAccountCreationScreen());
+        //AND REFRESH THE WINDOW
+        screenManager.refreshWindow();
+    }
+}

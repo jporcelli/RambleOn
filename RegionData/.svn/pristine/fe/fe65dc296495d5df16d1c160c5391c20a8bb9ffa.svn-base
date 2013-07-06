@@ -1,0 +1,58 @@
+package regiondata;
+
+//LIBRARIES TO USE
+import java.io.File;
+
+/**
+ * This interface provides the requirements for an importer plug-in to be used
+ * for loading region data from an XML file. Note that this interface, does not 
+ * have a particular XML file structure/schema. So various formats could be used, 
+ * which would be up to the plug-in developer.
+ *
+ * @author James C. Porcelli, SBU ID # 108900819
+ */
+public interface RegionImporter {
+
+    /**
+     * Attempts to load all the sub region data for the current region specified
+     * by the prefix of the XML data file passed as the regionDataFile.
+     *
+     * @param regionDataFile The XML file from which the data will be extracted.
+     * This XML file is simply the desired region to load which corresponds exactly
+     * to a directory in the game files with a " Data.XML" suffix appended to it.
+     * The decision has been made to pass the responsibility off to the caller
+     * to append the required suffix to the filename before calling this method.
+     *
+     * @param dataManager The data read from the file will be loaded into this
+     * region data manager which will store and make available to the programmer
+     * all the information contained therein.
+     *
+     * @return Returns true if the world loaded successfully, false otherwise.
+     */
+    public boolean loadRegion(File regionDataFile, RegionDataManager dataManager);    
+    
+    /**
+     * Attempts to load all the sub region leader images for the current region
+     * specified by the directory passed as the regionDir.
+     * 
+     * @param regionDir The directory for the current region which should contain
+     * if its available all the leader images. The directory name for the file
+     * corresponds exactly to the name of the current region for which data is 
+     * being requested.
+     * 
+     * @throws LeaderInformationNotAvailableException If the region for which
+     * leader images were requested does not contain any such images/information.
+     */
+    public void loadRegionLeaderImages(File regionDir, RegionDataManager dataManager) throws LeaderInformationNotAvailableException;
+    
+    /**
+     * 
+     * 
+     * @param regionDir
+     * 
+     * @param dataManager
+     * 
+     * @throws FlagInformationNotAvailableException 
+     */
+    public void loadRegionFlagImages(File regionDir, RegionDataManager dataManager) throws FlagInformationNotAvailableException;
+}

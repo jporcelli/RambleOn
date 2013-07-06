@@ -1,0 +1,9 @@
+<region name="Andorra" leader="Jaume Barumeu" capital="Andorra la Vella">
+	<sub_region red="192" green="192" blue="192" name="Canillo" capital="Canillo"/>
+	<sub_region red="182" green="182" blue="182" name="Ordino" capital="Ordino"/>
+	<sub_region red="172" green="172" blue="172" name="Encamp" capital="Encamp"/>
+	<sub_region red="162" green="162" blue="162" name="LaMassana" capital="LaMassana"/>
+	<sub_region red="152" green="152" blue="152" name="LaVella" capital="LaVella"/>
+	<sub_region red="142" green="142" blue="142" name="Escaldes" capital="Escaldes"/>
+	<sub_region red="132" green="132" blue="132" name="Julia" capital="Julia"/>
+</region>

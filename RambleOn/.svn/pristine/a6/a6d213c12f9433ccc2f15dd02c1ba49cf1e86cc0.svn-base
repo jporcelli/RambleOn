@@ -1,0 +1,90 @@
+package rambleon;
+
+import static rambleon.RambleOnSettings.*;
+import java.awt.Graphics;
+import java.awt.Image;
+import java.awt.image.BufferedImage;
+import java.io.Serializable;
+import javax.swing.JPanel;
+import mini_game.MiniGame;
+import mini_game.Sprite;
+import mini_game.SpriteType;
+import rambleonsprites.TextualSprite;
+
+/**
+ * This is where all rendering for the RambleOn game application will be done.
+ * This includes all rendering of the map and controls.
+ *
+ * @author James C. Porcelli, SBU ID 108900819
+ */
+public class RambleOnPanel extends JPanel {
+
+    //OUR RAMBLEON APP THAT IS ALSO A MINIGAME APP. WE NEED THIS BECAUSE
+    //IT HAS ALL OUR GUI STUFF THAT WE NEED TO RENDER
+    private MiniGame game;
+    //THE RAMBLEON GAME DATA THAT WE NEED TO RENDER
+    private RambleOnDataModel data;
+
+    /**
+     * This constructor stores the game and data references, which we'll need
+     * for rendering.
+     *
+     * @param game The RambleOn game that is using this panel for rendering
+     * @param data The data for RambleOn
+     */
+    public RambleOnPanel(MiniGame game, RambleOnDataModel data) {
+        this.game = game;
+        this.data = data;
+    }
+
+    /**
+     * This is where rendering starts. Note that the order of rendering is of
+     * particular importance, since things drawn first will be on the bottom,
+     * and things rendered last will be on top.
+     *
+     * @param g the Graphics context for this panel. Draw commands given through
+     * g will render things onto this panel.
+     */
+    @Override
+    public void paintComponent(Graphics g) {
+        renderToGraphicsContext(g);
+    }
+
+    /**
+     * This method does the actual rendering. This method is separate of
+     * paintComponent because it allows us to render content to an image as well
+     * as to this panel.
+     *
+     * @param g the Graphics context for this panel. Draw commands given through
+     * g will render things onto this panel.
+     */
+    public void renderToGraphicsContext(Graphics g) {
+
+        renderBackground(g);
+    }
+
+    /**
+     *
+     * @param g
+     */
+    public void renderBackground(Graphics g) {
+        Image img = ((RambleOnDataModel) data).getDataManager().getCurrentMap();
+        g.drawImage(img, 0, 0, img.getWidth(null), img.getHeight(null), null);
+    }
+
+    /**
+     * Renders the s Sprite into the Graphics context g. Note that each Sprite
+     * knows its own x,y coordinate location.
+     *
+     * @param g the Graphics context of this panel
+     *
+     * @param s the Sprite to be rendered
+     */
+    public void renderSprite(Graphics g, Sprite s) {
+        if (!s.getState().equals(INVISIBLE_STATE)) {
+            SpriteType bgST = s.getSpriteType();
+            Image img = bgST.getStateImage(s.getState());
+            g.drawImage(img, (int) s.getX(), (int) s.getY(), bgST.getWidth(), bgST.getHeight(), null);
+        }
+    }
+}

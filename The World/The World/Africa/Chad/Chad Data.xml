@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="Chad" leader="Idriss Deby Itno" capital="N'Djamena">
+    <sub_region red="200" green="200" blue="200" name="Borkou-Ennedi-Tibesti"      	capital="Faya-Largeau" />
+    <sub_region red="198" green="198" blue="198" name="Kanem"        				capital="Mao" />
+    <sub_region red="196" green="196" blue="196" name="Batha"           			capital="Ati" />
+    <sub_region red="194" green="194" blue="194" name="Wadi Fira"         			capital="Biltine" />
+    <sub_region red="192" green="192" blue="192" name="Ouaddai"          			capital="Abeche" />
+    <sub_region red="190" green="190" blue="190" name="Salamat"       				capital="Am-Timan" />
+    <sub_region red="188" green="188" blue="188" name="Guera"          				capital="Mongo" />
+    <sub_region red="186" green="186" blue="186" name="Hadjer-Lamis"          		capital="Massakory" />
+    <sub_region red="184" green="184" blue="184" name="Lac"         				capital="Bol" />
+    <sub_region red="182" green="182" blue="182" name="Moyen-Chari"          		capital="Sarh" />
+    <sub_region red="180" green="180" blue="180" name="Mandoul"           			capital="Koumra" />
+    <sub_region red="178" green="178" blue="178" name="Tandjile"       				capital="Lai" />
+    <sub_region red="176" green="176" blue="176" name="Chari-Baguirmi"   			capital="Massenya" />
+    <sub_region red="174" green="174" blue="174" name="Mayo-Kebbi Est"           	capital="Bongor" />
+    <sub_region red="172" green="172" blue="172" name="Mayo-Kebbi Ouest"          	capital="Pala" />
+    <sub_region red="170" green="170" blue="170" name="Logone Occidental"           capital="Moundou" />
+    <sub_region red="168" green="168" blue="168" name="Logone Oriental"        		capital="Doba" />
+    <sub_region red="166" green="166" blue="166" name="N'Djamena"          			capital="N'Djamena" />
+</region>
+

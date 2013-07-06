@@ -1,0 +1,59 @@
+<region name="India" leader="Manmohan Singh" capital="New Delhi">
+<sub_region red="230" green="230" blue="230" name="Andhra Pradesh" capital="Hyderabad"/>
+
+<sub_region red="235" green="235" blue="235" name="Arunachal Pradesh" capital="Itanagar"/>
+
+<sub_region red="139" green="139" blue="139" name="Andaman Nicobar Islands" capital="Port Blair"/>
+
+<sub_region red="135" green="135" blue="135" name="Assam" capital="Dispur"/>
+
+<sub_region red="25" green="25" blue="25" name="Bihar" capital="Patna"/>
+
+<sub_region red="240" green="240" blue="240" name="Chhattisgarh" capital="Raipur"/>
+
+<sub_region red="150" green="150" blue="150" name="Goa" capital="Panaji"/>
+
+<sub_region red="100" green="100" blue="100" name="Gujarat" capital="Gandhinagar"/>
+
+<sub_region red="140" green="140" blue="140" name="Haryana" capital="Chandigarh"/>
+
+<sub_region red="160" green="160" blue="160" name="Himachal Pradesh" capital="Shimla"/>
+
+<sub_region red="27" green="27" blue="27" name="Jammu and Kashmir" capital="Jammu/Srinagar"/>
+
+<sub_region red="125" green="125" blue="125" name="Jharkhand" capital="Ranchi"/>
+
+<sub_region red="200" green="200" blue="200" name="Karnataka" capital="Bangalore"/>
+
+<sub_region red="210" green="210" blue="210" name="Kerala" capital="Thiruvananthapuram"/>
+
+<sub_region red="190" green="190" blue="190" name="Madhya Pradesh" capital="Bhopal"/>
+
+<sub_region red="120" green="120" blue="120" name="Maharashtra" capital="Mumbai"/>
+
+<sub_region red="99" green="99" blue="99" name="Manipur" capital="Imphal"/>
+
+<sub_region red="55" green="55" blue="55" name="Meghalaya" capital="Shillong"/>
+
+<sub_region red="145" green="145" blue="145" name="Mizoram" capital="Aizawl"/>
+
+<sub_region red="35" green="35" blue="35" name="Nagaland" capital="Kohima"/>
+
+<sub_region red="250" green="250" blue="250" name="Odisha" capital="Bhubaneswar"/>
+
+<sub_region red="225" green="225" blue="225" name="West Bengal" capital="Kolkata"/>
+
+<sub_region red="110" green="110" blue="110" name="Punjab" capital="Chandigarh"/>
+
+<sub_region red="130" green="130" blue="130" name="Rajasthan" capital="Jaipur"/>
+
+<sub_region red="155" green="155" blue="155" name="Sikkim" capital="Gangtok"/>
+
+<sub_region red="220" green="220" blue="220" name="Tamil Nadu" capital="Chennai"/>
+
+<sub_region red="199" green="199" blue="199" name="Tripura" capital="Agartala"/>
+
+<sub_region red="180" green="180" blue="180" name="Uttar Pradesh" capital="Lucknow"/>
+
+<sub_region red="170" green="170" blue="170" name="Uttarakhand" capital="Dehradun"/>
+</region>

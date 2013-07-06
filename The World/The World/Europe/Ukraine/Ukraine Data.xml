@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="Ukraine" leader="Viktor Yanukovych" capital="Kiev City">
+    <sub_region red="200" green="200" blue="200" name="Lunhansk"       capital="Luhansk" />
+    <sub_region red="198" green="198" blue="198" name="Kharkiv"        capital="Kharkiv" />
+    <sub_region red="196" green="196" blue="196" name="Donetsk"        capital="Donetsk" />
+    <sub_region red="194" green="194" blue="194" name="Sumy"           capital="Sumy" />
+    <sub_region red="192" green="192" blue="192" name="Poltava"        capital="Poltava" />
+    <sub_region red="190" green="190" blue="190" name="Dnipropetrovsk" capital="Dnipropetrovsk" />
+    <sub_region red="188" green="188" blue="188" name="Zaporizhia"     capital="Zaprozhia" />
+    <sub_region red="186" green="186" blue="186" name="Chernihiv"      capital="Chernihiv" />
+    <sub_region red="184" green="184" blue="184" name="Kiev"           capital="Kiev" />
+    <sub_region red="182" green="182" blue="182" name="Kiev City"      capital="Kiev City" />
+    <sub_region red="180" green="180" blue="180" name="Cherkasy"       capital="Cherkasy" />
+    <sub_region red="178" green="178" blue="178" name="Kirovohrad"     capital="Kirovohrad" />
+    <sub_region red="176" green="176" blue="176" name="Mykolaiv"       capital="Mykolaiv" />
+    <sub_region red="174" green="174" blue="174" name="Kherson"        capital="Kherson" />
+    <sub_region red="172" green="172" blue="172" name="A.R. Crimea"    capital="Simferopol" />
+    <sub_region red="170" green="170" blue="170" name="Sevastopol City"capital="Sevastopol" />
+    <sub_region red="168" green="168" blue="168" name="Zhytomyr"       capital="Zhytomyr" />
+    <sub_region red="166" green="166" blue="166" name="Vinnytsia"      capital="Vinnytsia" />
+    <sub_region red="164" green="164" blue="164" name="Odessa"         capital="Odessa" />
+    <sub_region red="162" green="162" blue="162" name="Rivne"          capital="Rivne" />
+    <sub_region red="160" green="160" blue="160" name="Khmel"          capital="Khmel" />
+    <sub_region red="158" green="158" blue="158" name="Chernlvtsi"     capital="Chernivtsi" />
+    <sub_region red="156" green="156" blue="156" name="Volyn"          capital="Lutsk" />
+    <sub_region red="154" green="154" blue="154" name="Ternopil"       capital="Ternopil" />
+    <sub_region red="152" green="152" blue="152" name="Lviv"           capital="Lviv" />
+    <sub_region red="150" green="150" blue="150" name="Ivano-Frankivsk"capital="Ivano-Frankivsk" />
+    <sub_region red="148" green="148" blue="148" name="Zakarpattia"    capital="Uzhhorod" />
+</region>
+

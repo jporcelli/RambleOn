@@ -1,0 +1,279 @@
+package rambleon;
+
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.FontMetrics;
+import java.awt.Graphics;
+import java.awt.Image;
+import java.awt.geom.Rectangle2D;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.LinkedList;
+import javax.swing.JPanel;
+import mini_game.MiniGame;
+import mini_game.Sprite;
+import mini_game.SpriteType;
+import static rambleon.RambleOnSettings.*;
+import rambleonsprites.TextualSprite;
+
+/**
+ * This is where all rendering for the RambleOn game application will be done.
+ * This includes all rendering of the map and controls.
+ *
+ * @author James C. Porcelli, SBU ID 108900819
+ */
+public class RambleOnPanel extends JPanel {
+
+    //OUR RAMBLEON APP THAT IS ALSO A MINIGAME APP. WE NEED THIS BECAUSE
+    //IT HAS ALL OUR GUI STUFF THAT WE NEED TO RENDER
+    private MiniGame game;
+    //THE RAMBLEON GAME DATA THAT WE NEED TO RENDER
+    private RambleOnDataModel data;
+
+    /**
+     * This constructor stores the game and data references, which we'll need
+     * for rendering.
+     *
+     * @param game The RambleOn game that is using this panel for rendering
+     * @param data The data for RambleOn
+     */
+    public RambleOnPanel(MiniGame game, RambleOnDataModel data) {
+        this.game = game;
+        this.data = data;
+    }
+
+    /**
+     * This is where rendering starts. Note that the order of rendering is of
+     * particular importance, since things drawn first will be on the bottom,
+     * and things rendered last will be on top.
+     *
+     * @param g the Graphics context for this panel. Draw commands given through
+     * g will render things onto this panel.
+     */
+    @Override
+    public void paintComponent(Graphics g) {
+        data.beginGame();
+        renderToGraphicsContext(g);
+    }
+
+    /*
+     * This method does the actual rendering. This method is separate of
+     * paintComponent because it allows us to render content to an image as well
+     * as to this panel.
+     *
+     * @param g the Graphics context for this panel. Draw commands given through
+     * g will render things onto this panel.
+     */
+    private void renderToGraphicsContext(Graphics g) {
+        //RENDER THE MAP
+        renderBackground(g);
+
+        renderSprite(g, game.getGUIDecor().get(STACK_BACKDROP_TYPE));
+
+        //RENDER THE STACK IF THE REGION TO PLAY HAS BEEN SELECTED AND THEREFORE
+        //A GAME MODE HAS BEEN SELECTED TO PLAY THAT REGION IN
+        if (!(data.isInRegionSelection())) {
+            //RENDER THE STACK FOR THE SELECTED GAME MODE
+            renderStack(g);
+        }
+
+        //RENDER THE BUTTONS AND DECOR
+        renderGUIControls(g);
+    }
+
+    /*
+     *
+     * @param g
+     */
+    private void renderBackground(Graphics g) {
+        //GET THE CURRENT REGION MAP FROM THE DATA MANAGER
+        Image img = data.getDataManager().getCurrentMap();
+        //AND RENDER IT TO THE CANVAS
+        g.drawImage(img, 0, 0, img.getWidth(null), img.getHeight(null), null);
+    }
+
+    /*
+     *
+     * @param g
+     */
+    private void renderStack(Graphics g) {
+        //ONLY THE STACK OF THE CURRENT GAME MODE IS NON-EMPTY SO WE CAN
+        //EASILY TELL WHICH GAME MODE WERE IN BY WHICH STACK IS NON EMPTY
+
+        //LEADER MODE
+        if (!(data.getLeaderModeStack().isEmpty())) {
+            //RENDER THE SUB REGION LEADER IMAGES TO THE STACK
+            renderSprites(g, data.getLeaderModeStack().iterator());
+            data.setCurMode(RambleOnModeType.LEADER_MODE);
+
+            //CAPITAL MODE
+        } else if (!(data.getCapitalModeStack().isEmpty())) {
+            //RENDER THE SUB REGION CAPITAL NAMES TO THE STACK
+            renderTextualSprites(g, data.getCapitalModeStack());
+            data.setCurMode(RambleOnModeType.CAPITAL_MODE);
+
+            //NAME MODE
+        } else if (!(data.getNameModeStack().isEmpty())) {
+            //RENDER SUB REGION NAMES TO THE STACK
+            renderTextualSprites(g, data.getNameModeStack());
+            data.setCurMode(RambleOnModeType.NAME_MODE);
+
+        } else {
+            //RENDER THE SUB REGION FLAG IMAGES TO THE STACK
+            renderSprites(g, data.getFlagModeStack().iterator());
+            data.setCurMode(RambleOnModeType.FLAG_MODE);
+        }
+    }
+
+    /*
+     * Renders the s Sprite into the Graphics context g. Note that each Sprite
+     * knows its own x,y coordinate location.
+     *
+     * @param g the Graphics context of this panel
+     *
+     * @param s the Sprite to be rendered
+     */
+    private void renderSprite(Graphics g, Sprite s) {
+        //RENDER THE INDIVIDUAL SPRITE GIVEN BY s
+        if (!s.getState().equals(INVISIBLE_STATE)) {
+            //GET THE TYPE
+            SpriteType bgST = s.getSpriteType();
+            //ADN THE STATE IMAGE
+            Image img = bgST.getStateImage(s.getState());
+            //AND RENDER THE IMAGE TO THE CANVAS
+            g.drawImage(img, (int) s.getX(), (int) s.getY(), bgST.getWidth(), bgST.getHeight(), null);
+        }
+    }
+
+    /*
+     *
+     * @param g
+     * @param stackIterator
+     */
+    private void renderSprites(Graphics g, Iterator<Sprite> stackIterator) {
+        //RENDER THE SUB REGION STACK TO THE CANVAS        
+        while (stackIterator.hasNext()) {
+            renderSprite(g, stackIterator.next());
+        }
+    }
+
+    /*
+     *
+     * @param g
+     * @param stackIterator
+     */
+    private void renderTextualSprites(Graphics g, LinkedList<TextualSprite> stack) {
+        //RENDER THE SUB REGION STACK TO THE CANVAS        
+        renderSubRegionStack(g, stack);
+    }
+
+    /*
+     *
+     *
+     * @param g the Graphics context of this panel.
+     */
+    private void renderSubRegionStack(Graphics g, LinkedList<TextualSprite> textSprites) {
+        //NOTE THAT WE HAVE A 300 X 400 AREA TO WORK WITH UNDER THE CONTROLS
+        //ON THE RIGHT HAND SIDE OF THE CANVAS.WELL MAKE EACH BUTTON HERE
+        //300 X 50 SO WE COULD FIT 8 BUTTONS IF WE WANT OR HAVE.     
+        LinkedList<TextualSprite> list = textSprites;
+        Iterator<TextualSprite> listIterator = list.iterator();
+
+        //COUNTER FOR NUMBER OF STACK ELEMENTS RENDERED
+        int counter = 0;
+        String textToRender = data.getDataManager().getCurrentRegion().getName();
+        Font font = getMaxFitFont(g, textToRender, 280, 40, "Serif", Font.BOLD, 40);
+        g.setFont(font);
+        while (listIterator.hasNext() && (counter < NUM_TEXT_SPRITES_ON_STACK)) {
+            //GET THE NEXT SPRITE
+            TextualSprite ts = listIterator.next();
+            //THE TEXT TO RENDER ATTRIBUTE OF THE SPRITE
+            String regionName = ts.getTextToRender();
+            //THE X POSITION OF THE SPRITE
+            int x = (int) (ts.getX());
+            //THE Y POSITION
+            int y = (int) (ts.getY());
+            //THE WIDTH
+            int width = 300;
+            //THE HEIGHT
+            int height = 50;
+            //FILL COLOR FOR THE BOX CREATED FOR THIS SPRITE
+            Color fillColor = new Color(0, 0, 0);
+            //AND THE TEXT COLOR
+            Color textColor = new Color(255, 0, 0);
+            //BOTTOM MOST STACK ELEMENT IS THE CORRESPONDING VALUE FOR THE REGION
+            //TO TO FIND ON THE MAP, SO DIFFERENTIATE IT WITH A UNIQUE TEXT COLOR
+            if (counter == 0) {
+                //PROVIDE AN UNIQUE FILL COLOR
+                fillColor = new Color(0, 0, 0);
+                //AND TEXT
+                textColor = new Color(0, 255, 0);
+            }
+            //SET THE VALUES FOR THE GRAPHICS OBJECT TO RENDER WITH
+            //FILL COLOR
+            g.setColor(fillColor);
+            //CREATE THE BOX
+            g.fill3DRect(x, y, width, height, true);
+            //TEXT COLOR
+            g.setColor(textColor);
+            //ADD THE STRING FOR THE REGION NAME OF THIS SPRITE 
+            g.drawString(regionName, x + 5, y + 40);
+            //INCREMENT THE COUNTER AND REPEAT
+            counter++;
+        }
+    }
+
+    /*
+     * 
+     * @param g
+     * @param text
+     * @param maxWidth
+     * @param maxHeight
+     * @param fontFamily
+     * @param fontStyle
+     * @param desiredPointSize
+     * @return 
+     */
+    private Font getMaxFitFont(Graphics g, String text, int maxWidth, int maxHeight, String fontFamily, int fontStyle, int desiredPointSize) {
+        Font f = null;
+        boolean bestFontFound = false;
+        while (!bestFontFound) {
+            f = new Font(fontFamily, fontStyle, desiredPointSize);
+            g.setFont(f);
+            FontMetrics fm = g.getFontMetrics();
+            Rectangle2D textBounds = fm.getStringBounds(text, g);
+            double textWidth = textBounds.getWidth();
+            double textHeight = textBounds.getHeight();
+            if ((textWidth > maxWidth) || (textHeight > maxHeight)) {
+                desiredPointSize--;
+                if (desiredPointSize < 1) {
+                    return f;
+                }
+            } else {
+                bestFontFound = true;
+            }
+        }
+        return f;
+    }
+
+    /*
+     * Render all the GUI buttons and decor to the canvas.
+     *
+     * @param g This panels rendering context.
+     */
+    private void renderGUIControls(Graphics g) {
+        //RENDER THE BUTTONS
+        Collection<Sprite> buttonSprites = game.getGUIButtons().values();
+        for (Sprite s : buttonSprites) {
+            renderSprite(g, s);
+        }
+
+        //RENDER THE DECOR
+        Collection<Sprite> decorSprites = game.getGUIDecor().values();
+        for (Sprite s : decorSprites) {
+            if (!s.getSpriteType().getSpriteTypeID().equals(STACK_BACKDROP_TYPE)) {
+                renderSprite(g, s);
+            }
+        }
+    }
+}

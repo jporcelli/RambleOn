@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="Slovakia" leader="Ivan Gašparovič" capital="Bratislava">
+    <sub_region red="100" green="100" blue="100" name="Bratislava"      	capital="Bratislava" />
+    <sub_region red="120" green="120" blue="120" name="Trnava"       		capital="Trnava" />
+    <sub_region red="140" green="140" blue="140" name="Trenčín"          	capital="Trenčín" />
+    <sub_region red="150" green="150" blue="150" name="Žilina"       		capital="Žilina" />
+    <sub_region red="130" green="130" blue="130" name="Prešov"      	    capital="Prešov" />
+    <sub_region red="160" green="160" blue="160" name="Nitra"      			capital="Nitra" />
+    <sub_region red="170" green="170" blue="170" name="Banská Bystrica"		capital="Banská Bystrica" />
+    <sub_region red="110" green="110" blue="110" name="Košice"       	 	capital="Košice" />
+</region>

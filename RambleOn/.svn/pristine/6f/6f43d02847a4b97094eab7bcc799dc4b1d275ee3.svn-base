@@ -1,0 +1,60 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package rambleonevents;
+
+import static rambleon.RambleOnSettings.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.JOptionPane;
+import rambleon.RambleOnScreenManager;
+
+/**
+ *
+ * @author James C. Porcelli, SBU ID 108900819
+ */
+public class CurrentAccountButtonsHandler implements ActionListener {
+
+    private RambleOnScreenManager screenManager;
+
+    /**
+     *
+     * @param screenManager
+     */
+    public CurrentAccountButtonsHandler(RambleOnScreenManager screenManager) {
+        this.screenManager = screenManager;
+    }
+
+    /**
+     *
+     * @param e
+     */
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        //THE STRING ASSOCIATED WITH THE TOOLTIP OF THE BUTTON THAT GENERATED THE EVENT
+        String associatedToolTip = e.getActionCommand();
+        //FIND OUT WHICH BUTTON THE EVENT IS ASSOCIATED WITH
+        switch (associatedToolTip) {
+            //BACK TO ACCOUNTS PAGE
+            case BACK_BUTTON_TOOLTIP: {
+                //REMOVE THE CURRENT ACCOUNTS SCREEN FROM THE WINDOW
+                screenManager.getWindow().remove(screenManager.getCurrentAccountScreen());
+                //ADD THE ACCOUNTS SCREEEN
+                screenManager.getWindow().add(screenManager.getAccountsScreen());
+                //AND REFRESH THE WINDOW
+                screenManager.refreshWindow();
+                break;
+            }
+            //THIS TAKES US TO GAME MODE BUT WELL JUST END THE PROGRAM HERE AT THIS STAGE IN DEVELOPTMENT
+            case PLAY_BUTTON_TOOLTIP: {
+                //SINCE WE ARE NOT READY TO DEPLOY THE ENTIRE APP YET THIS IS WHERE OUR PROGRAM WILL END
+                screenManager.getWindow().setVisible(false);
+                JOptionPane.showMessageDialog(screenManager.getWindow(), "YOU ARE NOW PLAYING RAMBLEON!");
+                //GOODBYE
+                System.exit(0);
+                break;
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package rambleonevents;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import rambleon.RambleOnScreenManager;
+
+/**
+ *
+ * @author James C. Porcelli, SBU ID 108900819
+ */
+public class CreateAccountButtonHandler implements ActionListener {
+
+    RambleOnScreenManager screenManager;
+    
+    /**
+     * 
+     * @param screenManager 
+     */
+    public CreateAccountButtonHandler(RambleOnScreenManager screenManager) {
+        this.screenManager = screenManager;
+    }
+    
+    /**
+     * 
+     * @param e 
+     */
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        //GO TO CREATE ACCOUNT SCREEN
+    }
+}

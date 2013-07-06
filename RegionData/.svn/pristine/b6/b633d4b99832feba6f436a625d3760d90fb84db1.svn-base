@@ -1,0 +1,11 @@
+package regiondata;
+
+import java.io.File;
+
+/**
+ *
+ * @author James C. Porcelli, SBU ID # 108900819
+ */
+public interface RegionImporter {
+    
+}

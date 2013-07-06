@@ -1,0 +1,125 @@
+package accountdata;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import static rambleon.RambleOnSettings.*;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.util.ArrayList;
+import java.util.TreeMap;
+import javax.swing.JOptionPane;
+import rambleon.RambleOnScreenManager;
+
+/**
+ * This is a data management class for Accounts, providing a means to add,
+ * remove, and find accounts.
+ *
+ * @author James Porcelli
+ */
+public class AccountDataManager {
+
+    //A MAPPING OF ACTIVE ACCOUNTS FOR THE APP FROM USERNAME TO ACCOUNT OBJECT
+    private TreeMap<String, Account> accounts;
+    private ArrayList<String> userNames;
+    //THERE IS ONLY ONE CURRENT ACCOUNT AT A TIME DURNG EXECUTION OF THE APPLICATION
+    private Account currentAccount;
+
+    /**
+     * Default constructor, Initialized all necessary data structures for the accounts
+     * manager.
+     */
+    public AccountDataManager() {
+        //INIT THE DATA STRUCTURE WHERE WELL STORE ALL OUR ACCOUNT DATA FROM THE 
+        //RAMBLEON DATA STORE 
+        accounts = new TreeMap<>();
+        //LIST OF ACTIVE USER NAMES
+        userNames = new ArrayList<>();
+    }
+
+    /**
+     *
+     * @return
+     */
+    public ArrayList<String> getUserNames() {
+        return userNames;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public TreeMap<String, Account> getAccounts() {
+        return accounts;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public Account getCurrentAccount() {
+        return currentAccount;
+    }
+
+    /**
+     *
+     * @param currentAccount
+     */
+    public void setCurrentAccount(Account currentAccount) {
+        this.currentAccount = currentAccount;
+    }
+
+    /**
+     * Save the RambleOn account database information to a binary file.
+     *
+     * @param manager
+     */
+    public void saveDatabase(RambleOnScreenManager manager) {
+        try {
+            FileOutputStream file = new FileOutputStream(RAMBLE_ON_ACCOUNT_MANAGER_DATASTORE);
+            try (ObjectOutputStream fOut = new ObjectOutputStream(file)) {
+                fOut.writeObject(manager);
+            }
+        } catch (IOException e) {
+            //FEEDBACK ABOUT FAILURE DURING DATABASE SAVING
+            JOptionPane.showMessageDialog(null, "Fatal Error Writing To RambleOn Data Store\n"
+                    + "Data May Have Been Lost\n " + e.getMessage());
+        }
+    }
+    
+    /**
+     * Loads the RambleOn data store from the binary file where it is stored.
+     * 
+     * @return 
+     */
+    public static RambleOnScreenManager loadDatabase() {
+        RambleOnScreenManager manager = null;
+        try {
+            try (FileInputStream file = new FileInputStream(RAMBLE_ON_ACCOUNT_MANAGER_DATASTORE)) {
+                ObjectInputStream fIn = new ObjectInputStream(file);
+                manager = (RambleOnScreenManager) fIn.readObject();
+            }
+        } catch (FileNotFoundException a) {
+            JOptionPane.showMessageDialog(null, "RambleOn Data Store Was Not Found", "RambleOn!", JOptionPane.INFORMATION_MESSAGE);
+
+            JOptionPane.showMessageDialog(null, "::Generating New Database::", "Load Database",
+                    JOptionPane.INFORMATION_MESSAGE);
+
+            manager = new RambleOnScreenManager();
+
+        } catch (IOException e) {
+            JOptionPane.showMessageDialog(null, "File IO Error", "RambleOn!", JOptionPane.ERROR_MESSAGE);
+        } catch (ClassNotFoundException c) {
+            JOptionPane.showMessageDialog(null, "Class Error", "RambleOn!", JOptionPane.ERROR_MESSAGE);
+        }
+
+        if (manager == null) {
+            JOptionPane.showMessageDialog(null, "Generating New Data Store", "RambleOn!",
+                    JOptionPane.INFORMATION_MESSAGE);
+            manager = new RambleOnScreenManager();
+        }
+
+        return manager;
+    }
+}

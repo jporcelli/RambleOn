@@ -1,0 +1,64 @@
+package rambleonevents;
+
+import accountdata.Account;
+import accountdata.AccountDataManager;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
+import rambleon.RambleOnScreenManager;
+
+/**
+ *
+ * @author James C. Porcelli, SBU ID 108900819
+ */
+public class AccountSelectionHandler implements ListSelectionListener {
+
+    //THE SCREEN MANAGER FOR THIS APP
+    private RambleOnScreenManager screenManager;
+
+    /**
+     *
+     * @param screenManager
+     */
+    public AccountSelectionHandler(RambleOnScreenManager screenManager) {
+        this.screenManager = screenManager;
+    }
+
+    /**
+     *
+     * @param e
+     */
+    @Override
+    public void valueChanged(ListSelectionEvent e) {
+        //SET THE CURRENT ACCOUNT TO THE SELECTED ACCOUNT
+        int userAtRow = e.getFirstIndex();
+        //GET THE ACCOUNTS MANAGER WHICH HAS ALL OUR ACCOUNTS INFORMATION
+        AccountDataManager accountsManager = screenManager.getAccountsManager();
+        //THEN GET THE USER NAME OF THE ACCOUNT AT THE INDEX IN THE LIST USED TO BUILD THE TABLE
+        String selectedAccountUserName = accountsManager.getUserNames().get(userAtRow);
+        //MAP THE USER NAME TO THE ACTUAL ACCOUNT OBJECT FOR THAT USER
+        Account selectedAccount = accountsManager.getAccounts().get(selectedAccountUserName);
+        //AND SET THE CURRENT ACCOUNT WITH THE SELECTED PLAYERS ACCOUNT
+        accountsManager.setCurrentAccount(selectedAccount);
+
+        //####THESE ARE TEST VALUES####
+        selectedAccount.getRegionsPlayed().add("TEST");
+        selectedAccount.getRegionsPlayed().add("TEST2");
+        selectedAccount.getRegionsPlayed().add("TEST3");
+        selectedAccount.getRegionsPlayed().add("TEST4");
+        //####THESE ARE TEST VALUES####
+
+        //ONLY INITIALIZE THE SCREEN IF ITS THE FIRST TIME AT THIS SCREEN
+        if (screenManager.getCurrentAccountScreen() == null) {
+            screenManager.initCurrentAccountScreen();
+        }
+
+
+        //NOW CHANGE THE CURRENT PAGE TO THE CURRENT ACCOUNTSN PAGE
+        screenManager.getWindow().remove(screenManager.getAccountsScreen());
+        screenManager.getWindow().add(screenManager.getCurrentAccountScreen());
+        screenManager.refreshWindow();
+
+
+
+    }
+}

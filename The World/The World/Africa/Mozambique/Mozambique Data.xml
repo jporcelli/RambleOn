@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="Mozambique" leader="Armando Guebuza" capital="Maputo">
+    <sub_region red="120" green="120" blue="120" name="Maputo"      		capital="Maputo" />
+    <sub_region red="125" green="125" blue="125" name="Gaza"        		capital="Xai-Xai" />
+    <sub_region red="130" green="130" blue="130" name="Inhambane"           	capital="Inhambane" />
+    <sub_region red="135" green="135" blue="135" name="Manica"         		capital="Chimaia" />
+    <sub_region red="140" green="140" blue="140" name="Sofala"          	capital="Beira" />
+    <sub_region red="145" green="145" blue="145" name="Tete"          		capital="Tete" />
+    <sub_region red="150" green="150" blue="150" name="Zambezia"        	capital="Quelimane" />
+    <sub_region red="155" green="155" blue="155" name="Nampula"          	capital="Nampula" />
+    <sub_region red="160" green="160" blue="160" name="Niassa"          	capital="Lichinga" />
+    <sub_region red="165" green="165" blue="165" name="Cabo Delgado"        	capital="Pemba" />
+</region>

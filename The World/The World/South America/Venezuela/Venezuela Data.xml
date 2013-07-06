@@ -1,0 +1,27 @@
+<region name="Venezuela" leader="Nicolás Maduro" capital="Caracas">
+<sub_region red="200" green="200" blue="200" name="Amazonas" capital="Puerto Ayacucho"/>
+<sub_region red="199" green="199" blue="199" name="Anzoátegui" capital="Barcelona"/>
+<sub_region red="198" green="198" blue="198" name="Apure" capital="San Fernando de Apure"/>
+<sub_region red="197" green="197" blue="197" name="Aragua" capital="Maracay"/>
+<sub_region red="196" green="196" blue="196" name="Barinas" capital="Barinas"/>
+<sub_region red="195" green="195" blue="195" name="Bolívar" capital="Ciudad Bolívar"/>
+<sub_region red="194" green="194" blue="194" name="Carabobo" capital="Valencia"/>
+<sub_region red="193" green="193" blue="193" name="Cojedes" capital="San Carlos"/>
+<sub_region red="192" green="192" blue="192" name="Delta Amacuro" capital="Tucupita"/>
+<sub_region red="191" green="191" blue="191" name="Falcón" capital="Coro"/>
+<sub_region red="190" green="190" blue="190" name="Guárico" capital="San Juan De Los Morros"/>
+<sub_region red="189" green="189" blue="189" name="Lara" capital="Barquisimeto"/>
+<sub_region red="188" green="188" blue="188" name="Mérida" capital="Mérida"/>
+<sub_region red="187" green="187" blue="187" name="Miranda" capital="Los Teques"/>
+<sub_region red="186" green="186" blue="186" name="Monagas" capital="Maturín"/>
+<sub_region red="185" green="185" blue="185" name="Nueva Esparta" capital="La Asunción"/>
+<sub_region red="184" green="184" blue="184" name="Portuguesa" capital="Guanare"/>
+<sub_region red="183" green="183" blue="183" name="Sucre" capital="Cumaná"/>
+<sub_region red="182" green="182" blue="182" name="Táchira" capital="San Cristóbal"/>
+<sub_region red="181" green="181" blue="181" name="Trujillo" capital="Trujillo"/>
+<sub_region red="180" green="180" blue="180" name="Vargas" capital="La Güaira"/>
+<sub_region red="179" green="179" blue="179" name="Yaracuy" capital="San Felipe"/>
+<sub_region red="178" green="178" blue="178" name="Zuilia" capital="Maracaibo"/>
+<sub_region red="177" green="177" blue="177" name="Capital District" capital="Caracas"/>
+<sub_region red="176" green="176" blue="176" name="Federal Dependencies" capital="Los Roques"/>
+</region>

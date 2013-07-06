@@ -1,0 +1,4 @@
+<region name="Palestine" Leader="Mahmoud Abbas" Capital="Tel Aviv">
+	<sub_region red="245" green="245" blue="245" name="West Bank" capital="Jenin"/>
+	<sub_region red="230" green="230" blue="230" name="Gaza" capital="Gaza"/>
+</region>

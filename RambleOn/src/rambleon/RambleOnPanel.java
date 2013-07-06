@@ -1,0 +1,499 @@
+package rambleon;
+
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.FontMetrics;
+import java.awt.Graphics;
+import java.awt.Image;
+import java.awt.geom.Rectangle2D;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.LinkedList;
+import javax.swing.JPanel;
+import mini_game.MiniGame;
+import mini_game.Sprite;
+import mini_game.SpriteType;
+import static rambleon.RambleOnSettings.*;
+import rambleonsprites.TextualSprite;
+
+/**
+ * This is where all rendering for the RambleOn game application will be done.
+ * This includes all rendering of the map and controls.
+ *
+ * @author James C. Porcelli, SBU ID 108900819
+ */
+public class RambleOnPanel extends JPanel {
+
+    //OUR RAMBLEON APP THAT IS ALSO A MINIGAME APP. WE NEED THIS BECAUSE
+    //IT HAS ALL OUR GUI STUFF THAT WE NEED TO RENDER
+    private MiniGame game;
+    //THE RAMBLEON GAME DATA THAT WE NEED TO RENDER
+    private RambleOnDataModel data;
+
+    /**
+     * This constructor stores the game and data references, which we'll need
+     * for rendering.
+     *
+     * @param game The RambleOn game that is using this panel for rendering
+     * @param data The data for RambleOn
+     */
+    public RambleOnPanel(MiniGame game, RambleOnDataModel data) {
+        this.game = game;
+        this.data = data;
+    }
+
+    /**
+     * This is where rendering starts. Note that the order of rendering is of
+     * particular importance, since things drawn first will be on the bottom,
+     * and things rendered last will be on top.
+     *
+     * @param g the Graphics context for this panel. Draw commands given through
+     * g will render things onto this panel.
+     */
+    @Override
+    public void paintComponent(Graphics g) {
+        renderToGraphicsContext(g);
+    }
+
+    /*
+     * This method does the actual rendering. This method is separate of
+     * paintComponent because it allows us to render content to an image as well
+     * as to this panel.
+     *
+     * @param g the Graphics context for this panel. Draw commands given through
+     * g will render things onto this panel.
+     */
+    private void renderToGraphicsContext(Graphics g) {
+        //RENDER THE MAP
+        renderBackground(g);
+
+        //RENDER THE STACK BACKDROP UNDER THE STACK 
+        renderSprite(g, game.getGUIDecor().get(STACK_BACKDROP_TYPE));
+
+        //RENDER THE STACK IF THE REGION TO PLAY HAS BEEN SELECTED AND THEREFORE
+        //A GAME MODE HAS BEEN SELECTED TO PLAY THAT REGION IN
+        if (data.getCurMode() != RambleOnModeType.REGION_SELECTION) {
+            //RENDER THE STACK FOR THE SELECTED GAME MODE
+            renderStack(g);
+        }
+
+        //RENDER THE BUTTONS AND DECOR
+        renderGUIControls(g);
+
+        //IF THE GAME IS OVER AND THE PLAYER WON RENDER THE WIN DISPLAY
+        if (data.won()) {
+            //SET THE WIN DISPLAY CLOSE BUTTON GUI BUTTON TO ENABLED STATE ONLY WHEN WE NEED IT
+            game.getGUIButtons().get(WIN_DISPLAY_CLOSE_BUTTON_TYPE).setState(ENABLED_STATE);
+            //RENDER THE WIN DISPLAY
+            renderWinDisplay(g);
+        }
+    }
+
+    /*
+     * Renders the current region map to the canvas.
+     * 
+     * @param g The graphics context for this canvas.
+     */
+    private void renderBackground(Graphics g) {
+        //GET THE CURRENT REGION MAP FROM THE DATA MANAGER
+        Image img = data.getDataManager().getCurrentMap();
+        //AND RENDER IT TO THE CANVAS
+        g.drawImage(img, 0, 0, img.getWidth(null), img.getHeight(null), null);
+    }
+
+    /*
+     * Renders the winning condition display.
+     * 
+     * @param g The graphics context for this canvas.
+     */
+    private void renderWinDisplay(Graphics g) {
+        //RENDER THE WIN DISPLAY 
+        //NOTE - THE WIN DISPLAY IS 500 X 300
+        renderSprite(g, game.getGUIDecor().get(WIN_DISPLAY_TYPE));
+        //AND THE TOOLBAR
+        renderSprite(g, game.getGUIDecor().get(WIN_DISPLAY_TOOLBAR_TYPE));
+        //AND THE CLOSE BUTTON
+        renderSprite(g, game.getGUIButtons().get(WIN_DISPLAY_CLOSE_BUTTON_TYPE));
+
+        //THE HEIGHT AT WHICH THE STATS WILL BEGIN TO BE DISPLAYED
+        int statYpos = WIN_STATS_START_Y;
+
+        //SET THE FONT AND TEXT COLOR FOR THE WIN STATS DISPLAY TEXT
+        g.setFont(WIN_STATS_FONT);
+        g.setColor(WIN_STATS_COLOR);
+
+        statYpos += WIN_STATS_Y_INC;
+        //DISPLAY THE CURRENT REGION NAME
+        g.drawString("Region : " + data.getDataManager().getCurrentRegion().getName(), WIN_STATS_X, statYpos);
+        //INCREMENT THE STAT Y POS
+        statYpos += WIN_STATS_Y_INC;
+        //DISPLAY THE CURRENT GAME MODE
+        g.drawString("Game Play Mode : " + data.getCurMode().name(), WIN_STATS_X, statYpos);
+        //INCREMENT THE STAT Y POS
+        statYpos += WIN_STATS_Y_INC;
+        //NOW WE NEED TO FILL IN THE STATS FOR THE WINNING GAME
+        g.drawString("Elapsed Time : " + data.getGameWinDurationText(), WIN_STATS_X, statYpos);
+        //INCRMENT THE STAT Y POS FOR THE NEXT STATS
+        statYpos += WIN_STATS_Y_INC;
+        //NOW THE FINAL SCORE
+        g.drawString("Final Score : " + data.calculateScore(), WIN_STATS_X, statYpos);
+        //INCREMENT THE STAT Y POS 
+        statYpos += WIN_STATS_Y_INC;
+        //NOW THE TOTAL INCORRECT GUESSES
+        g.drawString("Incorrect Guesses : " + data.getIncorrectGuesses(), WIN_STATS_X, statYpos);
+
+    }
+
+    /*
+     * Redners the current game mode stack to the canvas.
+     * 
+     * @param g The graphics context for this canvas.
+     */
+    private void renderStack(Graphics g) {
+        //ONLY THE STACK OF THE CURRENT GAME MODE IS NON-EMPTY SO WE CAN
+        //EASILY TELL WHICH GAME MODE WERE IN BY WHICH STACK IS NON EMPTY
+
+        //LEADER MODE
+        if (!(data.getLeaderModeStack().isEmpty())) {
+            //RENDER THE SUB REGION LEADER IMAGES TO THE STACK
+            renderSprites(g, data.getLeaderModeStack().iterator());
+            data.setCurMode(RambleOnModeType.LEADER_MODE);
+
+            //CAPITAL MODE
+        } else if (!(data.getCapitalModeStack().isEmpty())) {
+            //RENDER THE SUB REGION CAPITAL NAMES TO THE STACK
+            renderTextualSprites(g, data.getCapitalModeStack());
+            data.setCurMode(RambleOnModeType.CAPITAL_MODE);
+
+            //NAME MODE
+        } else if (!(data.getNameModeStack().isEmpty())) {
+            //RENDER SUB REGION NAMES TO THE STACK
+            renderTextualSprites(g, data.getNameModeStack());
+            data.setCurMode(RambleOnModeType.NAME_MODE);
+
+        } else if (!(data.getFlagModeStack().isEmpty())) {
+            //RENDER THE SUB REGION FLAG IMAGES TO THE STACK
+            renderSprites(g, data.getFlagModeStack().iterator());
+            data.setCurMode(RambleOnModeType.FLAG_MODE);
+        }
+    }
+
+    /*
+     * Renders the s Sprite into the Graphics context g. Note that each Sprite
+     * knows its own x,y coordinate location.
+     *
+     * @param g the Graphics context for this canvas.
+     *
+     * @param s the Sprite to be rendered
+     */
+    private void renderSprite(Graphics g, Sprite s) {
+        //RENDER THE INDIVIDUAL SPRITE GIVEN BY s
+        if (!s.getState().equals(INVISIBLE_STATE)) {
+            //GET THE TYPE
+            SpriteType bgST = s.getSpriteType();
+            //AND THE STATE IMAGE
+            Image img = bgST.getStateImage(s.getState());
+            //AND RENDER THE IMAGE TO THE CANVAS
+            g.drawImage(img, (int) s.getX(), (int) s.getY(), bgST.getWidth(), bgST.getHeight(), null);
+        }
+    }
+
+    /*
+     * Renders the current game mode stack to the canvas for non textual
+     * sprite based stacks which include the stacks for flag, and leader mode.
+     * 
+     * @param g The graphics context for this canvas.
+     * 
+     * @param stackIterator An iterator to the current game mode stack.
+     */
+    private void renderSprites(Graphics g, Iterator<Sprite> stackIterator) {
+        //RENDER THE SUB REGION STACK TO THE CANVAS        
+        while (stackIterator.hasNext()) {
+            Sprite s = stackIterator.next();
+            renderSprite(g, s);
+
+            //ADD THE LEADERS NAME IF WERE IN LEADER MODE
+            if (data.getCurMode() == RambleOnModeType.LEADER_MODE) {
+                //GET THE SPRITE TYPE I.E THE REGION NAME
+                SpriteType bgST = s.getSpriteType();
+                //GET THE LEADER IMG , WELL USE ITS DIMENSIONS
+                //Image img = bgST.getStateImage(s.getState());
+                //NOW GET THE LEADERS NAME FOR THE LEADER IMG TO BE RENDERED
+                String leaderName = data.getDataManager().getAllRegions().get(bgST.getSpriteTypeID()).getLeader();
+                //SET SOME GRAPHICS ATTRIBUTES, I.E FONT, COLOR , ETC..
+                g.setColor(new Color(200, 200, 200));
+                Font font = new Font(Font.MONOSPACED, Font.BOLD, 15);
+                g.setFont(font);
+                //NOW RENDER THE LEADER NAME ABOVE THE IMG, AND GIVE THE NAME
+                //THE SAME X,Y VALUES AS THE IMG, SO WHEN THE IMG MOVES THE NAME
+                //MOVES AS WELL         
+                g.drawString(leaderName, (int) s.getX() - 20, (int) s.getY() - 20);
+
+            }
+        }
+    }
+
+    /*
+     * Renders the current game mode stack to the canvas for textual sprite based
+     * stacks which include the stacks for name, and captal mode.
+     * 
+     * @param g The graphics context for this canvas.
+     * 
+     * @param stackIterator An iterator to the current game mode stack
+     */
+    private void renderTextualSprites(Graphics g, LinkedList<TextualSprite> stack) {
+        //RENDER THE SUB REGION STACK TO THE CANVAS        
+        renderSubRegionStack(g, stack);
+    }
+
+    /*
+     * Handles the actual rendering process for textual based sprite stacks.
+     *
+     * @param g the Graphics context for this canvas.
+     */
+    private void renderSubRegionStack(Graphics g, LinkedList<TextualSprite> textSprites) {
+        //NOTE THAT WE HAVE A 300 X 400 AREA TO WORK WITH UNDER THE CONTROLS
+        //ON THE RIGHT HAND SIDE OF THE CANVAS.WELL MAKE EACH BUTTON HERE
+        //300 X 50 SO WE COULD FIT 8 BUTTONS IF WE WANT OR HAVE.     
+        LinkedList<TextualSprite> list = textSprites;
+        Iterator<TextualSprite> listIterator = list.iterator();
+
+        //COUNTER FOR NUMBER OF STACK ELEMENTS RENDERED
+        int counter = 0;
+        String textToRender = data.getDataManager().getCurrentRegion().getName();
+        Font font = getMaxFitFont(g, textToRender, 280, 40, "Serif", Font.BOLD, 40);
+        g.setFont(font);
+        while (listIterator.hasNext() && (counter < NUM_TEXT_SPRITES_ON_STACK)) {
+            //GET THE NEXT SPRITE
+            TextualSprite ts = listIterator.next();
+            //THE TEXT TO RENDER ATTRIBUTE OF THE SPRITE
+            String regionName = ts.getTextToRender();
+            //THE X POSITION OF THE SPRITE
+            int x = (int) (ts.getX());
+            //THE Y POSITION
+            int y = (int) (ts.getY());
+            //THE WIDTH
+            int width = 300;
+            //THE HEIGHT
+            int height = 50;
+            //FILL COLOR FOR THE BOX CREATED FOR THIS SPRITE
+            Color fillColor = new Color(0, 0, 0);
+            //AND THE TEXT COLOR
+            Color textColor = new Color(255, 0, 0);
+            //BOTTOM MOST STACK ELEMENT IS THE CORRESPONDING VALUE FOR THE REGION
+            //TO TO FIND ON THE MAP, SO DIFFERENTIATE IT WITH A UNIQUE TEXT COLOR
+            if (counter == 0) {
+                //PROVIDE AN UNIQUE FILL COLOR
+                fillColor = new Color(0, 0, 0);
+                //AND TEXT
+                textColor = new Color(0, 255, 0);
+            }
+            //SET THE VALUES FOR THE GRAPHICS OBJECT TO RENDER WITH
+            //FILL COLOR
+            g.setColor(fillColor);
+            //CREATE THE BOX
+            g.fill3DRect(x, y, width, height, true);
+            //TEXT COLOR
+            g.setColor(textColor);
+            //ADD THE STRING FOR THE REGION NAME OF THIS SPRITE 
+            g.drawString(regionName, x + 5, y + 40);
+            //INCREMENT THE COUNTER AND REPEAT
+            counter++;
+        }
+    }
+
+    /*
+     * Determines the best fit for the dont that occupies each stack element for
+     * textual based stack elements.
+     * 
+     * @param g The graphics context for this canvas.
+     * 
+     * @param text The text to be rendered.
+     * 
+     * @param maxWidth The maximum allowable width.
+     * 
+     * @param maxHeight The maximum allowable height.
+     * 
+     * @param fontFamily The dont family we are using.
+     * 
+     * @param fontStyle The font style we are using.
+     * 
+     * @param desiredPointSize The desired point size.
+     * 
+     * @return Returns the optimal font based on the passed critria. 
+     */
+    private Font getMaxFitFont(Graphics g, String text, int maxWidth, int maxHeight, String fontFamily, int fontStyle, int desiredPointSize) {
+        Font f = null;
+        boolean bestFontFound = false;
+        while (!bestFontFound) {
+            f = new Font(fontFamily, fontStyle, desiredPointSize);
+            g.setFont(f);
+            FontMetrics fm = g.getFontMetrics();
+            Rectangle2D textBounds = fm.getStringBounds(text, g);
+            double textWidth = textBounds.getWidth();
+            double textHeight = textBounds.getHeight();
+            if ((textWidth > maxWidth) || (textHeight > maxHeight)) {
+                desiredPointSize--;
+                if (desiredPointSize < 1) {
+                    return f;
+                }
+            } else {
+                bestFontFound = true;
+            }
+        }
+        return f;
+    }
+
+    /*
+     * Renders all the GUI buttons and decor for this game to the canvas.
+     *
+     * @param g The graphics context for this canvas.
+     */
+    private void renderGUIControls(Graphics g) {
+        //RENDER THE BUTTONS
+        Collection<Sprite> buttonSprites = game.getGUIButtons().values();
+        for (Sprite s : buttonSprites) {
+            //EXCEPT FOR THE GUI BUTTONS WE WANT TO RENDER MANUALLY
+            if (!(s.getSpriteType().getSpriteTypeID().equals(WIN_DISPLAY_CLOSE_BUTTON_TYPE))) {
+                //SET THE MOUSE OVER STATE IF THE MOUSE IS OVER THAT TOOLBAR BUTTON
+                setMouseOverState(s);
+                //NOW RENDER THE BUTTON
+                renderSprite(g, s);
+            }
+        }
+
+        //RENDER THE DECOR
+        Collection<Sprite> decorSprites = game.getGUIDecor().values();
+        for (Sprite s : decorSprites) {
+            //EXCEPT FOR THE GUI DECOR WE WANT TO RENDER MANUALLY
+            if (!(s.getSpriteType().getSpriteTypeID().equals(STACK_BACKDROP_TYPE))
+                    && !(s.getSpriteType().getSpriteTypeID().equals(WIN_DISPLAY_TYPE))
+                    && !(s.getSpriteType().getSpriteTypeID().equals(WIN_DISPLAY_TOOLBAR_TYPE))) {
+                renderSprite(g, s);
+            }
+        }
+    }
+
+    /*
+     * Sets the current sprite being rendered's state to its mouse over state
+     * if the mouse is determined to be currently hovering over that button. If
+     * not then the default enabled/disabled buttons are rendered.
+     * 
+     * @param s The current sprite being
+     */
+    private void setMouseOverState(Sprite s) {
+        //USE THE BUTTON SPRITES SPRITE TYPE ID AS A COMMAND STRING
+        switch (s.getSpriteType().getSpriteTypeID()) {
+            //CAPITAL MODE BUTTON
+            case CAPITAL_TYPE:
+                //IF THE MOUSE IS OVER CAPITAL MODE BUTTON
+                if (s.containsPoint(data.getLastMouseX(), data.getLastMouseY())) {
+                    //AND CAPITAL MODE IS CURRENTLY AVAILABLE
+                    if (data.getDataManager().capitalsAvailable()) {
+                        //THEN USE THE MOUSE OVER ON IMG
+                        s.setState(MOUSE_OVER_STATE_ON);
+                    } else {
+                        //ELSE USE THE MOUSE OVER OFF IMAGE
+                        s.setState(MOUSE_OVER_STATE_OFF);
+                    }
+                    //MOUSE NOT OVER CAPITAL MODE BUTTON
+                } else {
+                    //RENDER THE DEFAULT ENABLED/DISABLED BUTTONS
+                    if (data.getDataManager().capitalsAvailable()) {
+                        s.setState(ENABLED_STATE);
+                    } else {
+                        s.setState(DISABLED_STATE);
+                    }
+                }
+                break;
+            //NAME MODE BUTTON
+            case NAME_TYPE:
+                //IF THE MOUSE IS OVER NAME MODE BUTTON
+                if (s.containsPoint(data.getLastMouseX(), data.getLastMouseY())) {
+                    //AND NAME MODE IS CURRENTLY AVAILABLE
+                    if (true) {
+                        //THEN USE THE MOUSE OVER ON IMG
+                        s.setState(MOUSE_OVER_STATE_ON);
+                    } else {
+                        //ELSE USE THE MOUSE OVER OFF IMG
+                        s.setState(MOUSE_OVER_STATE_OFF);
+                    }
+                    //MOUSE NOT OVER THE NAME MODE BUTTON
+                } else {
+                    //RENDER THE DEFAULT ENABLED/DISABLED BUTTONS
+                    if (true) {
+                        s.setState(ENABLED_STATE);
+                    } else {
+                        s.setState(DISABLED_STATE);
+                    }
+                }
+                break;
+            //FLAG MODE BUTTON
+            case FLAG_TYPE:
+                //IF THE MOUSE IS OVER THE FLAG MODE BUTTON
+                if (s.containsPoint(data.getLastMouseX(), data.getLastMouseY())) {
+                    //AND FLAG MODE IS CURRENTLY AVAILABLE
+                    if (!(data.getDataManager().getSubRegionFlags().isEmpty())) {
+                        //THEN USE THE MOUSE OVER ON IMG
+                        s.setState(MOUSE_OVER_STATE_ON);
+                    } else {
+                        //ELSE USE THE MOUSEOVER OFF IMG
+                        s.setState(MOUSE_OVER_STATE_OFF);
+                    }
+                    //MOUSE NOT OVER FLAG MODE BUTTON
+                } else {
+                    //RENDER THE DEFAULT ENABLED/DISABLED BUTTONS
+                    if (!(data.getDataManager().getSubRegionFlags().isEmpty())) {
+                        s.setState(ENABLED_STATE);
+                    } else {
+                        s.setState(DISABLED_STATE);
+                    }
+                }
+                break;
+            //LEADER MODE BUTTON
+            case LEADER_TYPE:
+                //IF THE MOUSE IS OVER THE LEADER MODE BUTTON
+                if (s.containsPoint(data.getLastMouseX(), data.getLastMouseY())) {
+                    //AND LEADER MODE IS AVAILABLE
+                    if (!(data.getDataManager().getSubRegionLeaders().isEmpty())) {
+                        //THEN USE THE MOUSE OVER ON IMG
+                        s.setState(MOUSE_OVER_STATE_ON);
+                    } else {
+                        //ELSE USE THE MOUSE OVER OFF IMG
+                        s.setState(MOUSE_OVER_STATE_OFF);
+                    }
+                    //MOUSE NOT OVER THE LEADER MODE BUTTON
+                } else {
+                    //RENDER THE DEFAULT ENABLED/DISABLED BUTTONS
+                    if (!(data.getDataManager().getSubRegionLeaders().isEmpty())) {
+                        s.setState(ENABLED_STATE);
+                    } else {
+                        s.setState(DISABLED_STATE);
+                    }
+                }
+                break;
+            //EXIT BUTTON
+            case EXIT_TYPE:
+                //IF THE MOUSE IS OVER THE EXIT BUTTON
+                if (s.containsPoint(data.getLastMouseX(), data.getLastMouseY())) {
+                    //THEN USE THE MOUSE OVER ON IMG
+                    s.setState(MOUSE_OVER_STATE_ON);
+                    //MOUSE NOT OVER THE EXIT BUTTON
+                } else {
+                    s.setState(ENABLED_STATE);
+                }
+                break;
+
+            case BACK_TO_ACCOUNTS_BUTTON_TYPE:
+                //IF THE MOUSE IF OVER THE BACK TO ACCOUTNS BUTTON
+                if (s.containsPoint(data.getLastMouseX(), data.getLastMouseY())) {
+                    //THEN USE THE MOUSE OVER ON IMG
+                    s.setState(MOUSE_OVER_STATE_ON);
+                    //MOUSE NOT OVER THE EXIT BUTTON
+                } else {
+                    s.setState(ENABLED_STATE);
+                }
+                break;
+        }
+    }
+}

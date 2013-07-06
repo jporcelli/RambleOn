@@ -1,0 +1,15 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package worldimportexport;
+
+import java.io.Serializable;
+
+/**
+ *
+ * @author Owner
+ */
+public class WorldIO implements Serializable{
+    
+}

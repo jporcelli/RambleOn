@@ -1,0 +1,24 @@
+<region name="Croatia" leader="Ivo Josipovic" capital="Zagreb">
+<sub_region red="200" green="200" blue="200" name="Vukovar-Syrmia" capital="Vukovar"/>
+<sub_region red="198" green="198" blue="198" name="Osijek-Baranja" capital="Osijek"/>
+<sub_region red="196" green="196" blue="196" name="Brod-Posavina" capital="Slavonski Brod"/>
+<sub_region red="194" green="194" blue="194" name="Pozega-Slavonia" capital="Pozega"/>
+<sub_region red="192" green="192" blue="192" name="Virovitica-Podravina" capital="Virovitica"/>
+<sub_region red="190" green="190" blue="190" name="Sisak-Molavina" capital="Sisak"/>
+<sub_region red="188" green="188" blue="188" name="Bjelovar-Bilogora" capital="Bjelovar"/>
+<sub_region red="186" green="186" blue="186" name="Koprivnica-Krizeci" capital="Koprivnica"/>
+<sub_region red="184" green="184" blue="184" name="Medimurska" capital="Cavokec"/>
+<sub_region red="182" green="182" blue="182" name="Varazdin" capital="Varazdin"/>
+<sub_region red="180" green="180" blue="180" name="Krapina-Zagorje" capital="Krapina"/>
+<sub_region red="178" green="178" blue="178" name="Zagrebacka" capital="Zagreb"/>
+<sub_region red="176" green="176" blue="176" name="Grad Zagreb" capital="Zagreb"/>
+<sub_region red="174" green="174" blue="174" name="Zagreb County" capital="Zagreb"/>
+<sub_region red="172" green="172" blue="172" name="Karlovac" capital="Karlovac"/>
+<sub_region red="170" green="170" blue="170" name="Primorje-Gorski Kotar" capital="Rijeka"/>
+<sub_region red="168" green="168" blue="168" name="Istria" capital="Pazin"/>
+<sub_region red="166" green="166" blue="166" name="Licka-Senj" capital="Gospic"/>
+<sub_region red="164" green="164" blue="164" name="Zadar" capital="Zadar"/>
+<sub_region red="162" green="162" blue="162" name="Sibenik-Knin" capital="Sibenik"/>
+<sub_region red="160" green="160" blue="160" name="Split-Dalmatia" capital="Split"/>
+<sub_region red="158" green="158" blue="158" name="Dubrovnik-Neretva" capital="Dubrovnik"/>
+</region>

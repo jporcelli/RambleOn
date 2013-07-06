@@ -1,0 +1,26 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package rambleon;
+
+import mini_game.MiniGame;
+import mini_game.MiniGameDataModel;
+
+/**
+ *
+ * @author James C. Porcelli, SBU ID 108900819
+ */
+public class RambleOnDataModel extends MiniGameDataModel{
+    
+    public RambleOnDataModel(){}
+    
+    public void updateDebugText(MiniGame game){}
+    
+    public void updateAll(MiniGame game){}
+    
+    public void reset(MiniGame game){}
+    
+    public void checkMousePressOnSprites(MiniGame game, int mouseX, int mouseY){}
+    
+}

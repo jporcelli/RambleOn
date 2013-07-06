@@ -1,0 +1,46 @@
+package rambleonevents;
+
+import accountdata.Account;
+import accountdata.AccountDataManager;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
+import rambleon.RambleOnScreenManager;
+
+/**
+ *
+ * @author James C. Porcelli, SBU ID 108900819
+ */
+public class AccountSelectionHandler implements ListSelectionListener {
+
+    //THE SCREEN MANAGER FOR THIS APP
+    private RambleOnScreenManager screenManager;
+
+    /**
+     * 
+     * @param screenManager 
+     */
+    public AccountSelectionHandler(RambleOnScreenManager screenManager) {
+        this.screenManager = screenManager;
+
+    }
+
+    /**
+     *
+     * @param e
+     */
+    @Override
+    public void valueChanged(ListSelectionEvent e) {
+        //SET THE CURRENT ACCOUNT TO THE SELECTED ACCOUNT
+        int userAtRow = e.getFirstIndex();
+        AccountDataManager accountsManager = screenManager.getAccountsManager();
+        String selectedAccountUserName = accountsManager.getUserNames().get(userAtRow);
+        Account selectedAccount = accountsManager.getAccounts().get(selectedAccountUserName);
+        accountsManager.setCurrentAccount(selectedAccount);
+
+        //NOW CHANGE THE CURRENT PAGE TO THE CURRENT ACCOUTN PAGE
+        screenManager.getWindow().remove(screenManager.getAccountsScreen());
+        screenManager.getWindow().add(screenManager.getCurrentAccountScreen());
+        screenManager.refreshWindow();
+
+    }
+}

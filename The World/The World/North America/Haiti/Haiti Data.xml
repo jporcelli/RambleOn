@@ -1,0 +1,12 @@
+-<region name="Haiti" leader="Michel Martelly" capital="Port-au-Prince">
+<sub_region red="210" green="210" blue="210" name="Artibonite" capital="Gonaives"/>
+<sub_region red="230" green="230" blue="230" name="Nord-Ouest" capital="Port-de-Paix"/>
+<sub_region red="220" green="220" blue="220" name="Nord" capital="Cap-Haitien"/>
+<sub_region red="180" green="180" blue="180" name="Centre" capital="Hinche"/>
+<sub_region red="160" green="160" blue="160" name="Nord-Est" capital="Fort-Liberte"/>
+<sub_region red="130" green="130" blue="130" name="Sud" capital="Les Cayes"/>
+<sub_region red="195" green="195" blue="195" name="Sud-Est" capital="Jacmel"/>
+<sub_region red="175" green="175" blue="175" name="Nippes" capital="Miragoane"/>
+<sub_region red="140" green="140" blue="140" name="Ouest" capital="Port-au-Prince"/>
+<sub_region red="149" green="149" blue="149" name="Grande-Anse" capital="Jeremie"/>
+</region>

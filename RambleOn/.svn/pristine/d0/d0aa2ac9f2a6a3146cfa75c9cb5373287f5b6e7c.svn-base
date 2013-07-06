@@ -1,0 +1,84 @@
+package accountdata;
+
+import java.util.ArrayList;
+import java.util.TreeMap;
+import worlddata.Region;
+
+/**
+ * This class encapsulates all the information we need for a given user account
+ * for this game. We will initialize one of these Account objects for each
+ * account we have stored in the XML data file providing the data store for this
+ * application.
+ *
+ * @author James C. Porcelli, SBU ID 108900819
+ */
+public class Account {
+
+    //THIS ACCOUNTS USERNAME
+    private String userName;
+    //A MAPPING OF THE NAME OF EVERY REGION THIS USER HAS PLAYED TO THE
+    //CORRESPONDING GAME STATISTICS FOR THAT REGION FOR THIS ACCOUNT
+    private TreeMap<String, AccountStatistics> regionStats;
+    //THIS IS THE LIST OF EVERY REGION PLAYED BY THIS ACCOUNT HOLDER IN 
+    //CHRONOLOGICAL ORDER
+    private ArrayList<Region> regionsPlayed;
+
+    /**
+     * Create a new RambleOn user account.
+     *
+     * @param userName
+     */
+    public Account(String userName) {
+        this.userName = userName;
+        regionStats = new TreeMap<>();
+        regionsPlayed = new ArrayList<>();
+    }
+    
+    /**
+     * 
+     * @return 
+     */
+    public ArrayList<Region> getRegionsPlayed() {
+        return regionsPlayed;
+    }
+    
+    /**
+     * 
+     * @param regionsPlayed 
+     */
+    public void setRegionsPlayed(ArrayList<Region> regionsPlayed) {
+        this.regionsPlayed = regionsPlayed;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public String getUserName() {
+        return userName;
+    }
+
+    /**
+     *
+     * @param userName
+     */
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public TreeMap<String, AccountStatistics> getRegionStats() {
+        return regionStats;
+    }
+
+    /**
+     *
+     * @param regionStats
+     */
+    public void setRegionStats(TreeMap<String, AccountStatistics> regionStats) {
+        this.regionStats = regionStats;
+    }
+}

@@ -1,0 +1,312 @@
+package rambleon;
+
+import static rambleon.RambleOnSettings.*;
+import accountdata.AccountDataManager;
+import java.awt.Color;
+import java.awt.event.ActionEvent;
+import java.awt.geom.Point2D;
+import java.awt.geom.Point2D.Double;
+import java.awt.image.BufferedImage;
+import java.util.ArrayList;
+import java.util.GregorianCalendar;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.LinkedList;
+import mini_game.MiniGame;
+import mini_game.MiniGameDataModel;
+import mini_game.Sprite;
+import mini_game.SpriteType;
+import rambleonevents.AccountSelectionHandler;
+import rambleonsprites.TextualSprite;
+import worlddata.Region;
+
+/**
+ *
+ * @author James C. Porcelli, SBU ID 108900819
+ */
+public class RambleOnDataModel extends MiniGameDataModel {
+
+    private ScreenState currentScreen;
+    private String regionName;
+    private Region region;
+    private String subRegionType;
+    private HashMap<Color, String> colorToSubRegionMappings;
+    private HashMap<String, Color> subRegionToColorMappings;
+    private HashMap<String, ArrayList<Point2D.Double>> pixels;
+    private LinkedList<String> redSubRegions;
+    private LinkedList<TextualSprite> subRegionStack;
+    private LinkedList<TextualSprite> accountsList;
+    private GregorianCalendar startTime;
+    private GregorianCalendar winEndingTime;
+    private int incorrectGuesses;
+
+    /**
+     *
+     */
+    public RambleOnDataModel() {
+        accountsList = new LinkedList<>();
+
+    }
+
+    /**
+     *
+     * @return
+     */
+    public LinkedList<TextualSprite> getAccountsList() {
+        return accountsList;
+    }
+
+    /**
+     *
+     * @param accountsList
+     */
+    public void setAccountsList(LinkedList<TextualSprite> accountsList) {
+        this.accountsList = accountsList;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public ScreenState getCurrentScreen() {
+        return currentScreen;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public boolean atWelcomeScreen() {
+        return currentScreen == ScreenState.WELCOME_SCREEN;
+    }
+
+    /*
+     * 
+     */
+    public boolean atAccountsScreen() {
+        return currentScreen == ScreenState.ACCOUNTS_SCREEN;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public boolean atCurrentAccountScreen() {
+        return currentScreen == ScreenState.CURRENT_ACCOUNT_SCREEN;
+    }
+
+    /**
+     *
+     * @param currentScreen
+     */
+    public void setCurrentScreen(ScreenState currentScreen) {
+        this.currentScreen = currentScreen;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public String getRegionName() {
+        return regionName;
+    }
+
+    /**
+     *
+     * @param regionName
+     */
+    public void setRegionName(String regionName) {
+        this.regionName = regionName;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public Region getRegion() {
+        return region;
+    }
+
+    /**
+     *
+     * @param region
+     */
+    public void setRegion(Region region) {
+        this.region = region;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public String getSubRegionType() {
+        return subRegionType;
+    }
+
+    /**
+     *
+     * @param subRegionType
+     */
+    public void setSubRegionType(String subRegionType) {
+        this.subRegionType = subRegionType;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public HashMap<Color, String> getColorToSubRegionMappings() {
+        return colorToSubRegionMappings;
+    }
+
+    /**
+     *
+     * @param colorToSubRegionMappings
+     */
+    public void setColorToSubRegionMappings(HashMap<Color, String> colorToSubRegionMappings) {
+        this.colorToSubRegionMappings = colorToSubRegionMappings;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public HashMap<String, Color> getSubRegionToColorMappings() {
+        return subRegionToColorMappings;
+    }
+
+    /**
+     *
+     * @param subRegionToColorMappings
+     */
+    public void setSubRegionToColorMappings(HashMap<String, Color> subRegionToColorMappings) {
+        this.subRegionToColorMappings = subRegionToColorMappings;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public HashMap<String, ArrayList<Double>> getPixels() {
+        return pixels;
+    }
+
+    /**
+     *
+     * @param pixels
+     */
+    public void setPixels(HashMap<String, ArrayList<Double>> pixels) {
+        this.pixels = pixels;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public LinkedList<String> getRedSubRegions() {
+        return redSubRegions;
+    }
+
+    /**
+     *
+     * @param redSubRegions
+     */
+    public void setRedSubRegions(LinkedList<String> redSubRegions) {
+        this.redSubRegions = redSubRegions;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public LinkedList<TextualSprite> getSubRegionStack() {
+        return subRegionStack;
+    }
+
+    /**
+     *
+     * @param subRegionStack
+     */
+    public void setSubRegionStack(LinkedList<TextualSprite> subRegionStack) {
+        this.subRegionStack = subRegionStack;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public GregorianCalendar getStartTime() {
+        return startTime;
+    }
+
+    /**
+     *
+     * @param startTime
+     */
+    public void setStartTime(GregorianCalendar startTime) {
+        this.startTime = startTime;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public GregorianCalendar getWinEndingTime() {
+        return winEndingTime;
+    }
+
+    /**
+     *
+     * @param winEndingTime
+     */
+    public void setWinEndingTime(GregorianCalendar winEndingTime) {
+        this.winEndingTime = winEndingTime;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public int getIncorrectGuesses() {
+        return incorrectGuesses;
+    }
+
+    /**
+     *
+     * @param incorrectGuesses
+     */
+    public void setIncorrectGuesses(int incorrectGuesses) {
+        this.incorrectGuesses = incorrectGuesses;
+    }
+
+    /**
+     *
+     * @param game
+     */
+    public void updateDebugText(MiniGame game) {
+    }
+
+    /**
+     *
+     * @param game
+     */
+    public void updateAll(MiniGame game) {
+    }
+
+    /**
+     *
+     * @param game
+     */
+    public void reset(MiniGame game) {
+    }
+
+    /**
+     *
+     * @param game
+     * @param mouseX
+     * @param mouseY
+     */
+    @Override
+    public void checkMousePressOnSprites(MiniGame game, int mouseX, int mouseY) {
+    }
+}

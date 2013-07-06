@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<region name="Maldives" leader="Mohammed Waheed Hassan" capital="Male">
+    <sub_region red="162" green="162" blue="162" name="Mathi-Uthuru" capital="N/A"/>
+    <sub_region red="149" green="149" blue="149" name="Uthuru" capital="N/A"/>
+    <sub_region red="153" green="153" blue="153" name="Medhu-Uthuru" capital="N/A"/>
+    <sub_region red="145" green="145" blue="145" name="Medhu" capital="N/A"/>
+    <sub_region red="138" green="138" blue="138" name="Medhu-Dhekunu" capital="N/A"/>
+    <sub_region red="128" green="128" blue="128" name="Mathi-Dhekunu" capital="N/A"/>
+    <sub_region red="125" green="125" blue="125" name="Dhekunu" capital="N/A"/>
+</region>

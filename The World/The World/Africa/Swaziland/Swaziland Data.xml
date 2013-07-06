@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="Swaziland" leader="King Mswati III" capital="Mbabane">
+    <sub_region red="146" green="146" blue="146" name="Shiselweni"      capital="Nhlangano" />
+    <sub_region red="144" green="144" blue="144" name="Manzini"        capital="Manzini" />
+    <sub_region red="142" green="142" blue="142" name="Lubombo"           capital="Siteki" />
+    <sub_region red="140" green="140" blue="140" name="Hhohho"         capital="Mbabane" />
+</region>
+

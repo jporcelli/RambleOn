@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<region name = "Laos" leader = "Choummaly Sayasone" capital = "Vientiane">
+    <sub_region red = "127" green = "127" blue = "127" name = "Attapu" capital = "Samakkhixay"/>
+    <sub_region red = "131" green = "131" blue = "131" name = "Champasak" capital = "Pakse"/>
+    <sub_region red = "139" green = "139" blue = "139" name = "Sekong" capital = "Lamarm"/>
+    <sub_region red = "140" green = "140" blue = "140" name = "Salavan" capital = "Salavan"/>
+    <sub_region red = "143" green = "143" blue = "143" name = "Savannakhet" capital = "Khanthabouly"/>
+    <sub_region red = "153" green = "153" blue = "153" name = "Khammouan" capital = "Thakhek"/>
+    <sub_region red = "159" green = "159" blue = "159" name = "Bolikhamxai" capital = "Paksane"/>
+    <sub_region red = "168" green = "168" blue = "168" name = "Vientiane Prefecture" capital = "Vientiane City"/>
+    <sub_region red = "176" green = "176" blue = "176" name = "Xaisomboun" capital = "Ban Mouang Cha"/>
+    <sub_region red = "183" green = "183" blue = "183" name = "Xiangkhoang" capital = "Pek"/>
+    <sub_region red = "190" green = "190" blue = "190" name = "Vientiane" capital = "Phonhong"/>
+    <sub_region red = "197" green = "197" blue = "197" name = "Houaphan" capital = "Xamneua"/>
+    <sub_region red = "201" green = "201" blue = "201" name = "Louangphabang" capital = "Louangphrabang"/>
+    <sub_region red = "206" green = "206" blue = "206" name = "Xaignabouli" capital = "Xayabury"/>
+    <sub_region red = "211" green = "211" blue = "211" name = "Oudomxai" capital = "Xay"/>
+    <sub_region red = "219" green = "219" blue = "219" name = "Bokeo" capital = "Houayxay"/>
+    <sub_region red = "226" green = "226" blue = "226" name = "Luang Namtha" capital = "Namtha"/>
+    <sub_region red = "233" green = "233" blue = "233" name = "Phongsali" capital = "Phongsaly"/>
+</region>   

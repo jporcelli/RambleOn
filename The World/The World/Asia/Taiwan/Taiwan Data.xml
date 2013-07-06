@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="Taiwan" leader="Ma Ying-jeou" capital="Taipei">
+    <sub_region red="250" green="250" blue="250" name="Jilong"      capital="Jilong" />
+    <sub_region red="240" green="240" blue="240" name="New Taipei"        capital="New Taipei" />
+    <sub_region red="230" green="230" blue="230" name="Taipei"           capital="Taipei" />
+    <sub_region red="220" green="220" blue="220" name="Yilan"         capital="Yilan" />
+    <sub_region red="210" green="210" blue="210" name="Taoyuan"          capital="Taoyuan" />
+    <sub_region red="200" green="200" blue="200" name="Hsinchu"        capital="Hsinchu" />
+    <sub_region red="190" green="190" blue="190" name="Miaoli"          capital="Miaoli" />
+    <sub_region red="180" green="180" blue="180" name="Taichung"          capital="Taichung" />
+    <sub_region red="170" green="170" blue="170" name="Nantou"         capital="Nantou" />
+    <sub_region red="160" green="160" blue="160" name="Haulien"          capital="Haulien" />
+    <sub_region red="150" green="150" blue="150" name="Chunghwa"           capital="Chunghwa" />
+    <sub_region red="140" green="140" blue="140" name="Yunlin"       capital="Yunlin" />
+    <sub_region red="130" green="130" blue="130" name="Penghu"   capital="Penghu" />
+    <sub_region red="120" green="120" blue="120" name="Chiayi"           capital="Chiayi" />
+    <sub_region red="110" green="110" blue="110" name="Tainan"          capital="Tainan" />
+    <sub_region red="100" green="100" blue="100" name="Kaosiung"           capital="Kaosiung" />
+    <sub_region red="90" green="90" blue="90" name="Pingtung"        capital="Pingtung" />
+    <sub_region red="80" green="80" blue="80" name="Taitung"           capital="Taitung" />
+</region>
+

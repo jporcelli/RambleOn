@@ -1,0 +1,24 @@
+<region name="Guatemala" leader="Otto Perez Molina" capital="Guatemala">
+<sub_region red="200" green="200" blue="200" name="Peten" capital="Flores"/>
+<sub_region red="198" green="198" blue="198" name="Izabal" capital="Puerto Barrios"/>
+<sub_region red="196" green="196" blue="196" name="Zacapa" capital="Zacapa"/>
+<sub_region red="194" green="194" blue="194" name="Chiquimula" capital="Chiquimula"/>
+<sub_region red="192" green="192" blue="192" name="Jutiapa" capital="Jutiapa"/>
+<sub_region red="190" green="190" blue="190" name="Jalapa" capital="Jalapa"/>
+<sub_region red="188" green="188" blue="188" name="El Progreso" capital="Guastatova"/>
+<sub_region red="186" green="186" blue="186" name="Baja Verapaz" capital="Salama"/>
+<sub_region red="184" green="184" blue="184" name="Alta Verapaz" capital="Coban"/>
+<sub_region red="182" green="182" blue="182" name="El Quiche" capital="Santa Cruz del Quiche"/>
+<sub_region red="180" green="180" blue="180" name="Guatemala" capital="Guatemala City"/>
+<sub_region red="178" green="178" blue="178" name="Santa Rosa" capital="Cuilapa"/>
+<sub_region red="176" green="176" blue="176" name="Escuintla" capital="Escuintla"/>
+<sub_region red="174" green="174" blue="174" name="Sacatepequez" capital="Antigua Guatemala"/>
+<sub_region red="172" green="172" blue="172" name="Chimaltenango" capital="Chimaltenango"/>
+<sub_region red="170" green="170" blue="170" name="Suchitepequez" capital="Mazatenango"/>
+<sub_region red="168" green="168" blue="168" name="Solola" capital="Solola"/>
+<sub_region red="166" green="166" blue="166" name="Totonicapán" capital="Totonicapan"/>
+<sub_region red="164" green="164" blue="164" name="Huehuetenango" capital="Huehuetenango"/>
+<sub_region red="162" green="162" blue="162" name="San Marcos" capital="San Marcos"/>
+<sub_region red="160" green="160" blue="160" name="Quetzaltenango" capital="Quetzaltenango"/>
+<sub_region red="158" green="158" blue="158" name="Retalhuleu" capital="Retalhuleu"/>
+</region>

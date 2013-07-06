@@ -1,0 +1,7 @@
+<region name="Martinique" leader="Josette Manin" capital="Fort-de-France">
+<sub_region red="130" green="130" blue="130" name="Caribbean North" capital="St.Pierre"/>
+<sub_region red="110" green="110" blue="110" name="Center" capital="Riviere Salee"/>
+<sub_region red="120" green="120" blue="120" name="North Atlantic" capital="Marigot"/>
+<sub_region red="100" green="100" blue="100" name="Southern Towns" capital="Le Marin"/>
+</region>
+

@@ -1,0 +1,16 @@
+<region name="Uzbekistan" leader="Islam Karimov" capital="Tashkent">
+<sub_region red="200" green="200" blue="200" name="Qaraqalpaqstan Respublikasi" capital="Nukus"/>
+<sub_region red="197" green="197" blue="197" name="Xorazm Viloyati" capital="Urganch"/>
+<sub_region red="194" green="194" blue="194" name="Navoiy Viloyati" capital="Navoiy"/>
+<sub_region red="191" green="191" blue="191" name="Buxoro Viloyati" capital="Bukhara"/>
+<sub_region red="188" green="188" blue="188" name="Qashqadaryo Viloyati" capital="Qarshi"/>
+<sub_region red="185" green="185" blue="185" name="Samarqand Viloyati" capital="Samarqand"/>
+<sub_region red="182" green="182" blue="182" name="Jizzax Viloyati" capital="Jizzax"/>
+<sub_region red="179" green="179" blue="179" name="Surxondaryo Viloyati" capital="Termiz"/>
+<sub_region red="176" green="176" blue="176" name="Sirdaryo Viloyati" capital="Guiliston"/>
+<sub_region red="173" green="173" blue="173" name="Toshkent Viloyati" capital="Tashkent"/>
+<sub_region red="170" green="170" blue="170" name="Toshkent Shahri" capital="Tashkent"/>
+<sub_region red="167" green="167" blue="167" name="Namangan Viloyati" capital="Namangan"/>
+<sub_region red="164" green="164" blue="164" name="Farg'ona Viloyati" capital="Fergana"/>
+<sub_region red="161" green="161" blue="161" name="Andijon Viloyati" capital="Andijon"/>
+</region>

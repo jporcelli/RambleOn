@@ -1,0 +1,36 @@
+package rambleonevents;
+
+import rambleon.ScreenState;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import rambleon.RambleOn;
+import rambleon.RambleOnDataModel;
+
+/**
+ * Event Handler for the welcome screen of the RambleOn game
+ * 
+ * @author James C. Porcelli, SBU ID 108900819
+ */
+public class WelcomePageHandler implements ActionListener{
+    
+    //THE GAME THIS HANDLER IS RESPONDING TO EVENTS CREATED FOR
+    private RambleOn game;
+    
+    /**
+     * 
+     * @param game The RambleOn game that we will respond to events for.
+     */
+    public WelcomePageHandler(RambleOn game){
+        this.game = game;        
+    }
+    
+    /**
+     * 
+     * @param e The event fired by the WelcomeScreen in response to a mouse click
+     */
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        ((RambleOnDataModel)game.getData()).setCurrentScreen(ScreenState.ACCOUNTS_SCREEN);
+    }
+    
+}

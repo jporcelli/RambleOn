@@ -1,0 +1,19 @@
+<region name="Estonia" leader="Toomas Hendrik Ilves" capital="Tallinn">
+<sub_region red="200" green="200" blue="200" name="Hiuu" capital="Kärdla"/>
+<sub_region red="196" green="196" blue="196" name="Saare" capital="Kuressaare"/>
+<sub_region red="192" green="192" blue="192" name="Lääne" capital="Haapsalu"/>
+<sub_region red="188" green="188" blue="188" name="Pärnu" capital="Pärnu"/>
+<sub_region red="184" green="184" blue="184" name="Rapla" capital="Rapla"/>
+<sub_region red="180" green="180" blue="180" name="Harju" capital="Tallinn"/>
+<sub_region red="176" green="176" blue="176" name="Järva" capital="Paide"/>
+<sub_region red="172" green="172" blue="172" name="Viljandi" capital="Viljandi"/>
+<sub_region red="168" green="168" blue="168" name="Valga" capital="Valga"/>
+<sub_region red="164" green="164" blue="164" name="Võru" capital="Võru"/>
+<sub_region red="160" green="160" blue="160" name="Põlva" capital="Põlva"/>
+<sub_region red="156" green="156" blue="156" name="Tartu" capital="Tartu"/>
+<sub_region red="152" green="152" blue="152" name="Jõgeva" capital="Jõgeva"/>
+<sub_region red="148" green="148" blue="148" name="Lääne-Viru" capital="Rakvere"/>
+<sub_region red="144" green="144" blue="144" name="Ida-Viru" capital="Jõhvi"/>
+<sub_region red="140" green="140" blue="140" name="Lake Peipus" capital="Lake Peipus"/>
+<sub_region red="136" green="136" blue="136" name="Lake Pskov" capital="Lake Pskov"/>
+</region>

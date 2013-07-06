@@ -1,0 +1,64 @@
+package rambleonsprites;
+
+import java.io.Serializable;
+import mini_game.Sprite;
+import mini_game.SpriteType;
+
+/**
+ *
+ * @author James C. Porcelli, SBU ID 108900819
+ */
+public class TextualSprite extends Sprite implements Serializable{
+
+    private String textToRender;
+
+    public TextualSprite(
+            String initTextToRender,
+            SpriteType initSpriteType,
+            float initX, float initY,
+            float initVx, float initVy,
+            String initState) {
+        super(initSpriteType, initX, initY, initVx, initVy, initState);
+        textToRender = initTextToRender;
+    }
+
+    public String getTextToRender() {
+        return textToRender;
+    }
+
+    public void setTextToRender(String initTextToRender) {
+        textToRender = initTextToRender;
+    }
+
+    public float getAabbX() {
+        return aabbX;
+    }
+
+    public void setAabbX(float aabbX) {
+        this.aabbX = aabbX;
+    }
+
+    public float getAabbY() {
+        return aabbY;
+    }
+
+    public void setAabbY(float aabbY) {
+        this.aabbY = aabbY;
+    }
+
+    public float getAabbWidth() {
+        return aabbWidth;
+    }
+
+    public void setAabbWidth(float aabbWidth) {
+        this.aabbWidth = aabbWidth;
+    }
+
+    public float getAabbHeight() {
+        return aabbHeight;
+    }
+
+    public void setAabbHeight(float aabbHeight) {
+        this.aabbHeight = aabbHeight;
+    }
+}

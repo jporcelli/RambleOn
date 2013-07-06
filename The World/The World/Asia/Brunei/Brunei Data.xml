@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="Brunei" leader="Hassanal Bolkiah" capital="Brunei-et-muara">
+    <sub_region red="200" green="200" blue="200" name="Temburong"      capital="Bangar" />
+    <sub_region red="180" green="180" blue="180" name="Brunei-et-muara"        capital="Brunei-et-muara" />
+    <sub_region red="160" green="160" blue="160" name="Tutong"           capital="Tutong" />
+    <sub_region red="140" green="140" blue="140" name="Belait"         capital="Kuala Belait" />
+</region>
+

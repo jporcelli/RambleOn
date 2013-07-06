@@ -1,0 +1,12 @@
+<region name="Dominica" leader="Eliud Williams" capital="Roseau">
+<sub_region red="230" green="230" blue="230" name="Saint John" capital="Portsmouth"/>
+<sub_region red="220" green="220" blue="220" name="Saint Andrew" capital="Wesley"/>
+<sub_region red="210" green="210" blue="210" name="Saint Peter" capital="Colihaut"/>
+<sub_region red="200" green="200" blue="200" name="Saint Joseph" capital="Saint Joseph"/>
+<sub_region red="190" green="190" blue="190" name="Saint David" capital="Rosalie"/>
+<sub_region red="180" green="180" blue="180" name="Saint Paul" capital="Pont Casse"/>
+<sub_region red="170" green="170" blue="170" name="Saint George" capital="Roseau"/>
+<sub_region red="160" green="160" blue="160" name="Saint Patrick" capital="Berekua"/>
+<sub_region red="150" green="150" blue="150" name="Saint Luke" capital="Pointe Michel"/>
+<sub_region red="140" green="140" blue="140" name="Saint Mark" capital="Soufriere"/>
+</region>

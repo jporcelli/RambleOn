@@ -1,0 +1,7 @@
+<region name="Bahrain" leader="Hamad bin Isa Al Khalifa" capital="Manama">
+  <sub_region red="200" green="200" blue="200" name="Capital Governorate" capital="Manama"/>
+  <sub_region red="190" green="190" blue="190" name="Central Governorate" capital="Riffa"/>
+  <sub_region red="180" green="180" blue="180" name="Muharraq Governorate" capital="Muharraq City"/>
+  <sub_region red="170" green="170" blue="170" name="Northern Governorate" capital="Budaiya"/>
+  <sub_region red="160" green="160" blue="160" name="Southern Governorate" capital="Mamtalah"/>
+</region>

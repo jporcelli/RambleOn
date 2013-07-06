@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<region name="Côte d'Ivoire" leader="Alassane Ouattara" capital="Yamoussoukro">
+    <sub_region red="200" green="200" blue="200" name="Agnéby"      capital="Agboville" />
+	<sub_region red="200" green="200" blue="199" name="Bafing"      capital="Touba" />
+	<sub_region red="200" green="200" blue="198" name="Bas-Sassandra"      capital="San-Pédro" />
+	<sub_region red="200" green="199" blue="200" name="Denguélé"      capital="Odienné" />
+	<sub_region red="200" green="199" blue="199" name="Dix-Huit Montagnes"      capital="Man" />
+	<sub_region red="200" green="199" blue="198" name="Fromager"      capital="Gagnoa" />
+	<sub_region red="200" green="198" blue="200" name="Haut-Sassandra"      capital="Daloa" />
+	<sub_region red="200" green="198" blue="199" name="Lacs"      capital="Yamoussoukro" />
+	<sub_region red="200" green="198" blue="198" name="Lagunes"      capital="Abidjan" />
+	<sub_region red="199" green="200" blue="200" name="Marahoué"      capital="Bouaflé" />
+	<sub_region red="199" green="200" blue="199" name="Moyen-Cavally"      capital="Guiglo" />
+	<sub_region red="199" green="200" blue="198" name="Moyen-Comoé"      capital="Abengourou" />
+	<sub_region red="199" green="199" blue="200" name="N'zi-Comoé"      capital="Dimbokro" />
+	<sub_region red="199" green="199" blue="199" name="Savanes"      capital="Korhogo" />
+	<sub_region red="199" green="199" blue="198" name="Sud-Bandama"      capital="Divo" />
+	<sub_region red="199" green="198" blue="200" name="Sud-Comoé"      capital="Aboisso" />
+	<sub_region red="199" green="198" blue="199" name="Vallée du Bandama"      capital="Bouaké" />
+	<sub_region red="199" green="198" blue="198" name="Worodougou"      capital="Séguéla" />
+	<sub_region red="198" green="200" blue="200" name="Zanzan"      capital="Bondoukou" />
+</region>
+

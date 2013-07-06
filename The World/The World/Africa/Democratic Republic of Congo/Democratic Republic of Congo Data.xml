@@ -1,0 +1,11 @@
+<region name="Democratic Republic of the Congo" leader="Joseph Kabila" capital="Kinshasa">
+	<sub_region red="180" green="180" blue="180" name="Katanga" capital="Lubumbashi"/>
+	<sub_region red="175" green="175" blue="175" name="Maniema" capital="Kindu"/>
+	<sub_region red="170" green="170" blue="170" name="Prientale" capital="Kisangani"/>
+	<sub_region red="165" green="165" blue="165" name="Kasai-Oriental" capital="Mbuji-Mayi"/>
+	<sub_region red="160" green="160" blue="160" name="Equateur" capital="Mbandaka"/>
+	<sub_region red="155" green="155" blue="155" name="Kasai-Occidental" capital="Kananga"/>
+	<sub_region red="150" green="150" blue="150" name="Bandundu" capital="bandundu"/>
+	<sub_region red="145" green="145" blue="145" name="Kinshasa" capital="Kinshasa"/>
+	<sub_region red="140" green="140" blue="140" name="Bas-Congo" capital="Matadi"/>
+</region>
